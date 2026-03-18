@@ -1,0 +1,1191 @@
+{
+  "file": "lecture4.mp3",
+  "text": " Guys 100 days of code, your 2nd time is welcome Today in this video, we will take our Python program We will take our first Python program Because this is a Python program In which we will take a line of the same We will understand what is happening in our Python program And we will write it from scratch In our videos, we will write very dangerous Python programs from scratch But this is going to be our first program Let's go to the computer screen and let's get started So I have already written in the day 4 And today we will write our first program Now we have written our first program We have written it We have not written many programs But this program is going to be Which is character by character Word by word I am going to write from scratch So this is going to be the feeling of this So what do you guys do first? Now what is the print in the Python program? Let me tell you The print is a function What is the function? Basically, you use some task to perform The print function is to invoke any function We use some of these as our parentheses As you can see After writing a PRI, I can use parentheses And then I can close it like this And I will write whatever I want in it I will get print in it I know I write 7 in it So I will get 7 print in it But we will know what we will do We will write a Hello Word And you will have heard the Python programming In any programming language, when someone writes a code So the first program is written It is written as a Hello Word You can see here As I wrote a print in the print And I have read the line And I will write it in valid syntax Let's go and see it What is this? Start with the error Yes, start with the error When we eat the dough, we will learn So here you see I wrote the print in the order of the word I got the error Why did I get the error in the order of the word? Python, when you use the print So you have to give it a valid object Hello Word is a valid object Not the value of Python Python says that Hello Word is not a valid object Yes, but if you close a double code Then you are talking about the string in the order of the Python programming Hello Word is a string And we will run it and see And our first program is written Hello Word is looking at us You are looking at the output Hello Word is looking at us So let us save the time Congratulations Write in the comment For me, this is the first program Which is written by the character We have assembled it Very good So far, so good If I write here P R I N T And then I write it in the 5th and then run So first I will write the word And then I will write the 5th We have run Python in the term We saw that I write Python 3 in the term And then print Hello Word So I am writing manually All the lines are typing And I am getting it I want to do it I am writing manually You see, I have typed the first word And then I have typed the print 5 So I am writing the first word No, I need to type it I can make a script So I made this script And then I made the name Main.py script Means That the line by line execution If I write hello word Then I will get it And then print 5 So this will execute And as I know Print by I will write it like this And then I will run So first Then write Because the script is writing in line by line Now print is written in this implementation If you want to know Because the print is And what are the uses You see, this is the command app As I have taken the mouse here Then I will come to the command And then the values The object is gone It can be given as multiple values Like this So that the word is 7 And then the word is 7 And then the next statement That execute And then execute And then the line by line Our script execute Will be Can we print the Python programming language And print it No, we can't print it We can see many things And this is the score Of the speciality You will be able to tell What we will do But we will start Our first Python programming What is the script And when we execute a command And then execute the line by line And then the printer is given Any thing In the apple It is called apple When we write the python 3 here Python 3 It is called apple This is a read evaluate print loop I will write it 8 plus 9 So this will be written in 17 But after that I will write something else In the output As I write something In the output I will get the idea We don't want to do this Ideally We want to process the sequence of instructions With the Python We want to say that Python is doing this To execute this first Then execute this Then do this And I bought 10 rupees And I bought 5 kilos Or I bought 17 And I bought 13 kilos And I bought 13 kilos So I will say that Python 17 and 13 kilos And I bought 13 kilos So how much will it cost? You can do some kind of computations in the copy print For multiplication You have to put a star Don't put x It is okay You have to put star For the divide This one Plus and minus This is all simple Try it But you can see I bought all the things So you can give it a computation For the computation In the next videos We will learn more things In this course I want to tell you Who is this course? If you can't be consistent Or you want to do something in short cut Because this course is a question Consistency It demands that you practice Like you are watching this video And you will see your time You will be able to complete this course And go to the day and day And you will give your attendance In the comment below I will show you a comment If you want to learn more And you will learn very quickly And you will not be able to learn without practice Because it demands that you practice You will not be able to do anything You will have to take the stairs And this is the stairs And you will have to walk in the city for hundreds of days And trust me It will be worth it at the end I will tell you the experience of my years of experience Which I have learnt for a long time And from the videos we will coding in actual We will write all the codes in the next few videos And in fact Over the next A lot of videos Because we will be able to do hundreds of days And do not do this video If you do not have access to the playlist Then do do it And save it And do not do this video Thank you so much guys for watching this video And I will see you next time",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.92,
+      "text": "Guys 100 days of code, your 2nd time is welcome"
+    },
+    {
+      "start": 2.92,
+      "end": 6.22,
+      "text": "Today in this video, we will take our Python program"
+    },
+    {
+      "start": 6.76,
+      "end": 8.34,
+      "text": "We will take our first Python program"
+    },
+    {
+      "start": 8.94,
+      "end": 10.9,
+      "text": "Because this is a Python program"
+    },
+    {
+      "start": 10.9,
+      "end": 13.26,
+      "text": "In which we will take a line of the same"
+    },
+    {
+      "start": 13.26,
+      "end": 16.86,
+      "text": "We will understand what is happening in our Python program"
+    },
+    {
+      "start": 16.86,
+      "end": 18.84,
+      "text": "And we will write it from scratch"
+    },
+    {
+      "start": 19.64,
+      "end": 23.28,
+      "text": "In our videos, we will write very dangerous Python programs from scratch"
+    },
+    {
+      "start": 23.28,
+      "end": 25.46,
+      "text": "But this is going to be our first program"
+    },
+    {
+      "start": 25.46,
+      "end": 28.02,
+      "text": "Let's go to the computer screen and let's get started"
+    },
+    {
+      "start": 37.22,
+      "end": 39.56,
+      "text": "So I have already written in the day 4"
+    },
+    {
+      "start": 39.56,
+      "end": 42.36,
+      "text": "And today we will write our first program"
+    },
+    {
+      "start": 42.36,
+      "end": 44.16,
+      "text": "Now we have written our first program"
+    },
+    {
+      "start": 44.72,
+      "end": 45.62,
+      "text": "We have written it"
+    },
+    {
+      "start": 45.62,
+      "end": 47.18,
+      "text": "We have not written many programs"
+    },
+    {
+      "start": 47.72,
+      "end": 49.52,
+      "text": "But this program is going to be"
+    },
+    {
+      "start": 49.52,
+      "end": 50.8,
+      "text": "Which is character by character"
+    },
+    {
+      "start": 50.8,
+      "end": 51.8,
+      "text": "Word by word"
+    },
+    {
+      "start": 51.8,
+      "end": 53.0,
+      "text": "I am going to write from scratch"
+    },
+    {
+      "start": 53.0,
+      "end": 54.4,
+      "text": "So this is going to be the feeling of this"
+    },
+    {
+      "start": 54.4,
+      "end": 56.68,
+      "text": "So what do you guys do first?"
+    },
+    {
+      "start": 56.68,
+      "end": 58.98,
+      "text": "Now what is the print in the Python program?"
+    },
+    {
+      "start": 59.36,
+      "end": 61.16,
+      "text": "Let me tell you"
+    },
+    {
+      "start": 61.16,
+      "end": 62.34,
+      "text": "The print is a function"
+    },
+    {
+      "start": 62.34,
+      "end": 63.68,
+      "text": "What is the function?"
+    },
+    {
+      "start": 64.22,
+      "end": 65.54,
+      "text": "Basically, you use some task to perform"
+    },
+    {
+      "start": 66.72,
+      "end": 69.04,
+      "text": "The print function is to invoke any function"
+    },
+    {
+      "start": 69.72,
+      "end": 72.52,
+      "text": "We use some of these as our parentheses"
+    },
+    {
+      "start": 73.72,
+      "end": 74.74,
+      "text": "As you can see"
+    },
+    {
+      "start": 74.74,
+      "end": 79.58,
+      "text": "After writing a PRI, I can use parentheses"
+    },
+    {
+      "start": 80.12,
+      "end": 82.0,
+      "text": "And then I can close it like this"
+    },
+    {
+      "start": 82.0,
+      "end": 83.72,
+      "text": "And I will write whatever I want in it"
+    },
+    {
+      "start": 83.72,
+      "end": 85.2,
+      "text": "I will get print in it"
+    },
+    {
+      "start": 85.2,
+      "end": 86.38,
+      "text": "I know I write 7 in it"
+    },
+    {
+      "start": 86.38,
+      "end": 88.2,
+      "text": "So I will get 7 print in it"
+    },
+    {
+      "start": 88.2,
+      "end": 89.94,
+      "text": "But we will know what we will do"
+    },
+    {
+      "start": 89.94,
+      "end": 90.98,
+      "text": "We will write a Hello Word"
+    },
+    {
+      "start": 91.56,
+      "end": 94.56,
+      "text": "And you will have heard the Python programming"
+    },
+    {
+      "start": 94.56,
+      "end": 97.68,
+      "text": "In any programming language, when someone writes a code"
+    },
+    {
+      "start": 98.24,
+      "end": 100.24,
+      "text": "So the first program is written"
+    },
+    {
+      "start": 100.24,
+      "end": 101.18,
+      "text": "It is written as a Hello Word"
+    },
+    {
+      "start": 101.76,
+      "end": 102.72,
+      "text": "You can see here"
+    },
+    {
+      "start": 102.72,
+      "end": 104.1,
+      "text": "As I wrote a print in the print"
+    },
+    {
+      "start": 104.1,
+      "end": 105.62,
+      "text": "And I have read the line"
+    },
+    {
+      "start": 105.62,
+      "end": 107.26,
+      "text": "And I will write it in valid syntax"
+    },
+    {
+      "start": 107.26,
+      "end": 108.9,
+      "text": "Let's go and see it"
+    },
+    {
+      "start": 108.9,
+      "end": 109.68,
+      "text": "What is this?"
+    },
+    {
+      "start": 110.04,
+      "end": 110.58,
+      "text": "Start with the error"
+    },
+    {
+      "start": 110.58,
+      "end": 112.4,
+      "text": "Yes, start with the error"
+    },
+    {
+      "start": 113.04,
+      "end": 114.5,
+      "text": "When we eat the dough, we will learn"
+    },
+    {
+      "start": 115.06,
+      "end": 115.82,
+      "text": "So here you see"
+    },
+    {
+      "start": 115.82,
+      "end": 117.62,
+      "text": "I wrote the print in the order of the word"
+    },
+    {
+      "start": 117.62,
+      "end": 118.42,
+      "text": "I got the error"
+    },
+    {
+      "start": 119.14,
+      "end": 120.4,
+      "text": "Why did I get the error in the order of the word?"
+    },
+    {
+      "start": 120.4,
+      "end": 122.02,
+      "text": "Python, when you use the print"
+    },
+    {
+      "start": 122.98,
+      "end": 125.52,
+      "text": "So you have to give it a valid object"
+    },
+    {
+      "start": 126.26,
+      "end": 127.78,
+      "text": "Hello Word is a valid object"
+    },
+    {
+      "start": 127.78,
+      "end": 128.48,
+      "text": "Not the value of Python"
+    },
+    {
+      "start": 129.18,
+      "end": 129.92,
+      "text": "Python says that"
+    },
+    {
+      "start": 129.92,
+      "end": 131.88,
+      "text": "Hello Word is not a valid object"
+    },
+    {
+      "start": 131.88,
+      "end": 133.7,
+      "text": "Yes, but if you close a double code"
+    },
+    {
+      "start": 133.7,
+      "end": 138.42,
+      "text": "Then you are talking about the string in the order of the Python programming"
+    },
+    {
+      "start": 138.98,
+      "end": 139.72,
+      "text": "Hello Word is a string"
+    },
+    {
+      "start": 139.72,
+      "end": 141.2,
+      "text": "And we will run it and see"
+    },
+    {
+      "start": 141.2,
+      "end": 142.94,
+      "text": "And our first program is written"
+    },
+    {
+      "start": 143.5,
+      "end": 144.24,
+      "text": "Hello Word is looking at us"
+    },
+    {
+      "start": 145.02,
+      "end": 146.46,
+      "text": "You are looking at the output"
+    },
+    {
+      "start": 146.46,
+      "end": 147.44,
+      "text": "Hello Word is looking at us"
+    },
+    {
+      "start": 148.18,
+      "end": 149.26,
+      "text": "So let us save the time"
+    },
+    {
+      "start": 149.26,
+      "end": 149.44,
+      "text": "Congratulations"
+    },
+    {
+      "start": 149.44,
+      "end": 150.24,
+      "text": "Write in the comment"
+    },
+    {
+      "start": 150.24,
+      "end": 152.56,
+      "text": "For me, this is the first program"
+    },
+    {
+      "start": 152.56,
+      "end": 153.24,
+      "text": "Which is written by the character"
+    },
+    {
+      "start": 153.82,
+      "end": 154.66,
+      "text": "We have assembled it"
+    },
+    {
+      "start": 155.52,
+      "end": 156.52,
+      "text": "Very good"
+    },
+    {
+      "start": 156.52,
+      "end": 157.74,
+      "text": "So far, so good"
+    },
+    {
+      "start": 158.34,
+      "end": 159.28,
+      "text": "If I write here"
+    },
+    {
+      "start": 159.28,
+      "end": 160.22,
+      "text": "P R I N T"
+    },
+    {
+      "start": 160.22,
+      "end": 162.26,
+      "text": "And then I write it in the 5th and then run"
+    },
+    {
+      "start": 162.26,
+      "end": 163.28,
+      "text": "So first"
+    },
+    {
+      "start": 163.28,
+      "end": 164.1,
+      "text": "I will write the word"
+    },
+    {
+      "start": 164.1,
+      "end": 166.06,
+      "text": "And then I will write the 5th"
+    },
+    {
+      "start": 166.88,
+      "end": 168.02,
+      "text": "We have run Python in the term"
+    },
+    {
+      "start": 168.78,
+      "end": 169.94,
+      "text": "We saw that"
+    },
+    {
+      "start": 169.94,
+      "end": 173.86,
+      "text": "I write Python 3 in the term"
+    },
+    {
+      "start": 173.86,
+      "end": 174.78,
+      "text": "And then print"
+    },
+    {
+      "start": 174.78,
+      "end": 176.48,
+      "text": "Hello Word"
+    },
+    {
+      "start": 176.48,
+      "end": 177.82,
+      "text": "So I am writing manually"
+    },
+    {
+      "start": 177.82,
+      "end": 179.22,
+      "text": "All the lines are typing"
+    },
+    {
+      "start": 179.22,
+      "end": 181.1,
+      "text": "And I am getting it"
+    },
+    {
+      "start": 181.1,
+      "end": 181.98,
+      "text": "I want to do it"
+    },
+    {
+      "start": 181.98,
+      "end": 182.92,
+      "text": "I am writing manually"
+    },
+    {
+      "start": 182.92,
+      "end": 185.44,
+      "text": "You see, I have typed the first word"
+    },
+    {
+      "start": 186.18,
+      "end": 189.56,
+      "text": "And then I have typed the print 5"
+    },
+    {
+      "start": 189.56,
+      "end": 190.9,
+      "text": "So I am writing the first word"
+    },
+    {
+      "start": 191.82,
+      "end": 193.74,
+      "text": "No, I need to type it"
+    },
+    {
+      "start": 193.74,
+      "end": 195.52,
+      "text": "I can make a script"
+    },
+    {
+      "start": 195.52,
+      "end": 197.0,
+      "text": "So I made this script"
+    },
+    {
+      "start": 197.0,
+      "end": 197.62,
+      "text": "And then I made the name"
+    },
+    {
+      "start": 197.62,
+      "end": 198.96,
+      "text": "Main.py script"
+    },
+    {
+      "start": 198.96,
+      "end": 199.42,
+      "text": "Means"
+    },
+    {
+      "start": 199.42,
+      "end": 201.04,
+      "text": "That the line by line execution"
+    },
+    {
+      "start": 201.04,
+      "end": 202.84,
+      "text": "If I write hello word"
+    },
+    {
+      "start": 202.84,
+      "end": 203.94,
+      "text": "Then I will get it"
+    },
+    {
+      "start": 203.94,
+      "end": 206.04,
+      "text": "And then print 5"
+    },
+    {
+      "start": 206.04,
+      "end": 206.96,
+      "text": "So this will execute"
+    },
+    {
+      "start": 206.96,
+      "end": 208.7,
+      "text": "And as I know"
+    },
+    {
+      "start": 208.7,
+      "end": 211.08,
+      "text": "Print by"
+    },
+    {
+      "start": 212.12,
+      "end": 213.48,
+      "text": "I will write it like this"
+    },
+    {
+      "start": 213.48,
+      "end": 214.28,
+      "text": "And then I will run"
+    },
+    {
+      "start": 214.28,
+      "end": 214.88,
+      "text": "So first"
+    },
+    {
+      "start": 214.88,
+      "end": 217.5,
+      "text": "Then write"
+    },
+    {
+      "start": 217.5,
+      "end": 218.48,
+      "text": "Because the script is"
+    },
+    {
+      "start": 218.48,
+      "end": 219.16,
+      "text": "writing in line by line"
+    },
+    {
+      "start": 220.0,
+      "end": 222.54,
+      "text": "Now print is written in this implementation"
+    },
+    {
+      "start": 223.22,
+      "end": 224.88,
+      "text": "If you want to know"
+    },
+    {
+      "start": 224.88,
+      "end": 225.82,
+      "text": "Because the print is"
+    },
+    {
+      "start": 225.82,
+      "end": 227.04,
+      "text": "And what are the uses"
+    },
+    {
+      "start": 227.04,
+      "end": 228.68,
+      "text": "You see, this is the command app"
+    },
+    {
+      "start": 228.68,
+      "end": 230.94,
+      "text": "As I have taken the mouse here"
+    },
+    {
+      "start": 230.94,
+      "end": 231.94,
+      "text": "Then I will come to the command"
+    },
+    {
+      "start": 231.94,
+      "end": 232.98,
+      "text": "And then the values"
+    },
+    {
+      "start": 232.98,
+      "end": 234.08,
+      "text": "The object is gone"
+    },
+    {
+      "start": 234.08,
+      "end": 235.86,
+      "text": "It can be given as multiple values"
+    },
+    {
+      "start": 236.48,
+      "end": 237.06,
+      "text": "Like this"
+    },
+    {
+      "start": 237.06,
+      "end": 238.82,
+      "text": "So that the word is 7"
+    },
+    {
+      "start": 238.82,
+      "end": 241.02,
+      "text": "And then the word is 7"
+    },
+    {
+      "start": 241.88,
+      "end": 242.94,
+      "text": "And then the next statement"
+    },
+    {
+      "start": 242.94,
+      "end": 243.8,
+      "text": "That execute"
+    },
+    {
+      "start": 243.8,
+      "end": 244.8,
+      "text": "And then execute"
+    },
+    {
+      "start": 244.8,
+      "end": 246.42,
+      "text": "And then the line by line"
+    },
+    {
+      "start": 246.42,
+      "end": 247.48,
+      "text": "Our script execute"
+    },
+    {
+      "start": 247.48,
+      "end": 248.08,
+      "text": "Will be"
+    },
+    {
+      "start": 248.08,
+      "end": 250.24,
+      "text": "Can we print the Python programming language"
+    },
+    {
+      "start": 250.24,
+      "end": 251.54,
+      "text": "And print it"
+    },
+    {
+      "start": 251.54,
+      "end": 253.82,
+      "text": "No, we can't print it"
+    },
+    {
+      "start": 253.82,
+      "end": 254.94,
+      "text": "We can see many things"
+    },
+    {
+      "start": 254.94,
+      "end": 256.44,
+      "text": "And this is the score"
+    },
+    {
+      "start": 256.44,
+      "end": 257.7,
+      "text": "Of the speciality"
+    },
+    {
+      "start": 257.7,
+      "end": 258.3,
+      "text": "You will be able to tell"
+    },
+    {
+      "start": 258.82,
+      "end": 259.72,
+      "text": "What we will do"
+    },
+    {
+      "start": 259.72,
+      "end": 261.14,
+      "text": "But we will start"
+    },
+    {
+      "start": 261.14,
+      "end": 262.52,
+      "text": "Our first Python programming"
+    },
+    {
+      "start": 262.52,
+      "end": 263.86,
+      "text": "What is the script"
+    },
+    {
+      "start": 264.48,
+      "end": 268.26,
+      "text": "And when we execute a command"
+    },
+    {
+      "start": 268.26,
+      "end": 269.36,
+      "text": "And then execute the line by line"
+    },
+    {
+      "start": 269.36,
+      "end": 270.58,
+      "text": "And then the printer is given"
+    },
+    {
+      "start": 270.58,
+      "end": 271.68,
+      "text": "Any thing"
+    },
+    {
+      "start": 271.68,
+      "end": 272.58,
+      "text": "In the apple"
+    },
+    {
+      "start": 272.58,
+      "end": 273.4,
+      "text": "It is called apple"
+    },
+    {
+      "start": 273.4,
+      "end": 274.88,
+      "text": "When we write the python 3 here"
+    },
+    {
+      "start": 275.72,
+      "end": 276.58,
+      "text": "Python 3"
+    },
+    {
+      "start": 276.58,
+      "end": 277.08,
+      "text": "It is called apple"
+    },
+    {
+      "start": 277.08,
+      "end": 279.0,
+      "text": "This is a read evaluate print loop"
+    },
+    {
+      "start": 279.82,
+      "end": 281.22,
+      "text": "I will write it 8 plus 9"
+    },
+    {
+      "start": 281.22,
+      "end": 282.26,
+      "text": "So this will be written in 17"
+    },
+    {
+      "start": 282.26,
+      "end": 284.22,
+      "text": "But after that"
+    },
+    {
+      "start": 284.22,
+      "end": 285.6,
+      "text": "I will write something else"
+    },
+    {
+      "start": 285.6,
+      "end": 286.42,
+      "text": "In the output"
+    },
+    {
+      "start": 286.42,
+      "end": 287.66,
+      "text": "As I write something"
+    },
+    {
+      "start": 287.66,
+      "end": 288.7,
+      "text": "In the output"
+    },
+    {
+      "start": 288.7,
+      "end": 289.7,
+      "text": "I will get the idea"
+    },
+    {
+      "start": 289.7,
+      "end": 291.0,
+      "text": "We don't want to do this"
+    },
+    {
+      "start": 291.0,
+      "end": 291.72,
+      "text": "Ideally"
+    },
+    {
+      "start": 291.72,
+      "end": 294.22,
+      "text": "We want to process the sequence of instructions"
+    },
+    {
+      "start": 295.26,
+      "end": 296.08,
+      "text": "With the Python"
+    },
+    {
+      "start": 296.08,
+      "end": 298.0,
+      "text": "We want to say that"
+    },
+    {
+      "start": 298.0,
+      "end": 299.22,
+      "text": "Python is doing this"
+    },
+    {
+      "start": 299.22,
+      "end": 300.4,
+      "text": "To execute this first"
+    },
+    {
+      "start": 301.26,
+      "end": 302.62,
+      "text": "Then execute this"
+    },
+    {
+      "start": 302.62,
+      "end": 303.74,
+      "text": "Then do this"
+    },
+    {
+      "start": 303.74,
+      "end": 306.74,
+      "text": "And I bought 10 rupees"
+    },
+    {
+      "start": 307.26,
+      "end": 309.06,
+      "text": "And I bought 5 kilos"
+    },
+    {
+      "start": 309.06,
+      "end": 311.14,
+      "text": "Or I bought 17"
+    },
+    {
+      "start": 311.14,
+      "end": 313.02,
+      "text": "And I bought 13 kilos"
+    },
+    {
+      "start": 313.02,
+      "end": 313.9,
+      "text": "And I bought 13 kilos"
+    },
+    {
+      "start": 313.9,
+      "end": 315.44,
+      "text": "So I will say that"
+    },
+    {
+      "start": 315.44,
+      "end": 316.62,
+      "text": "Python 17 and 13 kilos"
+    },
+    {
+      "start": 316.62,
+      "end": 320.72,
+      "text": "And I bought 13 kilos"
+    },
+    {
+      "start": 320.72,
+      "end": 322.04,
+      "text": "So how much will it cost?"
+    },
+    {
+      "start": 322.12,
+      "end": 325.94,
+      "text": "You can do some kind of computations in the copy print"
+    },
+    {
+      "start": 325.94,
+      "end": 326.68,
+      "text": "For multiplication"
+    },
+    {
+      "start": 326.68,
+      "end": 327.28,
+      "text": "You have to put a star"
+    },
+    {
+      "start": 327.28,
+      "end": 328.18,
+      "text": "Don't put x"
+    },
+    {
+      "start": 328.18,
+      "end": 329.44,
+      "text": "It is okay"
+    },
+    {
+      "start": 329.44,
+      "end": 330.26,
+      "text": "You have to put star"
+    },
+    {
+      "start": 330.26,
+      "end": 331.32,
+      "text": "For the divide"
+    },
+    {
+      "start": 332.14,
+      "end": 332.58,
+      "text": "This one"
+    },
+    {
+      "start": 332.58,
+      "end": 334.14,
+      "text": "Plus and minus"
+    },
+    {
+      "start": 334.14,
+      "end": 335.66,
+      "text": "This is all simple"
+    },
+    {
+      "start": 335.66,
+      "end": 337.2,
+      "text": "Try it"
+    },
+    {
+      "start": 337.2,
+      "end": 339.14,
+      "text": "But you can see"
+    },
+    {
+      "start": 339.14,
+      "end": 341.98,
+      "text": "I bought all the things"
+    },
+    {
+      "start": 341.98,
+      "end": 345.06,
+      "text": "So you can give it a computation"
+    },
+    {
+      "start": 345.06,
+      "end": 345.22,
+      "text": "For the computation"
+    },
+    {
+      "start": 345.22,
+      "end": 345.9,
+      "text": "In the next videos"
+    },
+    {
+      "start": 345.9,
+      "end": 346.66,
+      "text": "We will learn more things"
+    },
+    {
+      "start": 346.66,
+      "end": 348.2,
+      "text": "In this course"
+    },
+    {
+      "start": 348.2,
+      "end": 349.84,
+      "text": "I want to tell you"
+    },
+    {
+      "start": 349.84,
+      "end": 350.9,
+      "text": "Who is this course?"
+    },
+    {
+      "start": 351.64,
+      "end": 354.18,
+      "text": "If you can't be consistent"
+    },
+    {
+      "start": 354.18,
+      "end": 356.0,
+      "text": "Or you want to do something in short cut"
+    },
+    {
+      "start": 357.62,
+      "end": 359.32,
+      "text": "Because this course is a question"
+    },
+    {
+      "start": 359.32,
+      "end": 360.6,
+      "text": "Consistency"
+    },
+    {
+      "start": 360.6,
+      "end": 362.68,
+      "text": "It demands that you practice"
+    },
+    {
+      "start": 362.68,
+      "end": 364.04,
+      "text": "Like you are watching this video"
+    },
+    {
+      "start": 364.04,
+      "end": 367.84,
+      "text": "And you will see your time"
+    },
+    {
+      "start": 367.84,
+      "end": 368.22,
+      "text": "You will be able to complete this course"
+    },
+    {
+      "start": 368.22,
+      "end": 370.24,
+      "text": "And go to the day and day"
+    },
+    {
+      "start": 370.24,
+      "end": 371.98,
+      "text": "And you will give your attendance"
+    },
+    {
+      "start": 371.98,
+      "end": 373.3,
+      "text": "In the comment below"
+    },
+    {
+      "start": 373.3,
+      "end": 375.08,
+      "text": "I will show you a comment"
+    },
+    {
+      "start": 375.08,
+      "end": 377.76,
+      "text": "If you want to learn more"
+    },
+    {
+      "start": 377.76,
+      "end": 378.62,
+      "text": "And you will learn very quickly"
+    },
+    {
+      "start": 378.62,
+      "end": 379.4,
+      "text": "And you will not be able to learn without practice"
+    },
+    {
+      "start": 380.88,
+      "end": 382.78,
+      "text": "Because it demands that you practice"
+    },
+    {
+      "start": 382.78,
+      "end": 384.22,
+      "text": "You will not be able to do anything"
+    },
+    {
+      "start": 384.22,
+      "end": 386.72,
+      "text": "You will have to take the stairs"
+    },
+    {
+      "start": 386.72,
+      "end": 388.66,
+      "text": "And this is the stairs"
+    },
+    {
+      "start": 388.66,
+      "end": 391.6,
+      "text": "And you will have to walk in the city for hundreds of days"
+    },
+    {
+      "start": 391.6,
+      "end": 393.34,
+      "text": "And trust me"
+    },
+    {
+      "start": 393.34,
+      "end": 394.96,
+      "text": "It will be worth it at the end"
+    },
+    {
+      "start": 394.96,
+      "end": 396.96,
+      "text": "I will tell you the experience of my years of experience"
+    },
+    {
+      "start": 396.96,
+      "end": 399.62,
+      "text": "Which I have learnt for a long time"
+    },
+    {
+      "start": 400.26,
+      "end": 402.5,
+      "text": "And from the videos we will coding in actual"
+    },
+    {
+      "start": 402.5,
+      "end": 405.96,
+      "text": "We will write all the codes in the next few videos"
+    },
+    {
+      "start": 406.48,
+      "end": 406.98,
+      "text": "And in fact"
+    },
+    {
+      "start": 406.98,
+      "end": 407.86,
+      "text": "Over the next"
+    },
+    {
+      "start": 407.86,
+      "end": 409.06,
+      "text": "A lot of videos"
+    },
+    {
+      "start": 409.06,
+      "end": 410.68,
+      "text": "Because we will be able to do hundreds of days"
+    },
+    {
+      "start": 410.68,
+      "end": 412.5,
+      "text": "And do not do this video"
+    },
+    {
+      "start": 412.5,
+      "end": 414.32,
+      "text": "If you do not have access to the playlist"
+    },
+    {
+      "start": 414.96,
+      "end": 415.56,
+      "text": "Then do do it"
+    },
+    {
+      "start": 416.3,
+      "end": 417.62,
+      "text": "And save it"
+    },
+    {
+      "start": 417.62,
+      "end": 419.34,
+      "text": "And do not do this video"
+    },
+    {
+      "start": 419.34,
+      "end": 422.24,
+      "text": "Thank you so much guys for watching this video"
+    },
+    {
+      "start": 422.24,
+      "end": 425.2,
+      "text": "And I will see you next time"
+    }
+  ]
+}

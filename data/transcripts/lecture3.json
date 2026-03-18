@@ -1,0 +1,1151 @@
+{
+  "file": "lecture3.mp3",
+  "text": " 100 days of code میں آپ کا دு بارے سے سوگتے گے آج کے اس video میں میں میں میں بات کریں گے Modules کے بارے میں اور PIP کیا ہوتا ہے اس کے بارے میں Modules basically dosa rao ka code boro ka kare mestima lo tha i ni ki آپ لوگ کسی آر کے دوارa like gai Cod ko upne baitan program mi use kar sakti mo modules he saa ita saa Modules do dho dhao dhao kye ho tain built in module ho tain maaribas aur ek maaribas external module sothain jinn k install kiye saa ita saa external modules wo code ho tain joki logo nal dhika ho tain aur wo chaatain kiye آپ unke code ko upne baitan program mi use kar sakti mo Uch aas saam al jokiye phone mestima lo tha aur iss phone ke ender kya chal rai kis tara se i kaam tara hai ii muge nei malu mo se ke baad bi mais phone ko istima lo tha kaar paar hao he k tara se myi liye external module muge nei malu mo kis ki implementations kye hai again mais ko use kar paar hao built in module on the other hand kuch aas sai module sothain joki paitan programming language ke saa ith shippote he nikiye آپ ko externally install karni kiye nuiye saarurat nahi hai Modules ko haam loa priog mi liye again aap loa agar modules kastama al kaar hoge to time bachayega, efforts bachayega aur aap loa ge kisi badi jeezbar kaam kaar pao ge chal dhe kaam bita screen me aur aap loa ge install karengi kuch modules ko haam loa ge kis kastama al kaam kaar hoge let's get started so guys me aach ako upne kaam bita screen ke ender aur aap nei day 3 ki raiapal ko khol liye kaam kaar hoe kya haap par aap loa ke kut dikne ko milega ye video joki maapir rekord kkar raam but abhi kuki ye video yeapar rekord nei woes liye saarurat na said na said na said na said na aap loa ko aap loa ke video dikne ko milega baid na hai baid na hai baid na baid na hai baid na hai baid na aur usi ke sa saad mei sko ko jis saarat se adjust kaar hoong aap loa ke kut dikko asko apni tara aap nei saab se adjust kaar saaktai hoong me jaldi sa aap loa ke baid na chatao ki modules kye haap hoon kye haap hoon lekin ka hazji iz ko laani ki zaururat prati ye aap kaar haap hoi reprie generator ki zaururat hai to almo sargar mein refigiter ruta aur reprie generator ko barze laani ki zaururat nahi hai wo ek tara se ek built-in module aap ka gaar mein module hoi hai kaar gaar mein ek sui hoi hoi thiye sui dhaga hoi hai kaar ginghaar mai chamba chota hai kaar gaar mein pleit hoi to ye saarhe baateen modules hai haar gaar mein mili jaldi haap haap hoon baar baatee laani ki zaururat nahi baad thiye usi dahraze baateen module hoi و if you are using the external modules, install the pip, python 3, if you are using the python 3.1, then you will get the python 3.1 i.e. you will get the python 3.1 i.e. if you are using the import pandas, then you will not get the error but if you are using import SKlearn, then you will get the module note pounder and no module named SKlearn i.e. you will get the module note pounder and no module named SKlearn i.e. you will get the python note pounder and no module named SKlearn g буд gup d frankly ve c d arising d ھاں کریں گاں نہیں آگا ہے رہی گاں تو میں آپ کو ایکزٹ کر دیاں اب یہ جو چیز ہے جو کی ہم پائٹن 3 لکھ کریں ہم پر دیکھ پاریں یہ رپل ہے پائیں گی رپی لاری بیل گاں و ہوتا ہے ریٹ ایوالیوٹ پرینڈ لوب ہم اس کو استمر نہیں کریں گے ہم پرپر پرگرامس لکھیں گے اور پائٹن سکریپٹ س لکھ کر جو ہے ہم اس کو ایکزیکیٹ کریں گے اور اس کے لے میں رапلٹ کا استمر کر رہا ہوں یہ اٹم اٹیکلی اس کو استول کر دے گاں تو آپ کنفیوس مطنے کیا رہا ہوں رہا ہوں رہا ہوں کی رپلٹ نے آپ کی کنویننس کے لئے اس کو استول کر دیاں رپلٹ چاہتا ہے کہ آپ لوگ جب پرگرامیگ کر رہا ہوں آپ کو کنویننس رہے لیکن کنسب سانا آپ کو ضروری ہے اور آپ کو یہاں چلا ہوگے تو رہا ہوں رہا ہوں دیکھنے ہوں ملنگ آپ کو جسے کہ میں آپ کو دیکھا ہے لیکن رپلٹ میں آپ دیکھوں اس نے پانداز اٹمانٹیکل انستول کرنا شروع کر دیاں لیکن کی رپلٹ کو ملو میں کی پانداز کیا ہے امپورٹ تو دیکھنے میں پانداز کو ایس کرنا چاہتا ہوں تو وائناٹ اٹمانٹیکل انستول کر دیا ہوں جو کی کافی اچھی بات لگتے ہیں مجھ رپلٹ کی یہ پائطن میں پانداز انہوں انستول کر لیا ہے اب میں معلو لیکن میں آپہر پرین ہائے کو جس طرح سے لیکن اور اب میں رہا ہوں تو انستول ہو گیا ہے اگر یہ رپلٹ کی خاصی ہے اب یہاں آپ کے لئے میں نے ٹیکس میں لکا ہوا ہے کہ موڈیول کوڑ لائبڑی کی طرف ہوتی جو کی کسی ہون لکی اور آپ کے لئے پرگرام میں لازکتے ہیں امپورٹ کی وقت کا استعمال کر اس کے بارے میں اور آپ کو بتا ہوں ابھیلٹن موڈیولس اور ایکسٹرن موڈیولس دو طرح کی موڈیولس اور ابھیلٹن موڈیولس اور ابھیلٹن موڈیولس تو لکتے ہیں یہاں آپ کو بتا ہون لکتے ہیں اگر یہاں آپ کو بتا ہون اور ابھیلٹن موڈیولس تجد ان اپین थाखा टीो BREAKERS खाटीो चैंखें दोर छानोने तोी लगऺने दो 채ूले और टेखानी नावेल नमल हम तो बिका प॥ेयूले को उ फैषने नポत लगख को बक्ल up चार लरीग से हो खगनैया है. ऒगग खा बार दुग बै� lentा करो व्ग � committee کیا ہے وہ ہے External Model مزاادہ ہے ایک دیکھو یہاں پپ کمان کیس طرح سے use کرنا یہ میں بتا ہے وہ ہے پپنی استال pandas لیکھوے pandas install جہاں یہ بڑن آپ use کر کے коپی کر سکتے ہو کو تو جو بھی کٹ میں لیکنہ اونا یہاں آپ کو چیس طرح سے коپی کریں اور اس کے بعد اس طرح سے پیست کر دیں تیگے اور آپ اس کو رنگ کر پائیں گے تو pandas میں کیا ہوتا ایک Model ہے pandas جس کے اندر ریٹсв function ہوتا ہے CSV Excel کی طرف file ہوتی ہے کو اس کو breed کر سکتے ہیں but ابھی اس چکھر میں مطلب کرنا آپ لوگ میں just آپ لوگ کو بتا رہاں کی اسے کیسے کام کرتے ہیں میں آنے والے دیدیل میں آپ کو Excel Excel sub-reed کر واغوں گا تو tenshen تو لینہ مدس کی قلتی سے بھی آپ لوگ ٹیگے اب بہت سارے لوگ پوچھ رہے کی نیشل لینگی ضرورتی نہیں ہے اور میں آپ لوگ کو بتا دو as long as its python 3 python 3.7 3.11 3.8 in میں زادہ دفرنس نہیں ہو نے والا آپ لوگ کے بروگرامس کام کریں گے حال ایک ایک ایک ایک ایک ایک ایک ایک ایک رب گرید ہو سکتے ہیں ہو سکتے ہیں اس کے بھی garantini ہو سکتے ہیں کہ ایک ایک ایک رہے بائدن 4 میں بھی تو وہ چیز بھی دیکھنے والی بات ہوگی but اس چیز کی tenshen ایک ایک ایک ایک ایک ایک ایک ایک ایک ایک تو کافی ٹرینڈگ چلا تھا یہ video مارا تو آپ لوگ جو ہے اس کو ضرورت ایکسس کریں playlist کو یہاں کلک کر کے bookmark کریں یہاں کلک کر کے playlist کو safe بھی کریں آپ لوگ کو کافی مزانے والا ہے python ایک کافی دماغے دار Programming Language ہے YouTube use python python کو Instagram use python کو Facebook use python کو یہ سوال لیکن use کرتے ہیں بالگی زوال لیکن use نہیں کرتے ہیں python کو python اتنی بڑی اوورسٹائی لنگوجے کی سب لوگ almost allie buddy buddy companies python کو use کرتے ہیں اب یہ تو ہم ایک لیرے کہ ایک لوگ Programming کیو کریں کیو کریں کیو کریں کیو کریں کیو کریں کیو کریں کیو کریں اور as computer computer کو چیز اچھی کرتے ہیں تو ہم computer سے وہ کام کرونا چاہتے ہیں جس میں computer ہے اور ہم جس میں جہی وہ کام تو ہم اپنے روز مر رکے زندی یہ میں کری رہے ہیں تو اسی لیے python programming Language کا استعمال کرتے ہیں کیو یہ بہو زیادہ از آن ہے اپنے دیے پورن میں مجھے ضرور ملنا اب یہ گلے سوڑیوں میں اتنے گایس Thank you so much guys for watching this video and I will see you next time",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.46,
+      "text": "100 days of code میں آپ کا دு بارے سے سوگتے گے"
+    },
+    {
+      "start": 2.46,
+      "end": 4.3,
+      "text": "آج کے اس video میں میں میں میں بات کریں گے"
+    },
+    {
+      "start": 4.3,
+      "end": 7.14,
+      "text": "Modules کے بارے میں اور PIP کیا ہوتا ہے اس کے بارے میں"
+    },
+    {
+      "start": 7.14,
+      "end": 9.76,
+      "text": "Modules basically dosa rao ka code boro ka kare mestima lo tha"
+    },
+    {
+      "start": 9.76,
+      "end": 11.98,
+      "text": "i ni ki آپ لوگ کسی آر کے دوارa like gai"
+    },
+    {
+      "start": 11.98,
+      "end": 14.54,
+      "text": "Cod ko upne baitan program mi use kar sakti mo modules"
+    },
+    {
+      "start": 14.54,
+      "end": 15.2,
+      "text": "he saa ita saa"
+    },
+    {
+      "start": 15.2,
+      "end": 16.34,
+      "text": "Modules do dho dhao dhao kye ho tain"
+    },
+    {
+      "start": 16.34,
+      "end": 17.82,
+      "text": "built in module ho tain maaribas"
+    },
+    {
+      "start": 17.82,
+      "end": 19.6,
+      "text": "aur ek maaribas external module sothain"
+    },
+    {
+      "start": 19.6,
+      "end": 21.86,
+      "text": "jinn k install kiye saa ita saa"
+    },
+    {
+      "start": 21.86,
+      "end": 23.46,
+      "text": "external modules wo code ho tain"
+    },
+    {
+      "start": 23.46,
+      "end": 24.76,
+      "text": "joki logo nal dhika ho tain"
+    },
+    {
+      "start": 24.76,
+      "end": 28.34,
+      "text": "aur wo chaatain kiye آپ unke code ko upne baitan program mi use kar sakti mo"
+    },
+    {
+      "start": 28.34,
+      "end": 30.14,
+      "text": "Uch aas saam al jokiye phone mestima lo tha"
+    },
+    {
+      "start": 30.14,
+      "end": 33.38,
+      "text": "aur iss phone ke ender kya chal rai kis tara se i kaam tara hai"
+    },
+    {
+      "start": 33.38,
+      "end": 35.56,
+      "text": "ii muge nei malu mo se ke baad bi mais phone ko istima lo tha"
+    },
+    {
+      "start": 35.56,
+      "end": 36.02,
+      "text": "kaar paar hao"
+    },
+    {
+      "start": 36.02,
+      "end": 37.9,
+      "text": "he k tara se myi liye external module"
+    },
+    {
+      "start": 37.9,
+      "end": 39.9,
+      "text": "muge nei malu mo kis ki implementations kye hai"
+    },
+    {
+      "start": 39.9,
+      "end": 41.08,
+      "text": "again mais ko use kar paar hao"
+    },
+    {
+      "start": 41.08,
+      "end": 42.84,
+      "text": "built in module on the other hand"
+    },
+    {
+      "start": 42.84,
+      "end": 44.08,
+      "text": "kuch aas sai module sothain"
+    },
+    {
+      "start": 44.08,
+      "end": 46.54,
+      "text": "joki paitan programming language ke saa ith shippote"
+    },
+    {
+      "start": 46.54,
+      "end": 48.78,
+      "text": "he nikiye آپ ko externally install karni kiye"
+    },
+    {
+      "start": 48.78,
+      "end": 49.76,
+      "text": "nuiye saarurat nahi hai"
+    },
+    {
+      "start": 49.76,
+      "end": 51.16,
+      "text": "Modules ko haam loa priog mi liye"
+    },
+    {
+      "start": 84.76,
+      "end": 87.22,
+      "text": "again aap loa agar modules kastama al kaar hoge to"
+    },
+    {
+      "start": 87.22,
+      "end": 89.0,
+      "text": "time bachayega, efforts bachayega"
+    },
+    {
+      "start": 89.0,
+      "end": 91.62,
+      "text": "aur aap loa ge kisi badi jeezbar kaam kaar pao ge"
+    },
+    {
+      "start": 91.62,
+      "end": 93.7,
+      "text": "chal dhe kaam bita screen me aur aap loa ge install karengi"
+    },
+    {
+      "start": 93.7,
+      "end": 96.86,
+      "text": "kuch modules ko haam loa ge kis kastama al kaam kaar hoge"
+    },
+    {
+      "start": 96.86,
+      "end": 98.06,
+      "text": "let's get started"
+    },
+    {
+      "start": 107.16,
+      "end": 109.68,
+      "text": "so guys me aach ako upne kaam bita screen ke ender"
+    },
+    {
+      "start": 109.68,
+      "end": 113.52,
+      "text": "aur aap nei day 3 ki raiapal ko khol liye kaam kaar hoe"
+    },
+    {
+      "start": 113.52,
+      "end": 114.92,
+      "text": "kya haap par aap loa ke kut dikne ko milega"
+    },
+    {
+      "start": 114.92,
+      "end": 116.8,
+      "text": "ye video joki maapir rekord kkar raam"
+    },
+    {
+      "start": 116.8,
+      "end": 118.98,
+      "text": "but abhi kuki ye video yeapar rekord"
+    },
+    {
+      "start": 118.98,
+      "end": 120.38,
+      "text": "nei woes liye saarurat na said na said na said na said na"
+    },
+    {
+      "start": 120.38,
+      "end": 121.72,
+      "text": "aap loa ko aap loa ke video dikne ko milega"
+    },
+    {
+      "start": 121.72,
+      "end": 122.34,
+      "text": "baid na hai baid na hai baid na"
+    },
+    {
+      "start": 122.34,
+      "end": 122.94,
+      "text": "baid na hai baid na hai baid na"
+    },
+    {
+      "start": 122.94,
+      "end": 124.7,
+      "text": "aur usi ke sa saad mei"
+    },
+    {
+      "start": 124.7,
+      "end": 126.28,
+      "text": "sko ko jis saarat se adjust kaar hoong"
+    },
+    {
+      "start": 126.28,
+      "end": 127.54,
+      "text": "aap loa ke kut dikko asko apni tara"
+    },
+    {
+      "start": 127.54,
+      "end": 129.58,
+      "text": "aap nei saab se adjust kaar saaktai hoong"
+    },
+    {
+      "start": 129.58,
+      "end": 131.08,
+      "text": "me jaldi sa aap loa ke baid na chatao"
+    },
+    {
+      "start": 131.08,
+      "end": 132.74,
+      "text": "ki modules kye haap hoon"
+    },
+    {
+      "start": 132.74,
+      "end": 143.2,
+      "text": "kye haap hoon"
+    },
+    {
+      "start": 233.2,
+      "end": 235.08,
+      "text": "lekin ka hazji iz ko laani ki zaururat prati ye"
+    },
+    {
+      "start": 235.08,
+      "end": 236.14,
+      "text": "aap kaar haap hoi"
+    },
+    {
+      "start": 236.14,
+      "end": 237.48,
+      "text": "reprie generator ki zaururat hai"
+    },
+    {
+      "start": 237.48,
+      "end": 239.0,
+      "text": "to almo sargar mein refigiter ruta"
+    },
+    {
+      "start": 239.0,
+      "end": 242.2,
+      "text": "aur reprie generator ko barze laani ki zaururat nahi hai"
+    },
+    {
+      "start": 242.2,
+      "end": 244.3,
+      "text": "wo ek tara se ek built-in module"
+    },
+    {
+      "start": 244.3,
+      "end": 245.52,
+      "text": "aap ka gaar mein module hoi"
+    },
+    {
+      "start": 245.52,
+      "end": 247.36,
+      "text": "hai kaar gaar mein ek sui hoi hoi"
+    },
+    {
+      "start": 247.36,
+      "end": 248.34,
+      "text": "thiye sui dhaga hoi"
+    },
+    {
+      "start": 248.34,
+      "end": 249.7,
+      "text": "hai kaar ginghaar mai chamba chota"
+    },
+    {
+      "start": 249.7,
+      "end": 250.66,
+      "text": "hai kaar gaar mein pleit hoi"
+    },
+    {
+      "start": 250.66,
+      "end": 252.24,
+      "text": "to ye saarhe baateen modules hai"
+    },
+    {
+      "start": 252.24,
+      "end": 253.54,
+      "text": "haar gaar mein mili jaldi"
+    },
+    {
+      "start": 253.54,
+      "end": 254.0,
+      "text": "haap haap hoon"
+    },
+    {
+      "start": 254.0,
+      "end": 255.38,
+      "text": "baar baatee laani ki zaururat nahi"
+    },
+    {
+      "start": 255.38,
+      "end": 255.86,
+      "text": "baad thiye"
+    },
+    {
+      "start": 255.86,
+      "end": 257.52,
+      "text": "usi dahraze baateen module hoi"
+    },
+    {
+      "start": 257.52,
+      "end": 267.4,
+      "text": "و if you are using the external modules, install the pip, python 3, if you are using the python 3.1, then you will get the python 3.1"
+    },
+    {
+      "start": 267.4,
+      "end": 269.32,
+      "text": "i.e. you will get the python 3.1"
+    },
+    {
+      "start": 269.32,
+      "end": 274.38,
+      "text": "i.e. if you are using the import pandas, then you will not get the error"
+    },
+    {
+      "start": 275.08,
+      "end": 282.98,
+      "text": "but if you are using import SKlearn, then you will get the module note pounder and no module named SKlearn"
+    },
+    {
+      "start": 282.98,
+      "end": 294.82,
+      "text": "i.e. you will get the module note pounder and no module named SKlearn"
+    },
+    {
+      "start": 294.82,
+      "end": 300.98,
+      "text": "i.e. you will get the python note pounder and no module named SKlearn"
+    },
+    {
+      "start": 347.96,
+      "end": 358.96,
+      "text": "g буд gup d frankly ve c"
+    },
+    {
+      "start": 358.96,
+      "end": 359.5,
+      "text": "d"
+    },
+    {
+      "start": 359.5,
+      "end": 360.06,
+      "text": "arising"
+    },
+    {
+      "start": 360.06,
+      "end": 360.82,
+      "text": "d"
+    },
+    {
+      "start": 360.82,
+      "end": 363.08,
+      "text": "ھاں کریں گاں نہیں آگا ہے رہی گاں"
+    },
+    {
+      "start": 363.08,
+      "end": 364.46,
+      "text": "تو میں آپ کو ایکزٹ کر دیاں"
+    },
+    {
+      "start": 364.46,
+      "end": 366.88,
+      "text": "اب یہ جو چیز ہے جو کی ہم پائٹن 3"
+    },
+    {
+      "start": 366.88,
+      "end": 367.78,
+      "text": "لکھ کریں ہم پر"
+    },
+    {
+      "start": 368.58,
+      "end": 370.46,
+      "text": "دیکھ پاریں یہ رپل ہے پائیں گی"
+    },
+    {
+      "start": 370.46,
+      "end": 371.78,
+      "text": "رپی لاری بیل گاں"
+    },
+    {
+      "start": 371.78,
+      "end": 372.34,
+      "text": "و ہوتا ہے"
+    },
+    {
+      "start": 373.36,
+      "end": 374.24,
+      "text": "ریٹ ایوالیوٹ"
+    },
+    {
+      "start": 374.24,
+      "end": 375.12,
+      "text": "پرینڈ لوب"
+    },
+    {
+      "start": 375.88,
+      "end": 377.34,
+      "text": "ہم اس کو استمر نہیں کریں گے"
+    },
+    {
+      "start": 377.34,
+      "end": 378.7,
+      "text": "ہم پرپر پرگرامس لکھیں گے"
+    },
+    {
+      "start": 378.7,
+      "end": 380.58,
+      "text": "اور پائٹن سکریپٹ س لکھ کر جو ہے"
+    },
+    {
+      "start": 380.58,
+      "end": 381.86,
+      "text": "ہم اس کو ایکزیکیٹ کریں گے"
+    },
+    {
+      "start": 381.86,
+      "end": 385.36,
+      "text": "اور اس کے لے میں رапلٹ کا استمر کر رہا ہوں"
+    },
+    {
+      "start": 415.36,
+      "end": 417.36,
+      "text": "یہ اٹم اٹیکلی اس کو استول کر دے گاں"
+    },
+    {
+      "start": 417.36,
+      "end": 419.1,
+      "text": "تو آپ کنفیوس مطنے کیا رہا ہوں"
+    },
+    {
+      "start": 419.1,
+      "end": 419.5,
+      "text": "رہا ہوں"
+    },
+    {
+      "start": 419.9,
+      "end": 420.48,
+      "text": "رہا ہوں"
+    },
+    {
+      "start": 420.48,
+      "end": 423.06,
+      "text": "کی رپلٹ نے آپ کی کنویننس کے لئے"
+    },
+    {
+      "start": 423.06,
+      "end": 424.74,
+      "text": "اس کو استول کر دیاں"
+    },
+    {
+      "start": 425.16,
+      "end": 427.28,
+      "text": "رپلٹ چاہتا ہے کہ آپ لوگ جب پرگرامیگ کر رہا ہوں"
+    },
+    {
+      "start": 427.28,
+      "end": 428.28,
+      "text": "آپ کو کنویننس رہے"
+    },
+    {
+      "start": 428.28,
+      "end": 430.12,
+      "text": "لیکن کنسب سانا آپ کو ضروری ہے"
+    },
+    {
+      "start": 430.12,
+      "end": 431.4,
+      "text": "اور آپ کو یہاں چلا ہوگے تو رہا ہوں"
+    },
+    {
+      "start": 431.4,
+      "end": 431.5,
+      "text": "رہا ہوں"
+    },
+    {
+      "start": 431.5,
+      "end": 431.92,
+      "text": "دیکھنے ہوں"
+    },
+    {
+      "start": 431.92,
+      "end": 433.54,
+      "text": "ملنگ آپ کو جسے کہ میں آپ کو دیکھا ہے"
+    },
+    {
+      "start": 433.54,
+      "end": 435.04,
+      "text": "لیکن رپلٹ میں آپ دیکھوں"
+    },
+    {
+      "start": 435.04,
+      "end": 437.7,
+      "text": "اس نے پانداز اٹمانٹیکل انستول کرنا شروع کر دیاں"
+    },
+    {
+      "start": 437.7,
+      "end": 439.38,
+      "text": "لیکن کی رپلٹ کو ملو میں"
+    },
+    {
+      "start": 439.38,
+      "end": 441.04,
+      "text": "کی پانداز کیا ہے"
+    },
+    {
+      "start": 441.04,
+      "end": 442.16,
+      "text": "امپورٹ تو دیکھنے میں"
+    },
+    {
+      "start": 442.16,
+      "end": 443.66,
+      "text": "پانداز کو ایس کرنا چاہتا ہوں"
+    },
+    {
+      "start": 443.66,
+      "end": 445.66,
+      "text": "تو وائناٹ اٹمانٹیکل انستول کر دیا ہوں"
+    },
+    {
+      "start": 445.66,
+      "end": 447.84,
+      "text": "جو کی کافی اچھی بات لگتے ہیں"
+    },
+    {
+      "start": 447.84,
+      "end": 448.44,
+      "text": "مجھ رپلٹ کی"
+    },
+    {
+      "start": 448.44,
+      "end": 449.72,
+      "text": "یہ پائطن میں"
+    },
+    {
+      "start": 449.72,
+      "end": 451.32,
+      "text": "پانداز انہوں انستول کر لیا ہے"
+    },
+    {
+      "start": 451.32,
+      "end": 452.54,
+      "text": "اب میں معلو لیکن میں آپہر"
+    },
+    {
+      "start": 452.54,
+      "end": 452.9,
+      "text": "پرین"
+    },
+    {
+      "start": 453.94,
+      "end": 454.42,
+      "text": "ہائے"
+    },
+    {
+      "start": 454.42,
+      "end": 455.98,
+      "text": "کو جس طرح سے لیکن اور اب میں"
+    },
+    {
+      "start": 455.98,
+      "end": 456.4,
+      "text": "رہا ہوں"
+    },
+    {
+      "start": 456.4,
+      "end": 457.88,
+      "text": "تو انستول ہو گیا ہے"
+    },
+    {
+      "start": 460.66,
+      "end": 462.48,
+      "text": "اگر یہ رپلٹ کی خاصی ہے"
+    },
+    {
+      "start": 462.48,
+      "end": 463.84,
+      "text": "اب یہاں آپ کے لئے"
+    },
+    {
+      "start": 463.84,
+      "end": 466.14,
+      "text": "میں نے ٹیکس میں لکا ہوا ہے کہ"
+    },
+    {
+      "start": 466.14,
+      "end": 466.82,
+      "text": "موڈیول"
+    },
+    {
+      "start": 466.82,
+      "end": 467.9,
+      "text": "کوڑ لائبڑی کی طرف ہوتی"
+    },
+    {
+      "start": 467.9,
+      "end": 468.92,
+      "text": "جو کی کسی ہون لکی اور"
+    },
+    {
+      "start": 468.92,
+      "end": 469.9,
+      "text": "آپ کے لئے پرگرام میں"
+    },
+    {
+      "start": 469.9,
+      "end": 470.44,
+      "text": "لازکتے ہیں"
+    },
+    {
+      "start": 470.44,
+      "end": 471.64,
+      "text": "امپورٹ کی وقت کا استعمال کر"
+    },
+    {
+      "start": 471.64,
+      "end": 472.66,
+      "text": "اس کے بارے میں"
+    },
+    {
+      "start": 472.66,
+      "end": 473.46,
+      "text": "اور آپ کو بتا ہوں"
+    },
+    {
+      "start": 473.46,
+      "end": 474.68,
+      "text": "ابھیلٹن موڈیولس"
+    },
+    {
+      "start": 474.68,
+      "end": 475.56,
+      "text": "اور ایکسٹرن موڈیولس"
+    },
+    {
+      "start": 475.56,
+      "end": 476.44,
+      "text": "دو طرح کی موڈیولس"
+    },
+    {
+      "start": 476.44,
+      "end": 477.28,
+      "text": "اور ابھیلٹن موڈیولس"
+    },
+    {
+      "start": 477.28,
+      "end": 479.88,
+      "text": "اور ابھیلٹن موڈیولس"
+    },
+    {
+      "start": 479.88,
+      "end": 480.8,
+      "text": "تو لکتے ہیں"
+    },
+    {
+      "start": 480.8,
+      "end": 482.34,
+      "text": "یہاں آپ کو بتا ہون لکتے ہیں"
+    },
+    {
+      "start": 490.98,
+      "end": 499.38,
+      "text": "اگر یہاں آپ کو بتا ہون"
+    },
+    {
+      "start": 499.38,
+      "end": 509.3,
+      "text": "اور ابھیلٹن موڈیولس"
+    },
+    {
+      "start": 509.3,
+      "end": 509.3,
+      "text": ""
+    },
+    {
+      "start": 509.3,
+      "end": 509.3,
+      "text": ""
+    },
+    {
+      "start": 509.3,
+      "end": 509.86,
+      "text": "تجد ان اپین"
+    },
+    {
+      "start": 516.54,
+      "end": 518.44,
+      "text": "थाखा टीो BREAKERS"
+    },
+    {
+      "start": 522.64,
+      "end": 532.56,
+      "text": "खाटीो चैंखें दोर छानोने तोी लगऺने दो 채ूले और टेखानी नावेल नमल हम तो बिका प॥ेयूले को उ फैषने नポत लगख को बक्ल up"
+    },
+    {
+      "start": 532.56,
+      "end": 539.84,
+      "text": "चार लरीग से हो खगनैया है. ऒगग खा बार दुग बै� lentा करो व्ग � committee"
+    },
+    {
+      "start": 539.84,
+      "end": 541.1,
+      "text": "کیا ہے وہ ہے External Model"
+    },
+    {
+      "start": 541.9,
+      "end": 544.78,
+      "text": "مزاادہ ہے ایک دیکھو یہاں پپ کمان کیس طرح سے"
+    },
+    {
+      "start": 544.78,
+      "end": 546.76,
+      "text": "use کرنا یہ میں بتا ہے وہ ہے پپنی استال"
+    },
+    {
+      "start": 546.76,
+      "end": 548.98,
+      "text": "pandas لیکھوے pandas install جہاں یہ بڑن آپ"
+    },
+    {
+      "start": 548.98,
+      "end": 550.22,
+      "text": "use کر کے коپی کر سکتے ہو"
+    },
+    {
+      "start": 550.22,
+      "end": 552.7,
+      "text": "کو تو جو بھی کٹ میں لیکنہ اونا یہاں"
+    },
+    {
+      "start": 552.7,
+      "end": 554.94,
+      "text": "آپ کو چیس طرح سے коپی کریں اور اس کے بعد"
+    },
+    {
+      "start": 554.94,
+      "end": 556.08,
+      "text": "اس طرح سے پیست کر دیں"
+    },
+    {
+      "start": 556.08,
+      "end": 558.96,
+      "text": "تیگے اور آپ اس کو رنگ کر پائیں گے تو"
+    },
+    {
+      "start": 558.96,
+      "end": 560.2,
+      "text": "pandas میں کیا ہوتا ایک"
+    },
+    {
+      "start": 560.2,
+      "end": 561.78,
+      "text": "Model ہے pandas"
+    },
+    {
+      "start": 561.78,
+      "end": 562.9,
+      "text": "جس کے اندر ریٹсв"
+    },
+    {
+      "start": 562.9,
+      "end": 564.3,
+      "text": "function ہوتا ہے CSV Excel"
+    },
+    {
+      "start": 564.3,
+      "end": 565.7,
+      "text": "کی طرف file ہوتی ہے کو اس کو"
+    },
+    {
+      "start": 565.8,
+      "end": 566.64,
+      "text": "breed کر سکتے ہیں but"
+    },
+    {
+      "start": 566.64,
+      "end": 568.58,
+      "text": "ابھی اس چکھر میں مطلب کرنا آپ لوگ میں"
+    },
+    {
+      "start": 568.58,
+      "end": 569.7,
+      "text": "just آپ لوگ کو بتا رہاں کی"
+    },
+    {
+      "start": 569.7,
+      "end": 571.04,
+      "text": "اسے کیسے کام کرتے ہیں"
+    },
+    {
+      "start": 571.04,
+      "end": 573.62,
+      "text": "میں آنے والے دیدیل میں آپ کو Excel Excel"
+    },
+    {
+      "start": 573.62,
+      "end": 574.58,
+      "text": "sub-reed کر واغوں گا تو"
+    },
+    {
+      "start": 574.58,
+      "end": 576.36,
+      "text": "tenshen تو لینہ مدس کی قلتی سے بھی آپ لوگ"
+    },
+    {
+      "start": 576.36,
+      "end": 576.62,
+      "text": "ٹیگے"
+    },
+    {
+      "start": 576.62,
+      "end": 595.78,
+      "text": "اب بہت سارے لوگ پوچھ رہے کی"
+    },
+    {
+      "start": 595.78,
+      "end": 597.0,
+      "text": "نیشل لینگی ضرورتی نہیں ہے"
+    },
+    {
+      "start": 597.0,
+      "end": 599.72,
+      "text": "اور میں آپ لوگ کو بتا دو as long as its python 3"
+    },
+    {
+      "start": 599.72,
+      "end": 602.62,
+      "text": "python 3.7 3.11 3.8"
+    },
+    {
+      "start": 602.62,
+      "end": 604.62,
+      "text": "in میں زادہ دفرنس نہیں ہو"
+    },
+    {
+      "start": 604.62,
+      "end": 606.48,
+      "text": "نے والا آپ لوگ کے بروگرامس کام کریں گے"
+    },
+    {
+      "start": 606.48,
+      "end": 610.68,
+      "text": "حال ایک ایک ایک ایک ایک ایک ایک ایک ایک"
+    },
+    {
+      "start": 610.68,
+      "end": 611.62,
+      "text": "رب گرید ہو سکتے ہیں"
+    },
+    {
+      "start": 611.62,
+      "end": 613.1,
+      "text": "ہو سکتے ہیں اس کے بھی"
+    },
+    {
+      "start": 613.1,
+      "end": 614.52,
+      "text": "garantini ہو سکتے ہیں کہ ایک ایک ایک"
+    },
+    {
+      "start": 614.52,
+      "end": 616.06,
+      "text": "رہے بائدن 4 میں بھی"
+    },
+    {
+      "start": 616.06,
+      "end": 617.92,
+      "text": "تو وہ چیز بھی دیکھنے والی بات ہوگی"
+    },
+    {
+      "start": 617.92,
+      "end": 619.6,
+      "text": "but اس چیز کی tenshen"
+    },
+    {
+      "start": 619.6,
+      "end": 623.22,
+      "text": "ایک ایک ایک ایک ایک ایک ایک ایک ایک ایک"
+    },
+    {
+      "start": 683.26,
+      "end": 685.5,
+      "text": "تو کافی ٹرینڈگ چلا تھا یہ"
+    },
+    {
+      "start": 685.5,
+      "end": 687.34,
+      "text": "video مارا تو آپ لوگ جو ہے اس کو"
+    },
+    {
+      "start": 687.34,
+      "end": 688.88,
+      "text": "ضرورت ایکسس کریں"
+    },
+    {
+      "start": 688.88,
+      "end": 690.06,
+      "text": "playlist کو یہاں کلک کر کے"
+    },
+    {
+      "start": 690.06,
+      "end": 691.68,
+      "text": "bookmark کریں یہاں کلک کر کے"
+    },
+    {
+      "start": 691.68,
+      "end": 692.98,
+      "text": "playlist کو safe بھی کریں"
+    },
+    {
+      "start": 692.98,
+      "end": 694.52,
+      "text": "آپ لوگ کو کافی مزانے والا ہے"
+    },
+    {
+      "start": 694.52,
+      "end": 695.78,
+      "text": "python ایک کافی دماغے دار"
+    },
+    {
+      "start": 695.78,
+      "end": 696.48,
+      "text": "Programming Language"
+    },
+    {
+      "start": 696.48,
+      "end": 696.68,
+      "text": "ہے"
+    },
+    {
+      "start": 697.22,
+      "end": 697.96,
+      "text": "YouTube use python"
+    },
+    {
+      "start": 697.96,
+      "end": 699.04,
+      "text": "python کو Instagram"
+    },
+    {
+      "start": 699.04,
+      "end": 700.82,
+      "text": "use python کو Facebook use"
+    },
+    {
+      "start": 700.82,
+      "end": 702.2,
+      "text": "python کو"
+    },
+    {
+      "start": 702.2,
+      "end": 703.96,
+      "text": "یہ سوال لیکن use کرتے ہیں"
+    },
+    {
+      "start": 703.96,
+      "end": 705.98,
+      "text": "بالگی زوال لیکن use نہیں کرتے ہیں"
+    },
+    {
+      "start": 705.98,
+      "end": 706.78,
+      "text": "python کو python"
+    },
+    {
+      "start": 706.78,
+      "end": 708.82,
+      "text": "اتنی بڑی اوورسٹائی لنگوجے"
+    },
+    {
+      "start": 708.82,
+      "end": 709.74,
+      "text": "کی سب لوگ"
+    },
+    {
+      "start": 709.74,
+      "end": 711.04,
+      "text": "almost allie buddy buddy companies"
+    },
+    {
+      "start": 711.04,
+      "end": 713.06,
+      "text": "python کو use کرتے ہیں"
+    },
+    {
+      "start": 713.06,
+      "end": 714.12,
+      "text": "اب یہ تو ہم ایک لیرے کہ"
+    },
+    {
+      "start": 714.12,
+      "end": 714.68,
+      "text": "ایک لوگ Programming"
+    },
+    {
+      "start": 714.68,
+      "end": 715.32,
+      "text": "کیو کریں کیو کریں"
+    },
+    {
+      "start": 715.32,
+      "end": 715.74,
+      "text": "کیو کریں کیو کریں کیو کریں"
+    },
+    {
+      "start": 715.74,
+      "end": 716.2,
+      "text": "کیو کریں کیو کریں"
+    },
+    {
+      "start": 718.56,
+      "end": 719.74,
+      "text": "اور as computer"
+    },
+    {
+      "start": 719.74,
+      "end": 721.22,
+      "text": "computer کو چیز اچھی کرتے ہیں"
+    },
+    {
+      "start": 721.22,
+      "end": 721.58,
+      "text": "تو ہم"
+    },
+    {
+      "start": 721.58,
+      "end": 723.28,
+      "text": "computer سے وہ کام کرونا چاہتے ہیں"
+    },
+    {
+      "start": 723.28,
+      "end": 723.86,
+      "text": "جس میں computer"
+    },
+    {
+      "start": 723.86,
+      "end": 724.98,
+      "text": "ہے اور ہم"
+    },
+    {
+      "start": 724.98,
+      "end": 725.34,
+      "text": "جس میں"
+    },
+    {
+      "start": 725.34,
+      "end": 726.28,
+      "text": "جہی وہ کام تو ہم"
+    },
+    {
+      "start": 726.28,
+      "end": 727.58,
+      "text": "اپنے روز مر رکے زندی یہ"
+    },
+    {
+      "start": 727.58,
+      "end": 728.46,
+      "text": "میں کری رہے ہیں"
+    },
+    {
+      "start": 728.46,
+      "end": 729.66,
+      "text": "تو اسی لیے"
+    },
+    {
+      "start": 729.66,
+      "end": 730.98,
+      "text": "python programming Language"
+    },
+    {
+      "start": 730.98,
+      "end": 731.82,
+      "text": "کا استعمال کرتے ہیں"
+    },
+    {
+      "start": 731.82,
+      "end": 732.88,
+      "text": "کیو یہ بہو زیادہ"
+    },
+    {
+      "start": 732.88,
+      "end": 733.38,
+      "text": "از آن ہے"
+    },
+    {
+      "start": 733.38,
+      "end": 734.08,
+      "text": "اپنے دیے پورن میں"
+    },
+    {
+      "start": 734.08,
+      "end": 734.88,
+      "text": "مجھے ضرور ملنا"
+    },
+    {
+      "start": 734.88,
+      "end": 736.06,
+      "text": "اب یہ گلے سوڑیوں میں"
+    },
+    {
+      "start": 736.06,
+      "end": 736.72,
+      "text": "اتنے گایس"
+    },
+    {
+      "start": 736.72,
+      "end": 738.9,
+      "text": "Thank you so much guys for watching this video"
+    },
+    {
+      "start": 738.9,
+      "end": 741.38,
+      "text": "and I will see you next time"
+    }
+  ]
+}

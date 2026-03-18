@@ -1,0 +1,3296 @@
+{
+  "file": "lecture5.mp3",
+  "text": " 100 days of code میں آپ کا 2 بارہ سے سواجتے آج کی اس video میں دیکھیں گےコメント کو escape sequence characters کو اور pin statement کو تھوڑا سا کریب سے جب we up look coding کرتے ہیں python programming language میں کسی بھی language میں کبھی کبھی ہم لوگ چاہتے ہیں اس program میں کچھ text چھوننا جو کی اگزیکیٹ نہ ہو ہم جو بھی اپنے program میں لکتے ہیں وہ python interpreter execute کرتے لیکن کبھی ہم چاہیں گے کی کچھ ایسی lign subter program میں لکتے جو کی اگزیکیٹ نہ ہو for example, میں اگر ایک program میں لکھر ہم چھے میں ہی نے کے بعد کو دی بل جا ہوں کہ اس program میں کیا ہو رہے تو اسے میں میری لیے اپنے program میں کچھ lign subter program سو بھا بھی ہوگا میں چاہوں گا کہ میں کچھ ایسی lign subter program چاہیں گے بھی اچھا حیری کو بتایا ہے کہ ہا رہوں کیا program لکھا تھا یا پھر اگر میں مہا لوگ نے ایک دو سیبام کے ساتھ کام کر رہوں یا پھر اپنے ایک اور دو سروھان کے ساتھ کام کر رہوں تو این دونوں کو مجھ بطانا ہوگا کی مہا ہے کیا کر رہوں program میں میرا program کی سترسے کام کر رہا ہے اس میں میں used کروں گا comments کا escape sequence characters of print statement بھی ام اس video میں دیکھیں چلتے ہیں کم بھی دی screen میں and let's get started تو میں ابر کیا کروں گا کی اپنی جو file main.py وہیاں پر خلی والا ہوں تو میں ابر file میں جا رہوں اور میں main.py کو یہاں پر خلیوں گا as always اور یہاں پر جو میرا main.py کا اوٹ پٹوں نے والا ہے وہ آپ لوگ کو دکھیں والا ہے تو اگر میں اپنی اپنی دیکھیں I am a good boy تو اس میں کوئی بھی شکنے ایک ایک ایک اچھل کروں تو اس لیے I am a good boy اور یہ نیولائن لٹرلی نہیں مارنی آپ کو ٹیگے صرف باکسلیش ان لک دو پائیتن will take care of it تو آپ لوگ ہو گیاں باکسلیشن چلو ٹیگے I am a good boy لیکا باکسلیش ان لک دیا رن کرو گیا آپ لوگ کوڈ کو جیسی آپ لوگ دیکھیں I am a good boy اور اس کے بعد ان this view or is also a good boy slash call نیولائن میں آگیا تو یہ کیا تھا باکسلیشن کیا تھا یہ تایک اس کے پیچھنز کریکٹر اس کے بعد میں آج بات کر اور بتاوں گا آپ کو کی escape sequence characters اور کسکے اس کے طرف ہوتے ہیں اور کن کن سے escape sequence characters ہوتے ہیں لیکن اسے بھی پہلے آپ لوگ کو بدا نہ چاہوں گا کمٹس کیا ہوتے ہیں مالوں میں کوڈ بھی اس پے کام کرنے میں آپ کے ساتھ ملکر کوڈ بھی دری داری .com بنا رہوں اور اس بیپسائٹ کو ہم لوگ Zoro Shona سے بنا رہے دونوں لوگ ملکر جو ہے اس میں کام کرنے امالوں میں آپ کو بدا نہ چاہوں کہ گوڑ بھی دری .com کا home page ہے اس میں کنیو design آنے والایا اور میں اس کو دو دن کے بعد لاغوں گا اور میں مالوں کامٹ کرنے والاوں کہ بایس design کو چینج مط کرنے اس لین کو اسے مطحطا نہ میں آپ کو لکنا چاہوں Hey Harry Please don't remove this line Okay ملوں میں یہ کہنا چاہتا میں کہتا میں کہتا Harry's line کو remove مط کرنے yaar میں اس میں کام کرنے Okay just this line کے لیے میں code ways میں رکھنا چاہتا لیکن آپ لوگ دیکھ رہے آپ کو بھی پائیتن دیفتن نالاز ہو چکے ناغراج کہیں یہ چل رائے انوالیٹ syntax کیا میں تو print ڈا بہت سارا اور بھی syntax ڈا ڈا Harry Please don't remove this line I didn't like it Python he doesn't say it so we will run it obviously we will get it we will get it no doubt and you will tell us what is it but I want to keep this line please say it okay don't don't I want to tell you Python say it in my comments comments you can keep any text from me no you say wow Python is so good Python say yes I am so good what do I do what do I do Python say you put a character and it will become a comment okay this will become a comment and if you have marked any line first of all you will replicate syntax siliting you will write in any ID syntax in this case the comment has started to show syntax siliting I printed it in yellow after this there is a string letter in orange and there is a bracket in different color in error and there is a syntax siliting you will see this line and now I can write a text in my program I want to mark this program and I want to mark this code that is 100 days of code okay I want to write this in my I can write it and I will tell you a secret I have told you you can select multiple lines and control or if you are in a Mac control plus forward slash like you will press you can comment any code and you can comment in this way I will comment in this way I will comment control plus forward slash okay control plus forward slash you can use a line and a series I am not talking I told you that this line is multiple lines you can mark as comments or you can comment okay it is a big thing I have written that a comment is a part of coding does not want to execute rather the programmer uses it to either explain a block or to avoid the execution of a specific part of code while testing I am a comment I am writing a code I am writing a code I want to write this print hello word okay I will show you a boss in the program I told you how to write this and this I told you this is a big thing I am not writing hello word I will say I will press control forward slash and now I can delete this code I will what is going on I will write this is a big thing so I can do this again and this is a hello word okay so this can be done hello word comment okay I have written that you have given an example you need to write a code copy paste it and run it okay as you will do you see you see this is a single line comment you will not get you will get a print statement I have given an example you can write a line after a line comment you can write it if you have written something I am doing it I will do it like this you see I have written a print and what can I do actually I have given this I should have written a book now look as I write a print and then I write a hello word and then I write something in the comment I want you can write it okay and then my code is executed as I will do it as I will do it I have written a book as I will do it I will ignore it so I will do it print printing what will be written what will be written you know what will be written what will be said print what will be said it is okay but you will write what will be said that you have written like this and then you can see I will write a pound like this and then I will do it so you can see it is fine now look what can I do I will tell you the code comment I already told you but one more thing you want to tell how will you write now I will tell you the story of multi-line comments I have told you that I will take this example I will comment this one I know that you have told me to comment three lines I have two lines because I am living in modern world I have IDE I have a template I have modern IDE so I will select and then I will select the control forward I will select this shortcut and then then then then then then then then then and you let me know and you or on text you to alright and and then you want to skip کوس رہوسرے کے سپینٹڈ میں میں Hey I am a good boy and this viewer is also a good boy slash girl Okay Now here you can see that I have written this tutorial I have written this in this I have written that to insert characters that cannot directly be used in a string we use escape sequence It is a character, so now talk about one thing that is one character which is directly stringed and not used in the use of the system we can use escape sequence characters For example if I enter the new line character literally it will come here and it will come here because it will not be possible to pass the pattern if you put the new line in the string literally it will not pass so we put the new line character Backslash plus n these two characters are looking at this but this is one character This is called escape sequence character Backslash n is a character which is the new line character This is a escape sequence character which you will also put in the string so now you will see the new line in the search If I run this then I am going to get this in a new line What about me I am a good boy I want to close the double code in a different way This is what you should do in this problem If you think like this and you think like this then you are looking at this red line The red line is given by the sun It is given by the sun It is given by the sun It is given by the sun It is given by the sun It is given by the sun If you want to run this then you will see this is the error You will get the invalid sentence What is the problem in this? What is the problem in this? When you start your print statement and start your string from the double code then the confusion is coming Here the string is starting Is the end of the string here? Now you will see that the end is not ending This is the end of the string But the Python interpreter is confused He says You have put the double code here You have put the Filser double code here This means the end of the string is ending here Then what is this? This is for the invalid sentence Because if the double code is written here then what is the good boy after this? You will see the error here So to save this We do not use the double code character We use the backslash double code which is a double code escape sequence character So this is a character This is a character Now I will do this So I will just double-code This is a good boy It is coming in the double code You can see the backslash here But I used the backslash Why did I use the backslash double code? Because I wanted to use the backslash double code Which is one character I used two times But this is the character The backslash double code Which is used in output It is a single double code It is a escape sequence character And escape sequence character is a backslash followed by the character you want to insert An example of a character That cannot be directly used in a string If you are in the print The string in the print It is made in a single code So you cannot use single code Now you guys We will read more details in the strings chapter But if I put the single code in the print I cannot put single code I have to put backslash single code Okay, I will put backslash single code So this is the single code And after this I am I put a single code Okay, so I can put single code in the strings So this is our escape sequence character I hope you guys understood Now I want to tell you about the print statement The first thing I want to tell you You can also give you multiple values You can give you this 6 and 7 You can give you 3 values And I will give you 3 to see This 6 and 7 You can see in your computer screen After this There is another parameter It is separate I can give you this as a Cp If you want to add this character And I will run this You guys will see When I will add this as a Cp This will be separated from the tilde character As you can see here After this, it is tilde And then it is tilde You also want to join You can do this as a given separator As I have done You can do this And then another parameter And is equal to And is equal to the place I write 009 What does it mean? It means that if I write a next print statement And I write a print Harry And I run it You can see that it is 6 and 7 And then the next print statement It will be 009 Ideally we write a And is equal to We write 009 backslash We put backslash in it And is equal to By default backslash And is equal to And is equal to Now I have added 009 backslash And whenever I run the next print statement Then 009 backslash And will be printed In this print statement What difference does it have? It means You have given multiple values And will separate The default separator And will be And then the default separator And then the end And when this print statement Will be printed And will be printed By default If you want to override And go to the new line And you can see That I have run this print statement And then the new line automatically And then the new line automatically Now print is taken Because the end is equal to 009 backslash Because this Sacrifice is then çıkar That you have given multiple values So what is different in its So again angemido In my experience In the demo I have put this me لیکن میں نے اس لے لیکھا کہ میں چاہتا کہ آپ لو کو ایباں مالوں ہوگی آپ لوگ Print Strait Print سے File Pb write کر سکتے ہیں آبجگٹ میں the Write Method defaultess is not SDD ڈیانی کی SDD ڈیانی کی SDD ڈیانی کی ایوڈ پر write کرے گے آپ لوگ جاہاں بھی رن کر رہاں کنسول پیگہ آپ کو دیکھاگہ یہ چاہتے ہیں ارگیم انڈیہ بارے میں بارے میں بعد میں بات کریں گے اس پیمہ آپ لوگوں کو اگر آپ لوگوں کو نیہ بھی تکھا کہ کوڑ access نہیں کیا تو کر لے نہ playlist ڈیانی کیا تو پیلے سب لگ بگمان ضرور کر لے نہ جیو playlist میں سانے ویڈیو ساعدوں نے والے آپ لوگ کلک کرنا اوپر یہاں کلک کرکے playlist کو بگمان کر لے نہ اور یہاں کلک کرکے اس کو سیب کر لے نہ بھی گلے سوڑے میں اتنے گایس Thank you so much guys for watching this video and I will see you next time",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.06,
+      "text": "100 days of code میں آپ کا 2 بارہ سے سواجتے آج کی اس video میں دیکھیں گے"
+    },
+    {
+      "start": 4.58,
+      "end": 7.36,
+      "text": "コメント کو escape sequence characters کو"
+    },
+    {
+      "start": 7.36,
+      "end": 8.88,
+      "text": "اور pin statement کو تھوڑا سا کریب سے"
+    },
+    {
+      "start": 8.88,
+      "end": 10.86,
+      "text": "جب we up look coding کرتے ہیں"
+    },
+    {
+      "start": 10.86,
+      "end": 12.28,
+      "text": "python programming language میں کسی بھی language میں"
+    },
+    {
+      "start": 12.28,
+      "end": 14.16,
+      "text": "کبھی کبھی ہم لوگ چاہتے ہیں"
+    },
+    {
+      "start": 14.16,
+      "end": 16.8,
+      "text": "اس program میں کچھ text چھوننا جو کی اگزیکیٹ نہ ہو"
+    },
+    {
+      "start": 16.8,
+      "end": 19.22,
+      "text": "ہم جو بھی اپنے program میں لکتے ہیں"
+    },
+    {
+      "start": 19.22,
+      "end": 21.16,
+      "text": "وہ python interpreter execute کرتے لیکن کبھی ہم چاہیں گے"
+    },
+    {
+      "start": 21.16,
+      "end": 24.8,
+      "text": "کی کچھ ایسی lign subter program میں لکتے جو کی اگزیکیٹ نہ ہو"
+    },
+    {
+      "start": 24.8,
+      "end": 26.5,
+      "text": "for example, میں اگر ایک program میں لکھر ہم"
+    },
+    {
+      "start": 26.5,
+      "end": 29.04,
+      "text": "چھے میں ہی نے کے بعد کو دی بل جا ہوں کہ اس program میں"
+    },
+    {
+      "start": 29.04,
+      "end": 30.08,
+      "text": "کیا ہو رہے تو اسے میں"
+    },
+    {
+      "start": 30.08,
+      "end": 32.7,
+      "text": "میری لیے اپنے program میں کچھ lign subter program"
+    },
+    {
+      "start": 32.7,
+      "end": 33.72,
+      "text": "سو بھا بھی ہوگا"
+    },
+    {
+      "start": 33.72,
+      "end": 36.36,
+      "text": "میں چاہوں گا کہ میں کچھ ایسی lign subter program"
+    },
+    {
+      "start": 36.36,
+      "end": 38.32,
+      "text": "چاہیں گے بھی اچھا حیری کو بتایا ہے کہ ہا رہوں"
+    },
+    {
+      "start": 38.32,
+      "end": 40.56,
+      "text": "کیا program لکھا تھا یا پھر اگر میں"
+    },
+    {
+      "start": 40.56,
+      "end": 43.2,
+      "text": "مہا لوگ نے ایک دو سیبام کے ساتھ کام کر رہوں"
+    },
+    {
+      "start": 43.2,
+      "end": 45.66,
+      "text": "یا پھر اپنے ایک اور دو سروھان کے ساتھ کام کر رہوں"
+    },
+    {
+      "start": 45.66,
+      "end": 47.46,
+      "text": "تو این دونوں کو مجھ بطانا ہوگا"
+    },
+    {
+      "start": 47.46,
+      "end": 48.8,
+      "text": "کی مہا ہے کیا کر رہوں"
+    },
+    {
+      "start": 48.8,
+      "end": 52.0,
+      "text": "program میں میرا program کی سترسے کام کر رہا ہے"
+    },
+    {
+      "start": 52.0,
+      "end": 53.58,
+      "text": "اس میں میں used کروں گا"
+    },
+    {
+      "start": 53.58,
+      "end": 55.58,
+      "text": "comments کا escape sequence characters"
+    },
+    {
+      "start": 55.58,
+      "end": 56.58,
+      "text": "of print statement"
+    },
+    {
+      "start": 56.58,
+      "end": 57.62,
+      "text": "بھی ام اس video میں دیکھیں"
+    },
+    {
+      "start": 57.62,
+      "end": 59.24,
+      "text": "چلتے ہیں کم بھی دی screen میں"
+    },
+    {
+      "start": 59.24,
+      "end": 60.48,
+      "text": "and let's get started"
+    },
+    {
+      "start": 69.88,
+      "end": 71.68,
+      "text": "تو میں ابر کیا کروں گا"
+    },
+    {
+      "start": 71.68,
+      "end": 73.92,
+      "text": "کی اپنی جو file main.py"
+    },
+    {
+      "start": 73.92,
+      "end": 74.9,
+      "text": "وہیاں پر"
+    },
+    {
+      "start": 74.9,
+      "end": 76.48,
+      "text": "خلی والا ہوں تو میں ابر file"
+    },
+    {
+      "start": 76.48,
+      "end": 78.32,
+      "text": "میں جا رہوں اور میں main.py"
+    },
+    {
+      "start": 78.32,
+      "end": 79.42,
+      "text": "کو یہاں پر خلیوں گا"
+    },
+    {
+      "start": 79.42,
+      "end": 79.96,
+      "text": "as always"
+    },
+    {
+      "start": 79.96,
+      "end": 81.42,
+      "text": "اور یہاں پر"
+    },
+    {
+      "start": 81.42,
+      "end": 83.42,
+      "text": "جو میرا main.py"
+    },
+    {
+      "start": 83.42,
+      "end": 84.72,
+      "text": "کا اوٹ پٹوں نے والا ہے"
+    },
+    {
+      "start": 84.72,
+      "end": 86.52,
+      "text": "وہ آپ لوگ کو دکھیں والا ہے"
+    },
+    {
+      "start": 86.52,
+      "end": 88.12,
+      "text": "تو اگر میں اپنی اپنی"
+    },
+    {
+      "start": 88.12,
+      "end": 88.4,
+      "text": "دیکھیں"
+    },
+    {
+      "start": 88.4,
+      "end": 89.92,
+      "text": "I am a good boy"
+    },
+    {
+      "start": 89.92,
+      "end": 91.08,
+      "text": "تو اس میں کوئی بھی"
+    },
+    {
+      "start": 91.08,
+      "end": 92.86,
+      "text": "شکنے ایک ایک ایک اچھل کروں"
+    },
+    {
+      "start": 92.86,
+      "end": 93.6,
+      "text": "تو اس لیے"
+    },
+    {
+      "start": 93.6,
+      "end": 94.52,
+      "text": "I am a good boy"
+    },
+    {
+      "start": 155.1,
+      "end": 157.68,
+      "text": "اور یہ نیولائن لٹرلی نہیں مارنی آپ کو"
+    },
+    {
+      "start": 157.68,
+      "end": 158.04,
+      "text": "ٹیگے"
+    },
+    {
+      "start": 158.04,
+      "end": 159.3,
+      "text": "صرف باکسلیش ان لک دو"
+    },
+    {
+      "start": 159.3,
+      "end": 160.86,
+      "text": "پائیتن will take care of it"
+    },
+    {
+      "start": 160.86,
+      "end": 161.98,
+      "text": "تو آپ لوگ ہو گیاں"
+    },
+    {
+      "start": 161.98,
+      "end": 163.08,
+      "text": "باکسلیشن چلو ٹیگے"
+    },
+    {
+      "start": 163.08,
+      "end": 163.94,
+      "text": "I am a good boy"
+    },
+    {
+      "start": 163.94,
+      "end": 165.48,
+      "text": "لیکا باکسلیش ان لک دیا"
+    },
+    {
+      "start": 165.48,
+      "end": 167.56,
+      "text": "رن کرو گیا آپ لوگ کوڈ کو جیسی"
+    },
+    {
+      "start": 167.56,
+      "end": 168.34,
+      "text": "آپ لوگ دیکھیں"
+    },
+    {
+      "start": 168.34,
+      "end": 168.96,
+      "text": "I am a good boy"
+    },
+    {
+      "start": 168.96,
+      "end": 169.66,
+      "text": "اور اس کے بعد ان"
+    },
+    {
+      "start": 169.66,
+      "end": 170.16,
+      "text": "this view"
+    },
+    {
+      "start": 170.16,
+      "end": 171.38,
+      "text": "or is also a good boy"
+    },
+    {
+      "start": 171.38,
+      "end": 171.98,
+      "text": "slash call"
+    },
+    {
+      "start": 171.98,
+      "end": 173.12,
+      "text": "نیولائن میں آگیا"
+    },
+    {
+      "start": 173.12,
+      "end": 174.62,
+      "text": "تو یہ کیا تھا"
+    },
+    {
+      "start": 175.28,
+      "end": 176.08,
+      "text": "باکسلیشن کیا تھا"
+    },
+    {
+      "start": 176.08,
+      "end": 177.64,
+      "text": "یہ تایک اس کے پیچھنز"
+    },
+    {
+      "start": 177.64,
+      "end": 178.06,
+      "text": "کریکٹر"
+    },
+    {
+      "start": 178.06,
+      "end": 179.3,
+      "text": "اس کے بعد میں آج بات کر"
+    },
+    {
+      "start": 179.3,
+      "end": 180.4,
+      "text": "اور بتاوں گا آپ کو کی"
+    },
+    {
+      "start": 180.4,
+      "end": 181.56,
+      "text": "escape sequence characters"
+    },
+    {
+      "start": 181.56,
+      "end": 183.3,
+      "text": "اور کسکے اس کے طرف ہوتے ہیں"
+    },
+    {
+      "start": 183.3,
+      "end": 185.64,
+      "text": "اور کن کن سے escape sequence characters"
+    },
+    {
+      "start": 185.64,
+      "end": 186.16,
+      "text": "ہوتے ہیں"
+    },
+    {
+      "start": 186.84,
+      "end": 188.36,
+      "text": "لیکن اسے بھی پہلے آپ لوگ کو"
+    },
+    {
+      "start": 188.36,
+      "end": 190.02,
+      "text": "بدا نہ چاہوں گا کمٹس کیا ہوتے ہیں"
+    },
+    {
+      "start": 190.02,
+      "end": 191.56,
+      "text": "مالوں میں کوڈ بھی اس پے کام کرنے"
+    },
+    {
+      "start": 191.56,
+      "end": 193.12,
+      "text": "میں آپ کے ساتھ ملکر"
+    },
+    {
+      "start": 193.12,
+      "end": 193.78,
+      "text": "کوڈ بھی دری داری"
+    },
+    {
+      "start": 193.78,
+      "end": 194.64,
+      "text": ".com بنا رہوں"
+    },
+    {
+      "start": 194.64,
+      "end": 195.86,
+      "text": "اور اس بیپسائٹ کو"
+    },
+    {
+      "start": 195.86,
+      "end": 196.12,
+      "text": "ہم لوگ"
+    },
+    {
+      "start": 196.12,
+      "end": 197.12,
+      "text": "Zoro Shona سے بنا رہے"
+    },
+    {
+      "start": 197.12,
+      "end": 197.66,
+      "text": "دونوں لوگ"
+    },
+    {
+      "start": 197.66,
+      "end": 198.32,
+      "text": "ملکر جو ہے"
+    },
+    {
+      "start": 198.32,
+      "end": 199.66,
+      "text": "اس میں کام کرنے"
+    },
+    {
+      "start": 199.66,
+      "end": 200.24,
+      "text": "امالوں"
+    },
+    {
+      "start": 200.24,
+      "end": 201.58,
+      "text": "میں آپ کو بدا نہ چاہوں"
+    },
+    {
+      "start": 201.58,
+      "end": 202.56,
+      "text": "کہ گوڑ بھی دری"
+    },
+    {
+      "start": 202.56,
+      "end": 203.64,
+      "text": ".com کا home page"
+    },
+    {
+      "start": 203.64,
+      "end": 205.16,
+      "text": "ہے اس میں کنیو"
+    },
+    {
+      "start": 205.16,
+      "end": 206.12,
+      "text": "design آنے والایا"
+    },
+    {
+      "start": 206.12,
+      "end": 207.22,
+      "text": "اور میں اس کو دو دن کے بعد"
+    },
+    {
+      "start": 207.22,
+      "end": 208.08,
+      "text": "لاغوں گا اور میں"
+    },
+    {
+      "start": 208.08,
+      "end": 208.5,
+      "text": "مالوں"
+    },
+    {
+      "start": 208.5,
+      "end": 209.8,
+      "text": "کامٹ کرنے والاوں"
+    },
+    {
+      "start": 209.8,
+      "end": 210.6,
+      "text": "کہ بایس design کو"
+    },
+    {
+      "start": 210.6,
+      "end": 211.26,
+      "text": "چینج مط کرنے"
+    },
+    {
+      "start": 211.26,
+      "end": 211.74,
+      "text": "اس لین کو"
+    },
+    {
+      "start": 211.74,
+      "end": 212.54,
+      "text": "اسے مطحطا نہ"
+    },
+    {
+      "start": 212.54,
+      "end": 213.64,
+      "text": "میں آپ کو لکنا چاہوں"
+    },
+    {
+      "start": 213.64,
+      "end": 214.36,
+      "text": "Hey"
+    },
+    {
+      "start": 215.0,
+      "end": 215.48,
+      "text": "Harry"
+    },
+    {
+      "start": 216.62,
+      "end": 217.1,
+      "text": "Please"
+    },
+    {
+      "start": 217.1,
+      "end": 218.46,
+      "text": "don't remove"
+    },
+    {
+      "start": 218.46,
+      "end": 219.46,
+      "text": "this line"
+    },
+    {
+      "start": 219.46,
+      "end": 219.88,
+      "text": "Okay"
+    },
+    {
+      "start": 219.88,
+      "end": 220.98,
+      "text": "ملوں میں یہ کہنا چاہتا"
+    },
+    {
+      "start": 220.98,
+      "end": 221.34,
+      "text": "میں کہتا"
+    },
+    {
+      "start": 221.34,
+      "end": 221.72,
+      "text": "میں کہتا"
+    },
+    {
+      "start": 221.72,
+      "end": 222.18,
+      "text": "Harry's line"
+    },
+    {
+      "start": 222.18,
+      "end": 222.52,
+      "text": "کو remove"
+    },
+    {
+      "start": 222.52,
+      "end": 223.04,
+      "text": "مط کرنے"
+    },
+    {
+      "start": 223.04,
+      "end": 223.32,
+      "text": "yaar"
+    },
+    {
+      "start": 223.32,
+      "end": 224.28,
+      "text": "میں اس میں"
+    },
+    {
+      "start": 224.28,
+      "end": 224.86,
+      "text": "کام کرنے"
+    },
+    {
+      "start": 224.86,
+      "end": 225.3,
+      "text": "Okay just"
+    },
+    {
+      "start": 225.3,
+      "end": 225.84,
+      "text": "this line"
+    },
+    {
+      "start": 225.84,
+      "end": 226.4,
+      "text": "کے لیے میں"
+    },
+    {
+      "start": 226.4,
+      "end": 227.04,
+      "text": "code ways میں"
+    },
+    {
+      "start": 227.04,
+      "end": 227.54,
+      "text": "رکھنا چاہتا"
+    },
+    {
+      "start": 227.54,
+      "end": 228.7,
+      "text": "لیکن آپ لوگ"
+    },
+    {
+      "start": 228.7,
+      "end": 228.98,
+      "text": "دیکھ رہے"
+    },
+    {
+      "start": 228.98,
+      "end": 229.54,
+      "text": "آپ کو بھی"
+    },
+    {
+      "start": 229.54,
+      "end": 229.8,
+      "text": "پائیتن"
+    },
+    {
+      "start": 229.8,
+      "end": 230.14,
+      "text": "دیفتن"
+    },
+    {
+      "start": 230.14,
+      "end": 230.9,
+      "text": "نالاز ہو چکے"
+    },
+    {
+      "start": 230.9,
+      "end": 232.06,
+      "text": "ناغراج کہیں"
+    },
+    {
+      "start": 232.06,
+      "end": 232.26,
+      "text": "یہ"
+    },
+    {
+      "start": 232.26,
+      "end": 233.54,
+      "text": "چل رائے"
+    },
+    {
+      "start": 233.54,
+      "end": 234.04,
+      "text": "انوالیٹ"
+    },
+    {
+      "start": 234.04,
+      "end": 234.3,
+      "text": "syntax"
+    },
+    {
+      "start": 234.3,
+      "end": 234.54,
+      "text": "کیا"
+    },
+    {
+      "start": 234.54,
+      "end": 235.1,
+      "text": "میں"
+    },
+    {
+      "start": 235.1,
+      "end": 235.3,
+      "text": "تو"
+    },
+    {
+      "start": 235.3,
+      "end": 235.54,
+      "text": "print"
+    },
+    {
+      "start": 235.54,
+      "end": 235.82,
+      "text": "ڈا"
+    },
+    {
+      "start": 235.82,
+      "end": 236.84,
+      "text": "بہت سارا"
+    },
+    {
+      "start": 236.84,
+      "end": 237.22,
+      "text": "اور بھی"
+    },
+    {
+      "start": 237.22,
+      "end": 237.46,
+      "text": "syntax"
+    },
+    {
+      "start": 237.46,
+      "end": 237.72,
+      "text": "ڈا"
+    },
+    {
+      "start": 237.72,
+      "end": 237.94,
+      "text": "ڈا"
+    },
+    {
+      "start": 237.94,
+      "end": 238.78,
+      "text": "Harry"
+    },
+    {
+      "start": 238.78,
+      "end": 240.26,
+      "text": "Please don't remove"
+    },
+    {
+      "start": 240.26,
+      "end": 240.96,
+      "text": "this line"
+    },
+    {
+      "start": 240.96,
+      "end": 241.94,
+      "text": "I didn't like it"
+    },
+    {
+      "start": 241.94,
+      "end": 242.26,
+      "text": "Python"
+    },
+    {
+      "start": 242.26,
+      "end": 242.5,
+      "text": "he doesn't say it"
+    },
+    {
+      "start": 242.5,
+      "end": 243.94,
+      "text": "so we will run it"
+    },
+    {
+      "start": 243.94,
+      "end": 244.56,
+      "text": "obviously"
+    },
+    {
+      "start": 244.56,
+      "end": 245.32,
+      "text": "we will get it"
+    },
+    {
+      "start": 245.32,
+      "end": 245.74,
+      "text": "we will get it"
+    },
+    {
+      "start": 245.74,
+      "end": 247.16,
+      "text": "no doubt"
+    },
+    {
+      "start": 247.16,
+      "end": 248.44,
+      "text": "and you will tell us"
+    },
+    {
+      "start": 248.44,
+      "end": 249.18,
+      "text": "what is it"
+    },
+    {
+      "start": 250.26,
+      "end": 250.84,
+      "text": "but I want to keep"
+    },
+    {
+      "start": 250.84,
+      "end": 251.22,
+      "text": "this line"
+    },
+    {
+      "start": 251.22,
+      "end": 252.18,
+      "text": "please"
+    },
+    {
+      "start": 252.18,
+      "end": 252.78,
+      "text": "say it"
+    },
+    {
+      "start": 252.78,
+      "end": 253.8,
+      "text": "okay"
+    },
+    {
+      "start": 253.8,
+      "end": 254.92,
+      "text": "don't"
+    },
+    {
+      "start": 256.26,
+      "end": 256.38,
+      "text": "don't"
+    },
+    {
+      "start": 256.38,
+      "end": 257.82,
+      "text": "I want to tell you"
+    },
+    {
+      "start": 257.82,
+      "end": 259.0,
+      "text": "Python"
+    },
+    {
+      "start": 259.0,
+      "end": 259.64,
+      "text": "say it"
+    },
+    {
+      "start": 259.64,
+      "end": 260.82,
+      "text": "in my comments"
+    },
+    {
+      "start": 260.82,
+      "end": 261.56,
+      "text": "comments"
+    },
+    {
+      "start": 261.56,
+      "end": 262.82,
+      "text": "you can keep any text"
+    },
+    {
+      "start": 262.82,
+      "end": 263.48,
+      "text": "from me"
+    },
+    {
+      "start": 263.48,
+      "end": 264.1,
+      "text": "no"
+    },
+    {
+      "start": 265.06,
+      "end": 265.74,
+      "text": "you"
+    },
+    {
+      "start": 266.26,
+      "end": 266.98,
+      "text": "say wow"
+    },
+    {
+      "start": 266.98,
+      "end": 268.36,
+      "text": "Python is so good"
+    },
+    {
+      "start": 269.26,
+      "end": 269.56,
+      "text": "Python say"
+    },
+    {
+      "start": 269.56,
+      "end": 269.84,
+      "text": "yes"
+    },
+    {
+      "start": 269.84,
+      "end": 270.58,
+      "text": "I am so good"
+    },
+    {
+      "start": 270.58,
+      "end": 272.02,
+      "text": "what do I do"
+    },
+    {
+      "start": 272.02,
+      "end": 272.92,
+      "text": "what do I do"
+    },
+    {
+      "start": 272.92,
+      "end": 274.26,
+      "text": "Python say"
+    },
+    {
+      "start": 274.26,
+      "end": 275.22,
+      "text": "you put a character"
+    },
+    {
+      "start": 275.84,
+      "end": 277.06,
+      "text": "and it will become a comment"
+    },
+    {
+      "start": 277.06,
+      "end": 277.84,
+      "text": "okay"
+    },
+    {
+      "start": 277.84,
+      "end": 279.42,
+      "text": "this will become a comment"
+    },
+    {
+      "start": 279.42,
+      "end": 281.08,
+      "text": "and if you have"
+    },
+    {
+      "start": 281.08,
+      "end": 281.5,
+      "text": "marked any line"
+    },
+    {
+      "start": 281.5,
+      "end": 282.88,
+      "text": "first of all"
+    },
+    {
+      "start": 282.88,
+      "end": 283.3,
+      "text": "you will"
+    },
+    {
+      "start": 283.3,
+      "end": 283.7,
+      "text": "replicate"
+    },
+    {
+      "start": 284.46,
+      "end": 285.22,
+      "text": "syntax"
+    },
+    {
+      "start": 285.22,
+      "end": 285.82,
+      "text": "siliting"
+    },
+    {
+      "start": 285.82,
+      "end": 286.58,
+      "text": "you will write in any ID"
+    },
+    {
+      "start": 286.58,
+      "end": 287.8,
+      "text": "syntax"
+    },
+    {
+      "start": 287.8,
+      "end": 289.1,
+      "text": "in this case"
+    },
+    {
+      "start": 289.84,
+      "end": 290.26,
+      "text": "the comment"
+    },
+    {
+      "start": 290.26,
+      "end": 291.86,
+      "text": "has started to show"
+    },
+    {
+      "start": 292.84,
+      "end": 292.86,
+      "text": "syntax"
+    },
+    {
+      "start": 293.84,
+      "end": 294.12,
+      "text": "siliting"
+    },
+    {
+      "start": 294.12,
+      "end": 295.28,
+      "text": "I printed it"
+    },
+    {
+      "start": 295.28,
+      "end": 295.58,
+      "text": "in yellow"
+    },
+    {
+      "start": 295.58,
+      "end": 297.48,
+      "text": "after this"
+    },
+    {
+      "start": 297.48,
+      "end": 297.82,
+      "text": "there is a string"
+    },
+    {
+      "start": 297.82,
+      "end": 298.14,
+      "text": "letter"
+    },
+    {
+      "start": 298.14,
+      "end": 298.98,
+      "text": "in orange"
+    },
+    {
+      "start": 298.98,
+      "end": 300.52,
+      "text": "and there is a bracket"
+    },
+    {
+      "start": 300.52,
+      "end": 303.16,
+      "text": "in different color"
+    },
+    {
+      "start": 303.16,
+      "end": 303.7,
+      "text": "in error"
+    },
+    {
+      "start": 303.7,
+      "end": 305.22,
+      "text": "and there is a syntax"
+    },
+    {
+      "start": 305.22,
+      "end": 305.72,
+      "text": "siliting"
+    },
+    {
+      "start": 305.72,
+      "end": 309.5,
+      "text": "you will see"
+    },
+    {
+      "start": 309.5,
+      "end": 312.22,
+      "text": "this line"
+    },
+    {
+      "start": 312.22,
+      "end": 315.66,
+      "text": "and now"
+    },
+    {
+      "start": 315.66,
+      "end": 319.38,
+      "text": "I can write a text"
+    },
+    {
+      "start": 319.38,
+      "end": 320.1,
+      "text": "in my program"
+    },
+    {
+      "start": 320.1,
+      "end": 322.8,
+      "text": "I want to mark"
+    },
+    {
+      "start": 323.48,
+      "end": 324.46,
+      "text": "this program"
+    },
+    {
+      "start": 324.46,
+      "end": 326.64,
+      "text": "and I want to mark"
+    },
+    {
+      "start": 326.64,
+      "end": 327.72,
+      "text": "this"
+    },
+    {
+      "start": 327.72,
+      "end": 328.1,
+      "text": "code"
+    },
+    {
+      "start": 328.1,
+      "end": 329.96,
+      "text": "that is"
+    },
+    {
+      "start": 329.96,
+      "end": 331.44,
+      "text": "100 days of code"
+    },
+    {
+      "start": 331.44,
+      "end": 332.22,
+      "text": "okay"
+    },
+    {
+      "start": 333.0,
+      "end": 334.26,
+      "text": "I want to write this"
+    },
+    {
+      "start": 334.26,
+      "end": 335.06,
+      "text": "in my"
+    },
+    {
+      "start": 335.06,
+      "end": 335.06,
+      "text": ""
+    },
+    {
+      "start": 335.06,
+      "end": 335.74,
+      "text": "I can write it"
+    },
+    {
+      "start": 335.74,
+      "end": 337.5,
+      "text": "and I will tell you"
+    },
+    {
+      "start": 337.5,
+      "end": 338.42,
+      "text": "a secret"
+    },
+    {
+      "start": 338.42,
+      "end": 341.96,
+      "text": "I have told you"
+    },
+    {
+      "start": 341.96,
+      "end": 343.14,
+      "text": "you can select"
+    },
+    {
+      "start": 343.14,
+      "end": 344.24,
+      "text": "multiple lines"
+    },
+    {
+      "start": 344.24,
+      "end": 344.46,
+      "text": "and"
+    },
+    {
+      "start": 344.46,
+      "end": 345.12,
+      "text": "control"
+    },
+    {
+      "start": 345.12,
+      "end": 347.08,
+      "text": "or if you are in a Mac"
+    },
+    {
+      "start": 347.08,
+      "end": 348.0,
+      "text": "control plus"
+    },
+    {
+      "start": 348.0,
+      "end": 348.84,
+      "text": "forward slash"
+    },
+    {
+      "start": 349.46,
+      "end": 350.14,
+      "text": "like you will press"
+    },
+    {
+      "start": 350.14,
+      "end": 351.36,
+      "text": "you can comment"
+    },
+    {
+      "start": 351.36,
+      "end": 351.86,
+      "text": "any code"
+    },
+    {
+      "start": 351.86,
+      "end": 352.58,
+      "text": "and you can comment"
+    },
+    {
+      "start": 352.58,
+      "end": 353.58,
+      "text": "in this way"
+    },
+    {
+      "start": 353.58,
+      "end": 355.7,
+      "text": "I will comment"
+    },
+    {
+      "start": 355.7,
+      "end": 357.16,
+      "text": "in this way"
+    },
+    {
+      "start": 357.16,
+      "end": 360.34,
+      "text": "I will comment"
+    },
+    {
+      "start": 360.34,
+      "end": 361.42,
+      "text": "control plus"
+    },
+    {
+      "start": 361.42,
+      "end": 362.28,
+      "text": "forward slash"
+    },
+    {
+      "start": 362.28,
+      "end": 362.64,
+      "text": "okay"
+    },
+    {
+      "start": 362.64,
+      "end": 364.24,
+      "text": "control plus"
+    },
+    {
+      "start": 364.24,
+      "end": 365.06,
+      "text": "forward slash"
+    },
+    {
+      "start": 365.86,
+      "end": 367.62,
+      "text": "you can use"
+    },
+    {
+      "start": 367.62,
+      "end": 368.72,
+      "text": "a"
+    },
+    {
+      "start": 368.72,
+      "end": 370.56,
+      "text": "line"
+    },
+    {
+      "start": 370.56,
+      "end": 371.28,
+      "text": "and"
+    },
+    {
+      "start": 371.86,
+      "end": 372.8,
+      "text": "a"
+    },
+    {
+      "start": 372.8,
+      "end": 373.24,
+      "text": "series"
+    },
+    {
+      "start": 373.86,
+      "end": 374.94,
+      "text": "I am not talking"
+    },
+    {
+      "start": 374.94,
+      "end": 376.98,
+      "text": "I told you"
+    },
+    {
+      "start": 376.98,
+      "end": 377.5,
+      "text": "that"
+    },
+    {
+      "start": 377.5,
+      "end": 378.16,
+      "text": "this line"
+    },
+    {
+      "start": 378.16,
+      "end": 378.46,
+      "text": "is"
+    },
+    {
+      "start": 378.46,
+      "end": 379.34,
+      "text": "multiple lines"
+    },
+    {
+      "start": 379.34,
+      "end": 380.72,
+      "text": "you can mark"
+    },
+    {
+      "start": 381.5,
+      "end": 381.64,
+      "text": "as"
+    },
+    {
+      "start": 381.64,
+      "end": 382.34,
+      "text": "comments"
+    },
+    {
+      "start": 382.34,
+      "end": 383.42,
+      "text": "or you can comment"
+    },
+    {
+      "start": 383.42,
+      "end": 384.4,
+      "text": "okay"
+    },
+    {
+      "start": 384.4,
+      "end": 386.5,
+      "text": "it is a big thing"
+    },
+    {
+      "start": 386.5,
+      "end": 388.1,
+      "text": "I have written"
+    },
+    {
+      "start": 388.1,
+      "end": 389.26,
+      "text": "that a comment"
+    },
+    {
+      "start": 389.26,
+      "end": 389.98,
+      "text": "is a part of"
+    },
+    {
+      "start": 389.98,
+      "end": 390.3,
+      "text": "coding"
+    },
+    {
+      "start": 391.14,
+      "end": 393.32,
+      "text": "does not want to execute"
+    },
+    {
+      "start": 393.32,
+      "end": 394.94,
+      "text": "rather the programmer uses it"
+    },
+    {
+      "start": 394.94,
+      "end": 395.18,
+      "text": "to"
+    },
+    {
+      "start": 395.18,
+      "end": 396.44,
+      "text": "either explain a block"
+    },
+    {
+      "start": 396.44,
+      "end": 397.58,
+      "text": "or to avoid the"
+    },
+    {
+      "start": 397.58,
+      "end": 398.78,
+      "text": "execution of a specific part"
+    },
+    {
+      "start": 398.78,
+      "end": 399.82,
+      "text": "of code while testing"
+    },
+    {
+      "start": 399.82,
+      "end": 401.28,
+      "text": "I am"
+    },
+    {
+      "start": 402.64,
+      "end": 403.92,
+      "text": "a comment"
+    },
+    {
+      "start": 403.92,
+      "end": 405.74,
+      "text": "I am writing a code"
+    },
+    {
+      "start": 405.74,
+      "end": 405.74,
+      "text": ""
+    },
+    {
+      "start": 405.74,
+      "end": 407.62,
+      "text": "I am writing a code"
+    },
+    {
+      "start": 407.62,
+      "end": 408.6,
+      "text": "I want to write this"
+    },
+    {
+      "start": 408.6,
+      "end": 409.68,
+      "text": "print"
+    },
+    {
+      "start": 409.68,
+      "end": 410.48,
+      "text": "hello"
+    },
+    {
+      "start": 411.36,
+      "end": 412.04,
+      "text": "word"
+    },
+    {
+      "start": 412.04,
+      "end": 412.44,
+      "text": "okay"
+    },
+    {
+      "start": 412.44,
+      "end": 414.36,
+      "text": "I will show you"
+    },
+    {
+      "start": 414.36,
+      "end": 414.86,
+      "text": "a boss"
+    },
+    {
+      "start": 414.86,
+      "end": 415.38,
+      "text": "in the program"
+    },
+    {
+      "start": 415.38,
+      "end": 416.0,
+      "text": "I told you"
+    },
+    {
+      "start": 416.0,
+      "end": 417.56,
+      "text": "how to write this"
+    },
+    {
+      "start": 417.56,
+      "end": 418.3,
+      "text": "and this"
+    },
+    {
+      "start": 418.3,
+      "end": 418.56,
+      "text": "I told you"
+    },
+    {
+      "start": 418.56,
+      "end": 420.42,
+      "text": "this is a big thing"
+    },
+    {
+      "start": 420.42,
+      "end": 421.88,
+      "text": "I am not writing"
+    },
+    {
+      "start": 421.88,
+      "end": 422.52,
+      "text": "hello word"
+    },
+    {
+      "start": 422.52,
+      "end": 423.68,
+      "text": "I will"
+    },
+    {
+      "start": 423.68,
+      "end": 423.82,
+      "text": "say"
+    },
+    {
+      "start": 423.82,
+      "end": 425.34,
+      "text": "I will"
+    },
+    {
+      "start": 425.34,
+      "end": 425.52,
+      "text": "press control"
+    },
+    {
+      "start": 425.52,
+      "end": 426.32,
+      "text": "forward slash"
+    },
+    {
+      "start": 426.32,
+      "end": 428.08,
+      "text": "and now I can"
+    },
+    {
+      "start": 428.08,
+      "end": 428.76,
+      "text": "delete this code"
+    },
+    {
+      "start": 428.76,
+      "end": 431.06,
+      "text": "I will"
+    },
+    {
+      "start": 431.06,
+      "end": 431.06,
+      "text": ""
+    },
+    {
+      "start": 431.74,
+      "end": 433.14,
+      "text": "what is going on"
+    },
+    {
+      "start": 433.14,
+      "end": 433.36,
+      "text": "I will"
+    },
+    {
+      "start": 433.36,
+      "end": 433.98,
+      "text": "write"
+    },
+    {
+      "start": 433.98,
+      "end": 434.86,
+      "text": "this is a big thing"
+    },
+    {
+      "start": 434.86,
+      "end": 435.88,
+      "text": "so I can"
+    },
+    {
+      "start": 435.88,
+      "end": 436.98,
+      "text": "do this again"
+    },
+    {
+      "start": 438.1,
+      "end": 438.74,
+      "text": "and this is a"
+    },
+    {
+      "start": 438.74,
+      "end": 438.88,
+      "text": "hello word"
+    },
+    {
+      "start": 438.88,
+      "end": 439.8,
+      "text": "okay"
+    },
+    {
+      "start": 439.8,
+      "end": 441.06,
+      "text": "so this can be done"
+    },
+    {
+      "start": 441.98,
+      "end": 442.56,
+      "text": "hello word"
+    },
+    {
+      "start": 442.56,
+      "end": 442.9,
+      "text": "comment"
+    },
+    {
+      "start": 442.9,
+      "end": 443.98,
+      "text": "okay"
+    },
+    {
+      "start": 443.98,
+      "end": 445.34,
+      "text": "I have written"
+    },
+    {
+      "start": 445.34,
+      "end": 445.8,
+      "text": "that you have"
+    },
+    {
+      "start": 445.8,
+      "end": 446.32,
+      "text": "given an example"
+    },
+    {
+      "start": 446.32,
+      "end": 447.22,
+      "text": "you need to write a code"
+    },
+    {
+      "start": 447.22,
+      "end": 448.42,
+      "text": "copy"
+    },
+    {
+      "start": 448.42,
+      "end": 449.78,
+      "text": "paste it"
+    },
+    {
+      "start": 449.78,
+      "end": 451.3,
+      "text": "and run it"
+    },
+    {
+      "start": 451.3,
+      "end": 451.92,
+      "text": "okay"
+    },
+    {
+      "start": 451.92,
+      "end": 453.24,
+      "text": "as you will do"
+    },
+    {
+      "start": 453.24,
+      "end": 454.1,
+      "text": "you see"
+    },
+    {
+      "start": 454.1,
+      "end": 455.66,
+      "text": "you see"
+    },
+    {
+      "start": 455.66,
+      "end": 456.36,
+      "text": "this is a single"
+    },
+    {
+      "start": 456.36,
+      "end": 456.86,
+      "text": "line comment"
+    },
+    {
+      "start": 456.86,
+      "end": 457.32,
+      "text": "you will not get"
+    },
+    {
+      "start": 457.32,
+      "end": 458.18,
+      "text": "you will get"
+    },
+    {
+      "start": 458.18,
+      "end": 459.22,
+      "text": "a print statement"
+    },
+    {
+      "start": 459.22,
+      "end": 460.8,
+      "text": "I have given an example"
+    },
+    {
+      "start": 460.8,
+      "end": 463.06,
+      "text": "you can write a line"
+    },
+    {
+      "start": 463.06,
+      "end": 463.88,
+      "text": "after a line comment"
+    },
+    {
+      "start": 463.88,
+      "end": 465.62,
+      "text": "you can write it"
+    },
+    {
+      "start": 465.62,
+      "end": 467.56,
+      "text": "if you have written something"
+    },
+    {
+      "start": 467.56,
+      "end": 468.36,
+      "text": "I am doing it"
+    },
+    {
+      "start": 468.36,
+      "end": 469.16,
+      "text": "I will do it"
+    },
+    {
+      "start": 469.16,
+      "end": 471.94,
+      "text": "like this"
+    },
+    {
+      "start": 471.94,
+      "end": 472.42,
+      "text": "you see"
+    },
+    {
+      "start": 472.42,
+      "end": 473.32,
+      "text": "I have written a print"
+    },
+    {
+      "start": 473.32,
+      "end": 475.08,
+      "text": "and what can I do"
+    },
+    {
+      "start": 475.08,
+      "end": 475.7,
+      "text": "actually"
+    },
+    {
+      "start": 475.7,
+      "end": 476.26,
+      "text": "I have given this"
+    },
+    {
+      "start": 476.26,
+      "end": 478.32,
+      "text": "I should have written a book"
+    },
+    {
+      "start": 478.32,
+      "end": 479.26,
+      "text": "now look"
+    },
+    {
+      "start": 479.26,
+      "end": 481.2,
+      "text": "as I write a print"
+    },
+    {
+      "start": 481.2,
+      "end": 482.98,
+      "text": "and then I write a hello word"
+    },
+    {
+      "start": 482.98,
+      "end": 483.88,
+      "text": "and then"
+    },
+    {
+      "start": 483.88,
+      "end": 485.28,
+      "text": "I write something"
+    },
+    {
+      "start": 485.28,
+      "end": 485.96,
+      "text": "in the comment"
+    },
+    {
+      "start": 485.96,
+      "end": 486.34,
+      "text": "I want"
+    },
+    {
+      "start": 486.34,
+      "end": 487.64,
+      "text": "you can write it"
+    },
+    {
+      "start": 487.64,
+      "end": 487.94,
+      "text": "okay"
+    },
+    {
+      "start": 487.94,
+      "end": 488.7,
+      "text": "and then"
+    },
+    {
+      "start": 488.7,
+      "end": 489.26,
+      "text": "my code"
+    },
+    {
+      "start": 489.26,
+      "end": 490.18,
+      "text": "is executed"
+    },
+    {
+      "start": 490.18,
+      "end": 492.54,
+      "text": "as I will do it"
+    },
+    {
+      "start": 492.54,
+      "end": 492.58,
+      "text": "as I will do it"
+    },
+    {
+      "start": 492.58,
+      "end": 492.58,
+      "text": ""
+    },
+    {
+      "start": 492.58,
+      "end": 493.84,
+      "text": "I have written a book"
+    },
+    {
+      "start": 493.84,
+      "end": 495.52,
+      "text": "as I will do it"
+    },
+    {
+      "start": 495.52,
+      "end": 497.02,
+      "text": "I will ignore it"
+    },
+    {
+      "start": 497.02,
+      "end": 498.62,
+      "text": "so I will do it"
+    },
+    {
+      "start": 498.62,
+      "end": 498.74,
+      "text": "print"
+    },
+    {
+      "start": 498.74,
+      "end": 499.16,
+      "text": "printing"
+    },
+    {
+      "start": 499.16,
+      "end": 499.82,
+      "text": "what will be written"
+    },
+    {
+      "start": 499.82,
+      "end": 503.06,
+      "text": "what will be written"
+    },
+    {
+      "start": 503.06,
+      "end": 503.06,
+      "text": ""
+    },
+    {
+      "start": 503.94,
+      "end": 505.1,
+      "text": "you know"
+    },
+    {
+      "start": 505.94,
+      "end": 506.56,
+      "text": "what will be written"
+    },
+    {
+      "start": 506.56,
+      "end": 508.92,
+      "text": "what will be said"
+    },
+    {
+      "start": 508.92,
+      "end": 509.28,
+      "text": "print"
+    },
+    {
+      "start": 509.28,
+      "end": 510.66,
+      "text": "what will be said"
+    },
+    {
+      "start": 510.66,
+      "end": 510.66,
+      "text": ""
+    },
+    {
+      "start": 510.66,
+      "end": 511.96,
+      "text": "it is okay"
+    },
+    {
+      "start": 512.94,
+      "end": 513.42,
+      "text": "but"
+    },
+    {
+      "start": 513.94,
+      "end": 514.8,
+      "text": "you will write"
+    },
+    {
+      "start": 514.8,
+      "end": 514.8,
+      "text": ""
+    },
+    {
+      "start": 514.8,
+      "end": 515.74,
+      "text": "what will be said"
+    },
+    {
+      "start": 515.74,
+      "end": 516.4,
+      "text": "that you have written"
+    },
+    {
+      "start": 516.4,
+      "end": 516.98,
+      "text": "like this"
+    },
+    {
+      "start": 516.98,
+      "end": 518.2,
+      "text": "and then"
+    },
+    {
+      "start": 518.74,
+      "end": 520.22,
+      "text": "you can see"
+    },
+    {
+      "start": 520.22,
+      "end": 521.9,
+      "text": "I will write"
+    },
+    {
+      "start": 521.9,
+      "end": 522.9,
+      "text": "a pound"
+    },
+    {
+      "start": 522.9,
+      "end": 523.42,
+      "text": "like this"
+    },
+    {
+      "start": 524.26,
+      "end": 525.4,
+      "text": "and then"
+    },
+    {
+      "start": 525.4,
+      "end": 526.1,
+      "text": "I will do it"
+    },
+    {
+      "start": 526.1,
+      "end": 526.36,
+      "text": "so"
+    },
+    {
+      "start": 526.36,
+      "end": 527.38,
+      "text": "you can see"
+    },
+    {
+      "start": 527.38,
+      "end": 528.42,
+      "text": "it is"
+    },
+    {
+      "start": 528.42,
+      "end": 528.6,
+      "text": "fine"
+    },
+    {
+      "start": 528.6,
+      "end": 529.78,
+      "text": "now look"
+    },
+    {
+      "start": 529.78,
+      "end": 530.72,
+      "text": "what can I do"
+    },
+    {
+      "start": 530.72,
+      "end": 532.04,
+      "text": "I will tell you"
+    },
+    {
+      "start": 532.04,
+      "end": 532.54,
+      "text": "the code comment"
+    },
+    {
+      "start": 532.54,
+      "end": 534.1,
+      "text": "I already told you"
+    },
+    {
+      "start": 534.1,
+      "end": 534.64,
+      "text": "but one more thing"
+    },
+    {
+      "start": 534.64,
+      "end": 536.16,
+      "text": "you want to tell"
+    },
+    {
+      "start": 536.16,
+      "end": 538.24,
+      "text": "how will you write"
+    },
+    {
+      "start": 538.24,
+      "end": 538.24,
+      "text": ""
+    },
+    {
+      "start": 538.24,
+      "end": 538.86,
+      "text": "now I will tell you"
+    },
+    {
+      "start": 538.86,
+      "end": 539.74,
+      "text": "the story of multi-line comments"
+    },
+    {
+      "start": 540.74,
+      "end": 541.6,
+      "text": "I have told you"
+    },
+    {
+      "start": 541.6,
+      "end": 542.62,
+      "text": "that"
+    },
+    {
+      "start": 542.62,
+      "end": 545.46,
+      "text": "I will take this example"
+    },
+    {
+      "start": 545.46,
+      "end": 546.62,
+      "text": "I will comment this one"
+    },
+    {
+      "start": 546.62,
+      "end": 548.2,
+      "text": "I know that you have told me"
+    },
+    {
+      "start": 548.2,
+      "end": 548.32,
+      "text": "to comment"
+    },
+    {
+      "start": 548.32,
+      "end": 548.9,
+      "text": "three lines"
+    },
+    {
+      "start": 548.9,
+      "end": 550.96,
+      "text": "I have two lines"
+    },
+    {
+      "start": 550.96,
+      "end": 553.16,
+      "text": "because I am living in modern world"
+    },
+    {
+      "start": 553.16,
+      "end": 555.08,
+      "text": "I have IDE"
+    },
+    {
+      "start": 555.08,
+      "end": 556.24,
+      "text": "I have a template"
+    },
+    {
+      "start": 556.24,
+      "end": 557.72,
+      "text": "I have modern IDE"
+    },
+    {
+      "start": 557.72,
+      "end": 558.7,
+      "text": "so I will select"
+    },
+    {
+      "start": 558.7,
+      "end": 559.56,
+      "text": "and then"
+    },
+    {
+      "start": 559.56,
+      "end": 560.16,
+      "text": "I will select the control forward"
+    },
+    {
+      "start": 560.16,
+      "end": 561.32,
+      "text": "I will select this shortcut"
+    },
+    {
+      "start": 561.32,
+      "end": 562.2,
+      "text": "and then"
+    },
+    {
+      "start": 562.2,
+      "end": 562.2,
+      "text": ""
+    },
+    {
+      "start": 562.2,
+      "end": 562.22,
+      "text": "then"
+    },
+    {
+      "start": 562.22,
+      "end": 562.3,
+      "text": "then"
+    },
+    {
+      "start": 562.3,
+      "end": 562.88,
+      "text": "then"
+    },
+    {
+      "start": 562.88,
+      "end": 562.9,
+      "text": "then"
+    },
+    {
+      "start": 562.9,
+      "end": 562.94,
+      "text": "then"
+    },
+    {
+      "start": 562.94,
+      "end": 562.94,
+      "text": ""
+    },
+    {
+      "start": 562.94,
+      "end": 563.1,
+      "text": "then"
+    },
+    {
+      "start": 563.1,
+      "end": 563.7,
+      "text": "then"
+    },
+    {
+      "start": 563.7,
+      "end": 564.56,
+      "text": "then"
+    },
+    {
+      "start": 564.56,
+      "end": 564.56,
+      "text": ""
+    },
+    {
+      "start": 564.56,
+      "end": 565.22,
+      "text": "and you"
+    },
+    {
+      "start": 565.22,
+      "end": 565.22,
+      "text": ""
+    },
+    {
+      "start": 567.54,
+      "end": 570.06,
+      "text": "let me know"
+    },
+    {
+      "start": 572.04,
+      "end": 572.04,
+      "text": ""
+    },
+    {
+      "start": 574.08,
+      "end": 575.16,
+      "text": "and you"
+    },
+    {
+      "start": 575.16,
+      "end": 575.16,
+      "text": ""
+    },
+    {
+      "start": 575.16,
+      "end": 575.46,
+      "text": "or"
+    },
+    {
+      "start": 575.46,
+      "end": 575.76,
+      "text": "on"
+    },
+    {
+      "start": 575.76,
+      "end": 575.82,
+      "text": "text"
+    },
+    {
+      "start": 575.82,
+      "end": 576.32,
+      "text": "you"
+    },
+    {
+      "start": 576.32,
+      "end": 576.9,
+      "text": "to"
+    },
+    {
+      "start": 576.9,
+      "end": 577.2,
+      "text": "alright"
+    },
+    {
+      "start": 577.2,
+      "end": 577.22,
+      "text": "and"
+    },
+    {
+      "start": 577.22,
+      "end": 578.28,
+      "text": "and"
+    },
+    {
+      "start": 579.7,
+      "end": 580.08,
+      "text": "then"
+    },
+    {
+      "start": 580.08,
+      "end": 580.58,
+      "text": "you"
+    },
+    {
+      "start": 592.44,
+      "end": 593.64,
+      "text": "want to"
+    },
+    {
+      "start": 593.64,
+      "end": 593.64,
+      "text": ""
+    },
+    {
+      "start": 593.64,
+      "end": 593.68,
+      "text": "skip"
+    },
+    {
+      "start": 593.68,
+      "end": 593.68,
+      "text": ""
+    },
+    {
+      "start": 593.68,
+      "end": 593.68,
+      "text": ""
+    },
+    {
+      "start": 593.68,
+      "end": 593.68,
+      "text": ""
+    },
+    {
+      "start": 593.68,
+      "end": 593.68,
+      "text": ""
+    },
+    {
+      "start": 593.68,
+      "end": 593.68,
+      "text": ""
+    },
+    {
+      "start": 593.68,
+      "end": 593.68,
+      "text": ""
+    },
+    {
+      "start": 593.68,
+      "end": 593.68,
+      "text": ""
+    },
+    {
+      "start": 593.68,
+      "end": 593.68,
+      "text": ""
+    },
+    {
+      "start": 593.68,
+      "end": 593.68,
+      "text": ""
+    },
+    {
+      "start": 683.68,
+      "end": 685.44,
+      "text": "کوس رہوسرے کے سپینٹڈ میں میں"
+    },
+    {
+      "start": 685.44,
+      "end": 689.96,
+      "text": "Hey I am a good boy and this viewer is also a good boy slash girl"
+    },
+    {
+      "start": 689.96,
+      "end": 690.22,
+      "text": "Okay"
+    },
+    {
+      "start": 690.22,
+      "end": 692.58,
+      "text": "Now here you can see that I have written this tutorial"
+    },
+    {
+      "start": 693.4,
+      "end": 694.1,
+      "text": "I have written this in this"
+    },
+    {
+      "start": 694.1,
+      "end": 698.9,
+      "text": "I have written that to insert characters that cannot directly be used in a string"
+    },
+    {
+      "start": 698.9,
+      "end": 700.1,
+      "text": "we use escape sequence"
+    },
+    {
+      "start": 700.1,
+      "end": 701.6,
+      "text": "It is a character, so now talk about one thing"
+    },
+    {
+      "start": 701.6,
+      "end": 703.74,
+      "text": "that is one character which is directly stringed"
+    },
+    {
+      "start": 703.74,
+      "end": 704.84,
+      "text": "and not used in the use of the system"
+    },
+    {
+      "start": 704.84,
+      "end": 706.5,
+      "text": "we can use escape sequence characters"
+    },
+    {
+      "start": 706.5,
+      "end": 708.12,
+      "text": "For example"
+    },
+    {
+      "start": 708.12,
+      "end": 710.02,
+      "text": "if I enter the new line character"
+    },
+    {
+      "start": 710.02,
+      "end": 711.16,
+      "text": "literally it will come here"
+    },
+    {
+      "start": 711.16,
+      "end": 711.72,
+      "text": "and it will come here"
+    },
+    {
+      "start": 711.72,
+      "end": 714.1,
+      "text": "because it will not be possible to pass the pattern"
+    },
+    {
+      "start": 714.1,
+      "end": 715.98,
+      "text": "if you put the new line in the string"
+    },
+    {
+      "start": 715.98,
+      "end": 717.42,
+      "text": "literally it will not pass"
+    },
+    {
+      "start": 717.42,
+      "end": 719.48,
+      "text": "so we put the new line character"
+    },
+    {
+      "start": 720.22,
+      "end": 721.2,
+      "text": "Backslash plus n"
+    },
+    {
+      "start": 721.2,
+      "end": 722.96,
+      "text": "these two characters are looking at this"
+    },
+    {
+      "start": 722.96,
+      "end": 723.94,
+      "text": "but this is one character"
+    },
+    {
+      "start": 723.94,
+      "end": 726.34,
+      "text": "This is called escape sequence character"
+    },
+    {
+      "start": 726.34,
+      "end": 729.1,
+      "text": "Backslash n is a character which is the new line character"
+    },
+    {
+      "start": 729.1,
+      "end": 730.7,
+      "text": "This is a escape sequence character"
+    },
+    {
+      "start": 730.7,
+      "end": 732.44,
+      "text": "which you will also put in the string"
+    },
+    {
+      "start": 732.44,
+      "end": 734.62,
+      "text": "so now you will see the new line in the search"
+    },
+    {
+      "start": 735.16,
+      "end": 736.32,
+      "text": "If I run this"
+    },
+    {
+      "start": 736.32,
+      "end": 738.82,
+      "text": "then I am going to get this in a new line"
+    },
+    {
+      "start": 739.7,
+      "end": 740.98,
+      "text": "What about me"
+    },
+    {
+      "start": 741.82,
+      "end": 742.56,
+      "text": "I am a good boy"
+    },
+    {
+      "start": 742.56,
+      "end": 743.9,
+      "text": "I want to close the double code"
+    },
+    {
+      "start": 743.9,
+      "end": 745.46,
+      "text": "in a different way"
+    },
+    {
+      "start": 745.46,
+      "end": 746.68,
+      "text": "This is what you should do"
+    },
+    {
+      "start": 746.68,
+      "end": 747.64,
+      "text": "in this problem"
+    },
+    {
+      "start": 747.64,
+      "end": 749.12,
+      "text": "If you think like this"
+    },
+    {
+      "start": 749.12,
+      "end": 750.24,
+      "text": "and you think like this"
+    },
+    {
+      "start": 750.24,
+      "end": 751.18,
+      "text": "then you are looking at this red line"
+    },
+    {
+      "start": 751.18,
+      "end": 753.18,
+      "text": "The red line is given by the sun"
+    },
+    {
+      "start": 753.18,
+      "end": 753.54,
+      "text": "It is given by the sun"
+    },
+    {
+      "start": 753.54,
+      "end": 754.74,
+      "text": "It is given by the sun"
+    },
+    {
+      "start": 754.74,
+      "end": 756.36,
+      "text": "It is given by the sun"
+    },
+    {
+      "start": 756.36,
+      "end": 757.4,
+      "text": "It is given by the sun"
+    },
+    {
+      "start": 757.4,
+      "end": 758.96,
+      "text": "It is given by the sun"
+    },
+    {
+      "start": 758.96,
+      "end": 761.34,
+      "text": "If you want to run this"
+    },
+    {
+      "start": 761.34,
+      "end": 762.04,
+      "text": "then you will see"
+    },
+    {
+      "start": 762.04,
+      "end": 763.66,
+      "text": "this is the error"
+    },
+    {
+      "start": 763.66,
+      "end": 765.0,
+      "text": "You will get the invalid sentence"
+    },
+    {
+      "start": 765.0,
+      "end": 766.9,
+      "text": "What is the problem in this?"
+    },
+    {
+      "start": 766.9,
+      "end": 768.16,
+      "text": "What is the problem in this?"
+    },
+    {
+      "start": 768.16,
+      "end": 769.6,
+      "text": "When you start your print statement"
+    },
+    {
+      "start": 769.6,
+      "end": 772.32,
+      "text": "and start your string from the double code"
+    },
+    {
+      "start": 772.32,
+      "end": 774.02,
+      "text": "then the confusion is coming"
+    },
+    {
+      "start": 774.02,
+      "end": 775.68,
+      "text": "Here the string is starting"
+    },
+    {
+      "start": 775.68,
+      "end": 777.56,
+      "text": "Is the end of the string here?"
+    },
+    {
+      "start": 778.04,
+      "end": 780.18,
+      "text": "Now you will see that the end is not ending"
+    },
+    {
+      "start": 780.18,
+      "end": 781.18,
+      "text": "This is the end of the string"
+    },
+    {
+      "start": 781.18,
+      "end": 783.8,
+      "text": "But the Python interpreter is confused"
+    },
+    {
+      "start": 783.8,
+      "end": 784.48,
+      "text": "He says"
+    },
+    {
+      "start": 784.48,
+      "end": 786.0,
+      "text": "You have put the double code here"
+    },
+    {
+      "start": 786.0,
+      "end": 787.4,
+      "text": "You have put the Filser double code here"
+    },
+    {
+      "start": 787.4,
+      "end": 789.9,
+      "text": "This means the end of the string is ending here"
+    },
+    {
+      "start": 790.72,
+      "end": 791.8,
+      "text": "Then what is this?"
+    },
+    {
+      "start": 791.88,
+      "end": 792.64,
+      "text": "This is for the invalid sentence"
+    },
+    {
+      "start": 793.58,
+      "end": 795.74,
+      "text": "Because if the double code is written here"
+    },
+    {
+      "start": 796.48,
+      "end": 798.52,
+      "text": "then what is the good boy after this?"
+    },
+    {
+      "start": 798.52,
+      "end": 800.86,
+      "text": "You will see the error here"
+    },
+    {
+      "start": 800.86,
+      "end": 802.04,
+      "text": "So to save this"
+    },
+    {
+      "start": 802.04,
+      "end": 803.7,
+      "text": "We do not use the double code character"
+    },
+    {
+      "start": 804.74,
+      "end": 806.58,
+      "text": "We use the backslash double code"
+    },
+    {
+      "start": 806.58,
+      "end": 810.18,
+      "text": "which is a double code escape sequence character"
+    },
+    {
+      "start": 810.18,
+      "end": 811.64,
+      "text": "So this is a character"
+    },
+    {
+      "start": 811.64,
+      "end": 813.02,
+      "text": "This is a character"
+    },
+    {
+      "start": 813.02,
+      "end": 814.76,
+      "text": "Now I will do this"
+    },
+    {
+      "start": 814.76,
+      "end": 816.62,
+      "text": "So I will just double-code"
+    },
+    {
+      "start": 816.62,
+      "end": 818.28,
+      "text": "This is a good boy"
+    },
+    {
+      "start": 818.28,
+      "end": 819.72,
+      "text": "It is coming in the double code"
+    },
+    {
+      "start": 819.72,
+      "end": 821.18,
+      "text": "You can see the backslash here"
+    },
+    {
+      "start": 821.74,
+      "end": 823.5,
+      "text": "But I used the backslash"
+    },
+    {
+      "start": 823.5,
+      "end": 828.18,
+      "text": "Why did I use the backslash double code?"
+    },
+    {
+      "start": 828.28,
+      "end": 828.64,
+      "text": "Because I wanted to use the backslash double code"
+    },
+    {
+      "start": 828.64,
+      "end": 829.9,
+      "text": "Which is one character"
+    },
+    {
+      "start": 829.9,
+      "end": 830.9,
+      "text": "I used two times"
+    },
+    {
+      "start": 830.9,
+      "end": 832.04,
+      "text": "But this is the character"
+    },
+    {
+      "start": 832.04,
+      "end": 833.58,
+      "text": "The backslash double code"
+    },
+    {
+      "start": 833.58,
+      "end": 834.66,
+      "text": "Which is used in output"
+    },
+    {
+      "start": 834.66,
+      "end": 836.3,
+      "text": "It is a single double code"
+    },
+    {
+      "start": 836.3,
+      "end": 838.76,
+      "text": "It is a escape sequence character"
+    },
+    {
+      "start": 839.5,
+      "end": 840.84,
+      "text": "And escape sequence character"
+    },
+    {
+      "start": 840.84,
+      "end": 843.9,
+      "text": "is a backslash followed by the character you want to insert"
+    },
+    {
+      "start": 844.5,
+      "end": 845.9,
+      "text": "An example of a character"
+    },
+    {
+      "start": 845.9,
+      "end": 847.64,
+      "text": "That cannot be directly used in a string"
+    },
+    {
+      "start": 848.5,
+      "end": 850.44,
+      "text": "If you are in the print"
+    },
+    {
+      "start": 850.44,
+      "end": 851.8,
+      "text": "The string in the print"
+    },
+    {
+      "start": 851.8,
+      "end": 855.02,
+      "text": "It is made in a single code"
+    },
+    {
+      "start": 855.02,
+      "end": 856.54,
+      "text": "So you cannot use single code"
+    },
+    {
+      "start": 856.54,
+      "end": 857.82,
+      "text": "Now you guys"
+    },
+    {
+      "start": 858.44,
+      "end": 860.44,
+      "text": "We will read more details in the strings chapter"
+    },
+    {
+      "start": 860.44,
+      "end": 863.26,
+      "text": "But if I put the single code in the print"
+    },
+    {
+      "start": 863.26,
+      "end": 864.02,
+      "text": "I cannot put single code"
+    },
+    {
+      "start": 864.86,
+      "end": 866.52,
+      "text": "I have to put backslash single code"
+    },
+    {
+      "start": 866.52,
+      "end": 869.82,
+      "text": "Okay, I will put backslash single code"
+    },
+    {
+      "start": 870.44,
+      "end": 871.54,
+      "text": "So this is the single code"
+    },
+    {
+      "start": 871.54,
+      "end": 872.34,
+      "text": "And after this I am"
+    },
+    {
+      "start": 872.98,
+      "end": 874.28,
+      "text": "I put a single code"
+    },
+    {
+      "start": 874.28,
+      "end": 876.14,
+      "text": "Okay, so I can put single code in the strings"
+    },
+    {
+      "start": 876.86,
+      "end": 879.28,
+      "text": "So this is our escape sequence character"
+    },
+    {
+      "start": 879.28,
+      "end": 880.44,
+      "text": "I hope you guys understood"
+    },
+    {
+      "start": 881.28,
+      "end": 883.92,
+      "text": "Now I want to tell you about the print statement"
+    },
+    {
+      "start": 883.92,
+      "end": 886.96,
+      "text": "The first thing I want to tell you"
+    },
+    {
+      "start": 886.96,
+      "end": 890.94,
+      "text": "You can also give you multiple values"
+    },
+    {
+      "start": 890.94,
+      "end": 893.66,
+      "text": "You can give you this 6 and 7"
+    },
+    {
+      "start": 893.66,
+      "end": 894.46,
+      "text": "You can give you 3 values"
+    },
+    {
+      "start": 894.46,
+      "end": 896.48,
+      "text": "And I will give you 3 to see"
+    },
+    {
+      "start": 897.28,
+      "end": 898.74,
+      "text": "This 6 and 7"
+    },
+    {
+      "start": 898.74,
+      "end": 900.9,
+      "text": "You can see in your computer screen"
+    },
+    {
+      "start": 900.9,
+      "end": 902.5,
+      "text": "After this"
+    },
+    {
+      "start": 903.28,
+      "end": 904.68,
+      "text": "There is another parameter"
+    },
+    {
+      "start": 904.68,
+      "end": 905.52,
+      "text": "It is separate"
+    },
+    {
+      "start": 905.52,
+      "end": 907.16,
+      "text": "I can give you this as a Cp"
+    },
+    {
+      "start": 907.16,
+      "end": 909.58,
+      "text": "If you want to add this character"
+    },
+    {
+      "start": 909.58,
+      "end": 911.8,
+      "text": "And I will run this"
+    },
+    {
+      "start": 911.8,
+      "end": 912.76,
+      "text": "You guys will see"
+    },
+    {
+      "start": 912.76,
+      "end": 913.58,
+      "text": "When I will add this as a Cp"
+    },
+    {
+      "start": 913.58,
+      "end": 917.06,
+      "text": "This will be separated from the tilde character"
+    },
+    {
+      "start": 917.06,
+      "end": 918.88,
+      "text": "As you can see here"
+    },
+    {
+      "start": 918.88,
+      "end": 920.22,
+      "text": "After this, it is tilde"
+    },
+    {
+      "start": 920.22,
+      "end": 921.74,
+      "text": "And then it is tilde"
+    },
+    {
+      "start": 921.74,
+      "end": 923.36,
+      "text": "You also want to join"
+    },
+    {
+      "start": 923.36,
+      "end": 926.66,
+      "text": "You can do this as a given separator"
+    },
+    {
+      "start": 926.66,
+      "end": 928.8,
+      "text": "As I have done"
+    },
+    {
+      "start": 928.8,
+      "end": 930.72,
+      "text": "You can do this"
+    },
+    {
+      "start": 930.72,
+      "end": 932.64,
+      "text": "And then another parameter"
+    },
+    {
+      "start": 933.16,
+      "end": 935.16,
+      "text": "And is equal to"
+    },
+    {
+      "start": 935.16,
+      "end": 936.58,
+      "text": "And is equal to the place"
+    },
+    {
+      "start": 936.58,
+      "end": 938.46,
+      "text": "I write 009"
+    },
+    {
+      "start": 938.46,
+      "end": 939.74,
+      "text": "What does it mean?"
+    },
+    {
+      "start": 940.18,
+      "end": 942.78,
+      "text": "It means that if I write a next print statement"
+    },
+    {
+      "start": 944.06,
+      "end": 945.9,
+      "text": "And I write a print Harry"
+    },
+    {
+      "start": 945.9,
+      "end": 947.78,
+      "text": "And I run it"
+    },
+    {
+      "start": 947.78,
+      "end": 950.74,
+      "text": "You can see that it is 6 and 7"
+    },
+    {
+      "start": 950.74,
+      "end": 953.38,
+      "text": "And then the next print statement"
+    },
+    {
+      "start": 953.38,
+      "end": 954.94,
+      "text": "It will be 009"
+    },
+    {
+      "start": 954.94,
+      "end": 956.54,
+      "text": "Ideally we write a"
+    },
+    {
+      "start": 956.54,
+      "end": 957.84,
+      "text": "And is equal to"
+    },
+    {
+      "start": 957.84,
+      "end": 959.28,
+      "text": "We write 009 backslash"
+    },
+    {
+      "start": 959.28,
+      "end": 962.26,
+      "text": "We put backslash in it"
+    },
+    {
+      "start": 962.26,
+      "end": 963.0,
+      "text": "And is equal to"
+    },
+    {
+      "start": 963.0,
+      "end": 965.56,
+      "text": "By default backslash"
+    },
+    {
+      "start": 965.56,
+      "end": 966.48,
+      "text": "And is equal to"
+    },
+    {
+      "start": 966.48,
+      "end": 969.04,
+      "text": "And is equal to"
+    },
+    {
+      "start": 969.04,
+      "end": 972.5,
+      "text": "Now I have added 009 backslash"
+    },
+    {
+      "start": 972.5,
+      "end": 974.54,
+      "text": "And whenever I run the next print statement"
+    },
+    {
+      "start": 974.54,
+      "end": 976.36,
+      "text": "Then 009 backslash"
+    },
+    {
+      "start": 976.36,
+      "end": 976.76,
+      "text": "And will be printed"
+    },
+    {
+      "start": 976.76,
+      "end": 979.02,
+      "text": "In this print statement"
+    },
+    {
+      "start": 979.02,
+      "end": 981.08,
+      "text": "What difference does it have?"
+    },
+    {
+      "start": 981.66,
+      "end": 982.32,
+      "text": "It means"
+    },
+    {
+      "start": 983.52,
+      "end": 985.72,
+      "text": "You have given multiple values"
+    },
+    {
+      "start": 986.26,
+      "end": 987.72,
+      "text": "And will separate"
+    },
+    {
+      "start": 988.26,
+      "end": 989.76,
+      "text": "The default separator"
+    },
+    {
+      "start": 990.96,
+      "end": 991.72,
+      "text": "And will be"
+    },
+    {
+      "start": 991.72,
+      "end": 991.72,
+      "text": ""
+    },
+    {
+      "start": 991.72,
+      "end": 993.38,
+      "text": "And then the default separator"
+    },
+    {
+      "start": 993.38,
+      "end": 995.06,
+      "text": "And then the end"
+    },
+    {
+      "start": 995.06,
+      "end": 998.62,
+      "text": "And when this print statement"
+    },
+    {
+      "start": 998.62,
+      "end": 999.14,
+      "text": "Will be printed"
+    },
+    {
+      "start": 999.14,
+      "end": 1001.98,
+      "text": "And will be printed"
+    },
+    {
+      "start": 1001.98,
+      "end": 1003.32,
+      "text": "By default"
+    },
+    {
+      "start": 1003.32,
+      "end": 1007.36,
+      "text": "If you want to override"
+    },
+    {
+      "start": 1007.36,
+      "end": 1010.16,
+      "text": "And go to the new line"
+    },
+    {
+      "start": 1010.16,
+      "end": 1011.2,
+      "text": "And you can see"
+    },
+    {
+      "start": 1011.2,
+      "end": 1012.46,
+      "text": "That I have run this print statement"
+    },
+    {
+      "start": 1012.46,
+      "end": 1014.54,
+      "text": "And then the new line automatically"
+    },
+    {
+      "start": 1014.54,
+      "end": 1017.42,
+      "text": "And then the new line automatically"
+    },
+    {
+      "start": 1017.42,
+      "end": 1019.98,
+      "text": "Now print is taken"
+    },
+    {
+      "start": 1019.98,
+      "end": 1022.8,
+      "text": "Because the end is equal to 009 backslash"
+    },
+    {
+      "start": 1022.8,
+      "end": 1027.7,
+      "text": "Because this Sacrifice is then çıkar"
+    },
+    {
+      "start": 1027.7,
+      "end": 1031.42,
+      "text": "That you have given multiple values"
+    },
+    {
+      "start": 1031.42,
+      "end": 1033.06,
+      "text": "So what is different in its"
+    },
+    {
+      "start": 1033.06,
+      "end": 1036.04,
+      "text": "So again angemido"
+    },
+    {
+      "start": 1036.04,
+      "end": 1038.62,
+      "text": "In my experience"
+    },
+    {
+      "start": 1038.62,
+      "end": 1038.88,
+      "text": "In the demo"
+    },
+    {
+      "start": 1038.88,
+      "end": 1039.88,
+      "text": "I have put this me"
+    },
+    {
+      "start": 1039.88,
+      "end": 1043.06,
+      "text": "لیکن میں نے اس لے لیکھا کہ میں چاہتا کہ آپ لو کو ایباں مالوں ہوگی آپ لوگ"
+    },
+    {
+      "start": 1043.06,
+      "end": 1046.46,
+      "text": "Print Strait Print سے File Pb write کر سکتے ہیں آبجگٹ میں the Write Method"
+    },
+    {
+      "start": 1047.3,
+      "end": 1050.54,
+      "text": "defaultess is not SDD ڈیانی کی SDD ڈیانی کی SDD ڈیانی کی ایوڈ پر write کرے گے"
+    },
+    {
+      "start": 1050.54,
+      "end": 1053.04,
+      "text": "آپ لوگ جاہاں بھی رن کر رہاں کنسول پیگہ آپ کو دیکھاگہ"
+    },
+    {
+      "start": 1053.04,
+      "end": 1057.16,
+      "text": "یہ چاہتے ہیں ارگیم انڈیہ بارے میں بارے میں بعد میں بات کریں گے اس پیمہ"
+    },
+    {
+      "start": 1087.16,
+      "end": 1090.22,
+      "text": "آپ لوگوں کو اگر آپ لوگوں کو نیہ بھی تکھا کہ کوڑ access نہیں کیا تو کر لے"
+    },
+    {
+      "start": 1090.22,
+      "end": 1092.66,
+      "text": "نہ playlist ڈیانی کیا تو پیلے سب لگ بگمان ضرور کر لے نہ جیو"
+    },
+    {
+      "start": 1092.66,
+      "end": 1096.52,
+      "text": "playlist میں سانے ویڈیو ساعدوں نے والے آپ لوگ کلک کرنا اوپر یہاں"
+    },
+    {
+      "start": 1096.52,
+      "end": 1101.02,
+      "text": "کلک کرکے playlist کو بگمان کر لے نہ اور یہاں کلک کرکے اس کو سیب کر لے"
+    },
+    {
+      "start": 1101.02,
+      "end": 1105.02,
+      "text": "نہ بھی گلے سوڑے میں اتنے گایس Thank you so much guys for watching this video"
+    },
+    {
+      "start": 1105.02,
+      "end": 1108.24,
+      "text": "and I will see you next time"
+    }
+  ]
+}

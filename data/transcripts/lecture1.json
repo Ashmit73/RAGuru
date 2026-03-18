@@ -1,0 +1,1371 @@
+{
+  "file": "lecture1.mp3",
+  "text": " Welcome to 100 Days of Code Guys, 100 Days of Code, we are going to learn Python programming from 0 to job ready. And if you have given 100 days, dedicated 100 days, then I will tell you in the bite size lesson. Python programming, we will take it as a 0-zero advance. Starting, you will feel that it is so easy, you will play children's Python and after that, you will get videos like this and we will go to day 100. We will raise the bar like anything, we will do in complex projects. We will do in industry, we will do in use of things in use of the industry. So, it will be a lot of excitement. Python is a dynamically typed object-oriented programming language, which was made in 1991 by Gweedo 1. Gweedo 1 was made in 1991 by Monty Python, the name of the circus was shown in the show, when he was working on this language, and he thought that he would give Python in his name. And then, his name was Python. In this course, we will practice a lot with the theory of theory, many exercises and quizzes, and you will be able to do a lot of challenges in the future. So, I will practice in my computer battle, and you will be able to practice Python's virtue and the number of words. So, now, please like this video and subscribe to the notifications so that you can miss any day. And you will get notifications every day, because the food in YouTube is very easy. So, you will get 100 days of code challenge and you will get 100 days of code challenge in the comment section. I accept 100 days of code challenge. Let's get started. So, I have already come here in Google Chrome browser. And I will tell you how to install Python from Download and Install. So, as soon as you get Python, you will get Python.org. And here, you will get the latest downloadable Python platform, which you will get, as you can see, I am in Mac OS. So, for Mac OS, Python 3.11 is available. So, I will download it, and you will get the downloadable, you can use your own ID, VS code or any other downloadable, to use it in your computer. But I will use the Rapplet app. And you can use the Rapplet app. This is a collaborative browser based ID. I am using it, because I feel it is very easy to use it. And with that, for me, you will get the code challenge. So, I will sign in from Google account. And then, I will redirect on the screen, so, as you can see, all my Rapplets are here. You can write a code in the app. If you are not a computer fast, then you are able to see it. Compute wise, that is, your computer is very lack. So, you need a browser tap. And you will be able to follow me. And, because I will use the Rapplet app. You will be easy to follow me. So, here I will go on my Rapplets. I have already made some Rapplets. And I will scroll down and go to the Python 0 to JobReady folder. And this is not my day 1 Rapplet app. So, here you can see, that in my video, you will get the floating paint here. And, here we will keep our content and the code. So, the console, I will keep it here. And, with that, you will see the code. I will close it. I will write the code here. And, here the output of this code. So, I will make a new file from now on. So, I will click here. And, I will open the main.py. And, I want to open it here. So, you guys, you guys, you have to use it as much as possible. Here is the tutorial. Here we will take the code. Here is the output. And, here is the video, which you can watch. Now, here I have put a demo video. You guys will see the video of our day. If you guys think that I have done this, then I will give you a link in the description. You guys will know how to do this. There is no teacher in this case. So, now, Python talks quickly. But, first of all, I want to talk about programming. So, as you can see, programming is a way for us to tell computers what to do. And, we do programming. If you have a calculator in your house, then the calculator is programmed. And, in the truth, we can tell you how much 5 plus 9 is. Now, 5 plus 9 is 14. I know that. So, I am using a calculator. But, how about 2, 3, 4, 5, 3, 4, 5, 3, 4, 5, 6, 4, 5, 6? You guys can calculate it. But, you can't do it. You can do it as much as you can. So, in this way, we have a very important communication with a computer. And, for this, we use programming. In this way, you talk to Hindi. You guys talk to your friends in English, Spanish, or any other language. We talk to the computer to use programming languages. Python, C, C plus plus, Java. And, in many other languages, in the market. But, this is the course. Python is dedicated to us. And, that is why Python is also easy. Python is my easiest to learn programming languages. Because, when you learn Python, and then you start doing things, then, it is fun on a different level. Python is dynamically typed. Journal purpose programming languages, which support object oriented paradigm. And, the functional approach also supports. But, you guys don't know what they are. So, in this course, we are going to learn. Now, the interpreter is the high level programming language. And, in the video 1, we started working on the 1989. Many people asked, when Python developed Python. It was not a single day, but, in 1989, the period of years, quite a one-door sound. It was created. So, in 1991, you also got to see it. In 1992, you also got to see it. In 1989, you also got to see it. But, it is true that, in 1989, it was created as the period of years. What are the features of Python? First of all, I will tell you. The simplest, the simplest programming language. I think Python is the biggest feature of all of this. And, you can do anything with it. Platform is independent. Okay, it is a platform independent. And, it means that, if you wrote in Windows, you can also go to Linux. And, if you wrote in Mac, you can also go to Windows. You can also go to KCV platform. I am writing in my browser. I don't mean to write in Mac. Because, I am using the AppLate platform. But, if I write in Mac, even in Mac, you can run the code. You can run the code. You can run the code easily. For your own purpose, I have a great language program. You don't have to pay the money to use it. Which is amazing. And, Python provides very big library support. All these people use this easy language. Because of which, what is the cost? All these people are working on a project. And, all the people's project, their request was written, their code was written, maybe someone has made something in a year and you can use it for a minute. It is a huge thing. I will talk about the learning point of view. I will talk about the error point of view. Maybe, the error you are using today, someone has already been given the time. And, he has taken out his tone. And, he has put it on the stack. You will be very easy for people. You will be very easy for people. That is the solution of the problem. Python provides a very big library which is supported. And, after that, the programming language is to integrate it. It can be linked to the language. After that, I have written some applications that you can do in database. You can do data science, you can do machine learning, you can do web applications, you can do data based, you can do a lot of serious, complex applications. And, you can do a lot of complex, you can do a lot of complex applications. You can do a lot of complex applications. And, I am using the app. Because, the code is very easy to share. You can also install Python in local. It is very easy. Simply, you can do it. Why not on any platform? You can install it. It is a game. And, if you are in Mac, you can see the simple installation in your computer screen. But, in Windows, you can install Python. If you are installing a computer, you are installing that you will have a path variable at Python 3. The option to path is to path which is the option to path. You will not have to check it. Or, you will have to check it. And, you will have to check it. Or, you will have to check it. If I open my terminal, when I have any view of Windows, I will write a Python. And, you can see that Python is not found. This problem is to solve. If you are in Linux, or in Mac, then Python will write. diferenRity 20%, 5 bug market. D.A.T. Pri. quedceی Dée Détú",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.94,
+      "text": "Welcome to 100 Days of Code Guys,"
+    },
+    {
+      "start": 2.12,
+      "end": 2.86,
+      "text": "100 Days of Code,"
+    },
+    {
+      "start": 3.04,
+      "end": 5.92,
+      "text": "we are going to learn Python programming from 0 to job ready."
+    },
+    {
+      "start": 6.78,
+      "end": 8.28,
+      "text": "And if you have given 100 days,"
+    },
+    {
+      "start": 8.86,
+      "end": 10.16,
+      "text": "dedicated 100 days,"
+    },
+    {
+      "start": 10.42,
+      "end": 12.1,
+      "text": "then I will tell you in the bite size lesson."
+    },
+    {
+      "start": 12.84,
+      "end": 13.88,
+      "text": "Python programming,"
+    },
+    {
+      "start": 14.04,
+      "end": 16.14,
+      "text": "we will take it as a 0-zero advance."
+    },
+    {
+      "start": 17.02,
+      "end": 19.44,
+      "text": "Starting, you will feel that it is so easy,"
+    },
+    {
+      "start": 19.74,
+      "end": 22.06,
+      "text": "you will play children's Python and after that,"
+    },
+    {
+      "start": 22.62,
+      "end": 24.38,
+      "text": "you will get videos like this and we will go to day 100."
+    },
+    {
+      "start": 24.76,
+      "end": 26.68,
+      "text": "We will raise the bar like anything,"
+    },
+    {
+      "start": 26.86,
+      "end": 27.88,
+      "text": "we will do in complex projects."
+    },
+    {
+      "start": 28.42,
+      "end": 29.82,
+      "text": "We will do in industry,"
+    },
+    {
+      "start": 30.08,
+      "end": 31.52,
+      "text": "we will do in use of things in use of the industry."
+    },
+    {
+      "start": 31.72,
+      "end": 33.2,
+      "text": "So, it will be a lot of excitement."
+    },
+    {
+      "start": 34.14,
+      "end": 37.0,
+      "text": "Python is a dynamically typed object-oriented programming language,"
+    },
+    {
+      "start": 37.24,
+      "end": 40.1,
+      "text": "which was made in 1991 by Gweedo 1."
+    },
+    {
+      "start": 40.1,
+      "end": 41.6,
+      "text": "Gweedo 1 was made in 1991 by Monty Python,"
+    },
+    {
+      "start": 41.78,
+      "end": 42.74,
+      "text": "the name of the circus was shown in the show,"
+    },
+    {
+      "start": 42.98,
+      "end": 44.48,
+      "text": "when he was working on this language,"
+    },
+    {
+      "start": 45.3,
+      "end": 47.46,
+      "text": "and he thought that he would give Python in his name."
+    },
+    {
+      "start": 47.48,
+      "end": 49.12,
+      "text": "And then, his name was Python."
+    },
+    {
+      "start": 49.66,
+      "end": 52.68,
+      "text": "In this course, we will practice a lot with the theory of theory,"
+    },
+    {
+      "start": 52.68,
+      "end": 54.58,
+      "text": "many exercises and quizzes,"
+    },
+    {
+      "start": 54.88,
+      "end": 57.3,
+      "text": "and you will be able to do a lot of challenges"
+    },
+    {
+      "start": 57.3,
+      "end": 57.96,
+      "text": "in the future."
+    },
+    {
+      "start": 58.18,
+      "end": 59.74,
+      "text": "So, I will practice in my computer battle,"
+    },
+    {
+      "start": 60.34,
+      "end": 62.16,
+      "text": "and you will be able to practice Python's"
+    },
+    {
+      "start": 62.16,
+      "end": 63.94,
+      "text": "virtue and the number of words."
+    },
+    {
+      "start": 64.62,
+      "end": 67.24,
+      "text": "So, now, please like this video and subscribe"
+    },
+    {
+      "start": 67.24,
+      "end": 69.56,
+      "text": "to the notifications so that you can miss any day."
+    },
+    {
+      "start": 70.76,
+      "end": 72.28,
+      "text": "And you will get notifications every day,"
+    },
+    {
+      "start": 72.28,
+      "end": 75.0,
+      "text": "because the food in YouTube is very easy."
+    },
+    {
+      "start": 75.34,
+      "end": 76.64,
+      "text": "So, you will get 100 days of code challenge"
+    },
+    {
+      "start": 76.64,
+      "end": 78.9,
+      "text": "and you will get 100 days of code challenge"
+    },
+    {
+      "start": 78.9,
+      "end": 79.78,
+      "text": "in the comment section."
+    },
+    {
+      "start": 79.94,
+      "end": 82.1,
+      "text": "I accept 100 days of code challenge."
+    },
+    {
+      "start": 82.44,
+      "end": 83.2,
+      "text": "Let's get started."
+    },
+    {
+      "start": 92.38,
+      "end": 94.66,
+      "text": "So, I have already come here in Google Chrome browser."
+    },
+    {
+      "start": 94.86,
+      "end": 96.84,
+      "text": "And I will tell you how to install Python"
+    },
+    {
+      "start": 96.84,
+      "end": 98.64,
+      "text": "from Download and Install."
+    },
+    {
+      "start": 99.3,
+      "end": 100.6,
+      "text": "So, as soon as you get Python,"
+    },
+    {
+      "start": 101.12,
+      "end": 102.28,
+      "text": "you will get Python.org."
+    },
+    {
+      "start": 102.88,
+      "end": 105.72,
+      "text": "And here, you will get the latest"
+    },
+    {
+      "start": 106.36,
+      "end": 107.2,
+      "text": "downloadable Python platform,"
+    },
+    {
+      "start": 107.34,
+      "end": 107.64,
+      "text": "which you will get,"
+    },
+    {
+      "start": 107.64,
+      "end": 109.0,
+      "text": "as you can see, I am in Mac OS."
+    },
+    {
+      "start": 109.52,
+      "end": 110.3,
+      "text": "So, for Mac OS,"
+    },
+    {
+      "start": 110.48,
+      "end": 113.58,
+      "text": "Python 3.11 is available."
+    },
+    {
+      "start": 113.66,
+      "end": 114.66,
+      "text": "So, I will download it,"
+    },
+    {
+      "start": 115.06,
+      "end": 116.3,
+      "text": "and you will get the downloadable,"
+    },
+    {
+      "start": 116.3,
+      "end": 117.78,
+      "text": "you can use your own ID,"
+    },
+    {
+      "start": 118.16,
+      "end": 120.32,
+      "text": "VS code or any other downloadable,"
+    },
+    {
+      "start": 120.32,
+      "end": 121.58,
+      "text": "to use it in your computer."
+    },
+    {
+      "start": 122.32,
+      "end": 125.34,
+      "text": "But I will use the Rapplet app."
+    },
+    {
+      "start": 125.44,
+      "end": 127.88,
+      "text": "And you can use the Rapplet app."
+    },
+    {
+      "start": 128.48,
+      "end": 130.66,
+      "text": "This is a collaborative browser based ID."
+    },
+    {
+      "start": 130.86,
+      "end": 131.18,
+      "text": "I am using it,"
+    },
+    {
+      "start": 131.98,
+      "end": 134.24,
+      "text": "because I feel it is very easy to use it."
+    },
+    {
+      "start": 135.14,
+      "end": 135.56,
+      "text": "And with that,"
+    },
+    {
+      "start": 136.16,
+      "end": 138.38,
+      "text": "for me, you will get the code challenge."
+    },
+    {
+      "start": 139.68,
+      "end": 142.92,
+      "text": "So, I will sign in from Google account."
+    },
+    {
+      "start": 142.92,
+      "end": 145.6,
+      "text": "And then, I will redirect on the screen,"
+    },
+    {
+      "start": 145.68,
+      "end": 147.62,
+      "text": "so, as you can see,"
+    },
+    {
+      "start": 147.78,
+      "end": 149.24,
+      "text": "all my Rapplets are here."
+    },
+    {
+      "start": 149.64,
+      "end": 152.82,
+      "text": "You can write a code in the app."
+    },
+    {
+      "start": 153.0,
+      "end": 154.84,
+      "text": "If you are not a computer fast,"
+    },
+    {
+      "start": 155.16,
+      "end": 156.98,
+      "text": "then you are able to see it."
+    },
+    {
+      "start": 157.32,
+      "end": 158.24,
+      "text": "Compute wise,"
+    },
+    {
+      "start": 158.48,
+      "end": 160.68,
+      "text": "that is, your computer is very lack."
+    },
+    {
+      "start": 161.04,
+      "end": 162.68,
+      "text": "So, you need a browser tap."
+    },
+    {
+      "start": 163.1,
+      "end": 164.22,
+      "text": "And you will be able to follow me."
+    },
+    {
+      "start": 165.1,
+      "end": 166.82,
+      "text": "And, because I will use the Rapplet app."
+    },
+    {
+      "start": 167.56,
+      "end": 169.96,
+      "text": "You will be easy to follow me."
+    },
+    {
+      "start": 169.96,
+      "end": 172.48,
+      "text": "So, here I will go on my Rapplets."
+    },
+    {
+      "start": 172.68,
+      "end": 173.88,
+      "text": "I have already made some Rapplets."
+    },
+    {
+      "start": 175.5,
+      "end": 179.72,
+      "text": "And I will scroll down and go to the Python 0 to JobReady folder."
+    },
+    {
+      "start": 179.96,
+      "end": 183.78,
+      "text": "And this is not my day 1 Rapplet app."
+    },
+    {
+      "start": 183.9,
+      "end": 186.3,
+      "text": "So, here you can see,"
+    },
+    {
+      "start": 186.64,
+      "end": 187.64,
+      "text": "that in my video,"
+    },
+    {
+      "start": 188.14,
+      "end": 189.7,
+      "text": "you will get the floating paint here."
+    },
+    {
+      "start": 190.78,
+      "end": 194.16,
+      "text": "And, here we will keep our content and the code."
+    },
+    {
+      "start": 195.08,
+      "end": 196.16,
+      "text": "So, the console,"
+    },
+    {
+      "start": 196.32,
+      "end": 197.42,
+      "text": "I will keep it here."
+    },
+    {
+      "start": 197.42,
+      "end": 199.74,
+      "text": "And, with that,"
+    },
+    {
+      "start": 200.28,
+      "end": 201.76,
+      "text": "you will see the code."
+    },
+    {
+      "start": 202.7,
+      "end": 203.6,
+      "text": "I will close it."
+    },
+    {
+      "start": 204.22,
+      "end": 205.48,
+      "text": "I will write the code here."
+    },
+    {
+      "start": 205.68,
+      "end": 207.0,
+      "text": "And, here the output of this code."
+    },
+    {
+      "start": 207.22,
+      "end": 210.34,
+      "text": "So, I will make a new file from now on."
+    },
+    {
+      "start": 210.36,
+      "end": 211.88,
+      "text": "So, I will click here."
+    },
+    {
+      "start": 212.38,
+      "end": 213.6,
+      "text": "And, I will open the main.py."
+    },
+    {
+      "start": 214.34,
+      "end": 215.58,
+      "text": "And, I want to open it here."
+    },
+    {
+      "start": 216.76,
+      "end": 217.42,
+      "text": "So, you guys,"
+    },
+    {
+      "start": 217.52,
+      "end": 219.3,
+      "text": "you guys, you have to use it as much as possible."
+    },
+    {
+      "start": 219.5,
+      "end": 220.6,
+      "text": "Here is the tutorial."
+    },
+    {
+      "start": 220.72,
+      "end": 222.3,
+      "text": "Here we will take the code."
+    },
+    {
+      "start": 222.48,
+      "end": 223.96,
+      "text": "Here is the output."
+    },
+    {
+      "start": 224.28,
+      "end": 225.72,
+      "text": "And, here is the video,"
+    },
+    {
+      "start": 225.72,
+      "end": 228.02,
+      "text": "which you can watch."
+    },
+    {
+      "start": 228.14,
+      "end": 229.78,
+      "text": "Now, here I have put a demo video."
+    },
+    {
+      "start": 230.58,
+      "end": 232.78,
+      "text": "You guys will see the video of our day."
+    },
+    {
+      "start": 234.08,
+      "end": 235.9,
+      "text": "If you guys think that I have done this,"
+    },
+    {
+      "start": 236.48,
+      "end": 238.56,
+      "text": "then I will give you a link in the description."
+    },
+    {
+      "start": 239.08,
+      "end": 240.74,
+      "text": "You guys will know how to do this."
+    },
+    {
+      "start": 240.76,
+      "end": 242.34,
+      "text": "There is no teacher in this case."
+    },
+    {
+      "start": 242.8,
+      "end": 244.82,
+      "text": "So, now, Python talks quickly."
+    },
+    {
+      "start": 245.24,
+      "end": 246.18,
+      "text": "But, first of all,"
+    },
+    {
+      "start": 246.58,
+      "end": 248.32,
+      "text": "I want to talk about programming."
+    },
+    {
+      "start": 249.12,
+      "end": 250.28,
+      "text": "So, as you can see,"
+    },
+    {
+      "start": 250.58,
+      "end": 253.66,
+      "text": "programming is a way for us to tell computers what to do."
+    },
+    {
+      "start": 255.34,
+      "end": 258.28,
+      "text": "And, we do programming."
+    },
+    {
+      "start": 258.84,
+      "end": 260.62,
+      "text": "If you have a calculator in your house,"
+    },
+    {
+      "start": 260.74,
+      "end": 262.12,
+      "text": "then the calculator is programmed."
+    },
+    {
+      "start": 262.56,
+      "end": 262.96,
+      "text": "And, in the truth,"
+    },
+    {
+      "start": 263.12,
+      "end": 265.8,
+      "text": "we can tell you how much 5 plus 9 is."
+    },
+    {
+      "start": 266.34,
+      "end": 268.14,
+      "text": "Now, 5 plus 9 is 14."
+    },
+    {
+      "start": 268.64,
+      "end": 269.74,
+      "text": "I know that."
+    },
+    {
+      "start": 269.84,
+      "end": 270.54,
+      "text": "So, I am using a calculator."
+    },
+    {
+      "start": 271.36,
+      "end": 273.78,
+      "text": "But, how about 2, 3, 4, 5, 3, 4, 5,"
+    },
+    {
+      "start": 273.98,
+      "end": 276.0,
+      "text": "3, 4, 5, 6, 4, 5, 6?"
+    },
+    {
+      "start": 276.16,
+      "end": 277.02,
+      "text": "You guys can calculate it."
+    },
+    {
+      "start": 277.28,
+      "end": 278.14,
+      "text": "But, you can't do it."
+    },
+    {
+      "start": 278.28,
+      "end": 279.18,
+      "text": "You can do it as much as you can."
+    },
+    {
+      "start": 279.92,
+      "end": 280.82,
+      "text": "So, in this way,"
+    },
+    {
+      "start": 280.82,
+      "end": 282.54,
+      "text": "we have a very important communication with a computer."
+    },
+    {
+      "start": 284.06,
+      "end": 286.26,
+      "text": "And, for this, we use programming."
+    },
+    {
+      "start": 286.56,
+      "end": 288.52,
+      "text": "In this way, you talk to Hindi."
+    },
+    {
+      "start": 288.52,
+      "end": 289.98,
+      "text": "You guys talk to your friends in English,"
+    },
+    {
+      "start": 291.58,
+      "end": 294.0,
+      "text": "Spanish, or any other language."
+    },
+    {
+      "start": 294.98,
+      "end": 297.6,
+      "text": "We talk to the computer to use programming languages."
+    },
+    {
+      "start": 298.62,
+      "end": 301.7,
+      "text": "Python, C, C plus plus, Java."
+    },
+    {
+      "start": 302.36,
+      "end": 303.32,
+      "text": "And, in many other languages,"
+    },
+    {
+      "start": 303.74,
+      "end": 304.02,
+      "text": "in the market."
+    },
+    {
+      "start": 304.22,
+      "end": 304.98,
+      "text": "But, this is the course."
+    },
+    {
+      "start": 305.44,
+      "end": 307.18,
+      "text": "Python is dedicated to us."
+    },
+    {
+      "start": 307.58,
+      "end": 309.52,
+      "text": "And, that is why Python is also easy."
+    },
+    {
+      "start": 309.52,
+      "end": 312.76,
+      "text": "Python is my easiest to learn programming languages."
+    },
+    {
+      "start": 313.08,
+      "end": 314.38,
+      "text": "Because, when you learn Python,"
+    },
+    {
+      "start": 314.46,
+      "end": 315.64,
+      "text": "and then you start doing things,"
+    },
+    {
+      "start": 316.46,
+      "end": 318.1,
+      "text": "then, it is fun on a different level."
+    },
+    {
+      "start": 319.08,
+      "end": 320.9,
+      "text": "Python is dynamically typed."
+    },
+    {
+      "start": 321.08,
+      "end": 322.56,
+      "text": "Journal purpose programming languages,"
+    },
+    {
+      "start": 322.8,
+      "end": 324.46,
+      "text": "which support object oriented paradigm."
+    },
+    {
+      "start": 325.46,
+      "end": 327.12,
+      "text": "And, the functional approach also supports."
+    },
+    {
+      "start": 327.56,
+      "end": 329.16,
+      "text": "But, you guys don't know what they are."
+    },
+    {
+      "start": 329.32,
+      "end": 330.54,
+      "text": "So, in this course, we are going to learn."
+    },
+    {
+      "start": 331.3,
+      "end": 334.4,
+      "text": "Now, the interpreter is the high level programming language."
+    },
+    {
+      "start": 334.8,
+      "end": 335.44,
+      "text": "And, in the video 1,"
+    },
+    {
+      "start": 335.54,
+      "end": 336.38,
+      "text": "we started working on the 1989."
+    },
+    {
+      "start": 336.38,
+      "end": 339.5,
+      "text": "Many people asked,"
+    },
+    {
+      "start": 339.62,
+      "end": 342.84,
+      "text": "when Python developed Python."
+    },
+    {
+      "start": 342.84,
+      "end": 343.66,
+      "text": "It was not a single day,"
+    },
+    {
+      "start": 344.38,
+      "end": 345.02,
+      "text": "but, in 1989,"
+    },
+    {
+      "start": 345.62,
+      "end": 346.56,
+      "text": "the period of years,"
+    },
+    {
+      "start": 346.56,
+      "end": 347.26,
+      "text": "quite a one-door sound."
+    },
+    {
+      "start": 347.76,
+      "end": 348.52,
+      "text": "It was created."
+    },
+    {
+      "start": 348.94,
+      "end": 349.66,
+      "text": "So, in 1991,"
+    },
+    {
+      "start": 350.28,
+      "end": 351.16,
+      "text": "you also got to see it."
+    },
+    {
+      "start": 351.2,
+      "end": 352.76,
+      "text": "In 1992, you also got to see it."
+    },
+    {
+      "start": 352.96,
+      "end": 354.0,
+      "text": "In 1989, you also got to see it."
+    },
+    {
+      "start": 354.18,
+      "end": 355.78,
+      "text": "But, it is true that,"
+    },
+    {
+      "start": 356.06,
+      "end": 356.12,
+      "text": "in 1989,"
+    },
+    {
+      "start": 356.6,
+      "end": 357.86,
+      "text": "it was created as the period of years."
+    },
+    {
+      "start": 358.54,
+      "end": 359.38,
+      "text": "What are the features of Python?"
+    },
+    {
+      "start": 359.68,
+      "end": 361.32,
+      "text": "First of all, I will tell you."
+    },
+    {
+      "start": 361.64,
+      "end": 362.22,
+      "text": "The simplest,"
+    },
+    {
+      "start": 362.42,
+      "end": 364.8,
+      "text": "the simplest programming language."
+    },
+    {
+      "start": 364.8,
+      "end": 367.32,
+      "text": "I think Python is the biggest feature of all of this."
+    },
+    {
+      "start": 367.7,
+      "end": 369.88,
+      "text": "And, you can do anything with it."
+    },
+    {
+      "start": 370.24,
+      "end": 371.46,
+      "text": "Platform is independent."
+    },
+    {
+      "start": 371.84,
+      "end": 372.74,
+      "text": "Okay, it is a platform independent."
+    },
+    {
+      "start": 373.48,
+      "end": 373.82,
+      "text": "And,"
+    },
+    {
+      "start": 374.38,
+      "end": 375.6,
+      "text": "it means that,"
+    },
+    {
+      "start": 376.02,
+      "end": 377.06,
+      "text": "if you wrote in Windows,"
+    },
+    {
+      "start": 377.68,
+      "end": 379.38,
+      "text": "you can also go to Linux."
+    },
+    {
+      "start": 379.56,
+      "end": 381.36,
+      "text": "And, if you wrote in Mac,"
+    },
+    {
+      "start": 381.82,
+      "end": 383.8,
+      "text": "you can also go to Windows."
+    },
+    {
+      "start": 384.1,
+      "end": 385.86,
+      "text": "You can also go to KCV platform."
+    },
+    {
+      "start": 386.34,
+      "end": 387.76,
+      "text": "I am writing in my browser."
+    },
+    {
+      "start": 388.38,
+      "end": 389.62,
+      "text": "I don't mean to write in Mac."
+    },
+    {
+      "start": 389.62,
+      "end": 390.64,
+      "text": "Because, I am using the AppLate platform."
+    },
+    {
+      "start": 391.36,
+      "end": 392.44,
+      "text": "But, if I write in Mac,"
+    },
+    {
+      "start": 392.44,
+      "end": 393.36,
+      "text": "even in Mac,"
+    },
+    {
+      "start": 393.36,
+      "end": 396.04,
+      "text": "you can run the code."
+    },
+    {
+      "start": 396.66,
+      "end": 397.34,
+      "text": "You can run the code."
+    },
+    {
+      "start": 397.34,
+      "end": 397.52,
+      "text": "You can run the code easily."
+    },
+    {
+      "start": 397.64,
+      "end": 399.44,
+      "text": "For your own purpose,"
+    },
+    {
+      "start": 400.1,
+      "end": 400.18,
+      "text": "I have a great language program."
+    },
+    {
+      "start": 400.62,
+      "end": 402.96,
+      "text": "You don't have to pay the money to use it."
+    },
+    {
+      "start": 402.98,
+      "end": 404.52,
+      "text": "Which is amazing."
+    },
+    {
+      "start": 405.16,
+      "end": 405.32,
+      "text": "And,"
+    },
+    {
+      "start": 405.56,
+      "end": 407.54,
+      "text": "Python provides very big library support."
+    },
+    {
+      "start": 407.92,
+      "end": 409.78,
+      "text": "All these people use this easy language."
+    },
+    {
+      "start": 410.26,
+      "end": 411.42,
+      "text": "Because of which,"
+    },
+    {
+      "start": 411.7,
+      "end": 412.28,
+      "text": "what is the cost?"
+    },
+    {
+      "start": 412.48,
+      "end": 415.24,
+      "text": "All these people are working on a project."
+    },
+    {
+      "start": 416.06,
+      "end": 416.44,
+      "text": "And,"
+    },
+    {
+      "start": 416.64,
+      "end": 418.68,
+      "text": "all the people's project,"
+    },
+    {
+      "start": 419.02,
+      "end": 420.16,
+      "text": "their request was written,"
+    },
+    {
+      "start": 420.16,
+      "end": 421.68,
+      "text": "their code was written,"
+    },
+    {
+      "start": 422.38,
+      "end": 424.36,
+      "text": "maybe someone has made something in a year"
+    },
+    {
+      "start": 424.36,
+      "end": 425.44,
+      "text": "and you can use it for a minute."
+    },
+    {
+      "start": 426.72,
+      "end": 428.08,
+      "text": "It is a huge thing."
+    },
+    {
+      "start": 428.32,
+      "end": 429.18,
+      "text": "I will talk about the learning point of view."
+    },
+    {
+      "start": 429.64,
+      "end": 430.72,
+      "text": "I will talk about the error point of view."
+    },
+    {
+      "start": 431.82,
+      "end": 434.04,
+      "text": "Maybe, the error you are using today,"
+    },
+    {
+      "start": 434.82,
+      "end": 435.98,
+      "text": "someone has already been given the time."
+    },
+    {
+      "start": 436.04,
+      "end": 436.96,
+      "text": "And, he has taken out his tone."
+    },
+    {
+      "start": 437.5,
+      "end": 439.24,
+      "text": "And, he has put it on the stack."
+    },
+    {
+      "start": 439.7,
+      "end": 442.84,
+      "text": "You will be very easy for people."
+    },
+    {
+      "start": 442.84,
+      "end": 445.12,
+      "text": "You will be very easy for people."
+    },
+    {
+      "start": 445.12,
+      "end": 447.04,
+      "text": "That is the solution of the problem."
+    },
+    {
+      "start": 447.04,
+      "end": 449.14,
+      "text": "Python provides a very big library"
+    },
+    {
+      "start": 449.14,
+      "end": 450.3,
+      "text": "which is supported."
+    },
+    {
+      "start": 451.18,
+      "end": 451.32,
+      "text": "And,"
+    },
+    {
+      "start": 451.32,
+      "end": 451.5,
+      "text": "after that,"
+    },
+    {
+      "start": 452.34,
+      "end": 453.98,
+      "text": "the programming language is to integrate it."
+    },
+    {
+      "start": 454.84,
+      "end": 458.9,
+      "text": "It can be linked to the language."
+    },
+    {
+      "start": 458.9,
+      "end": 459.78,
+      "text": "After that,"
+    },
+    {
+      "start": 460.4,
+      "end": 460.96,
+      "text": "I have written some applications"
+    },
+    {
+      "start": 460.96,
+      "end": 462.88,
+      "text": "that you can do in database."
+    },
+    {
+      "start": 463.8,
+      "end": 464.5,
+      "text": "You can do data science,"
+    },
+    {
+      "start": 465.16,
+      "end": 465.7,
+      "text": "you can do machine learning,"
+    },
+    {
+      "start": 466.26,
+      "end": 467.3,
+      "text": "you can do web applications,"
+    },
+    {
+      "start": 468.04,
+      "end": 468.66,
+      "text": "you can do data based,"
+    },
+    {
+      "start": 468.82,
+      "end": 470.78,
+      "text": "you can do a lot of serious, complex applications."
+    },
+    {
+      "start": 471.62,
+      "end": 472.08,
+      "text": "And,"
+    },
+    {
+      "start": 472.88,
+      "end": 475.96,
+      "text": "you can do a lot of complex,"
+    },
+    {
+      "start": 476.12,
+      "end": 476.92,
+      "text": "you can do a lot of complex applications."
+    },
+    {
+      "start": 476.92,
+      "end": 477.0,
+      "text": "You can do a lot of complex applications."
+    },
+    {
+      "start": 478.24,
+      "end": 479.22,
+      "text": "And, I am using the app."
+    },
+    {
+      "start": 480.04,
+      "end": 480.6,
+      "text": "Because,"
+    },
+    {
+      "start": 480.98,
+      "end": 483.06,
+      "text": "the code is very easy to share."
+    },
+    {
+      "start": 483.36,
+      "end": 484.68,
+      "text": "You can also install Python in local."
+    },
+    {
+      "start": 484.7,
+      "end": 485.78,
+      "text": "It is very easy."
+    },
+    {
+      "start": 486.06,
+      "end": 487.3,
+      "text": "Simply, you can do it."
+    },
+    {
+      "start": 487.56,
+      "end": 488.78,
+      "text": "Why not on any platform?"
+    },
+    {
+      "start": 489.46,
+      "end": 491.68,
+      "text": "You can install it."
+    },
+    {
+      "start": 492.16,
+      "end": 493.28,
+      "text": "It is a game."
+    },
+    {
+      "start": 493.86,
+      "end": 494.42,
+      "text": "And,"
+    },
+    {
+      "start": 495.46,
+      "end": 496.24,
+      "text": "if you are in Mac,"
+    },
+    {
+      "start": 496.58,
+      "end": 497.74,
+      "text": "you can see the simple installation"
+    },
+    {
+      "start": 497.74,
+      "end": 498.94,
+      "text": "in your computer screen."
+    },
+    {
+      "start": 499.12,
+      "end": 499.86,
+      "text": "But, in Windows,"
+    },
+    {
+      "start": 500.24,
+      "end": 501.3,
+      "text": "you can install Python."
+    },
+    {
+      "start": 503.44,
+      "end": 505.04,
+      "text": "If you are installing a computer,"
+    },
+    {
+      "start": 505.04,
+      "end": 505.98,
+      "text": "you are installing that"
+    },
+    {
+      "start": 505.98,
+      "end": 508.68,
+      "text": "you will have a path variable at Python 3."
+    },
+    {
+      "start": 509.06,
+      "end": 510.78,
+      "text": "The option to path"
+    },
+    {
+      "start": 510.78,
+      "end": 511.44,
+      "text": "is to path"
+    },
+    {
+      "start": 511.44,
+      "end": 513.02,
+      "text": "which is the option to path."
+    },
+    {
+      "start": 513.02,
+      "end": 515.32,
+      "text": "You will not have to check it."
+    },
+    {
+      "start": 516.04,
+      "end": 517.44,
+      "text": "Or, you will have to check it."
+    },
+    {
+      "start": 518.06,
+      "end": 518.66,
+      "text": "And,"
+    },
+    {
+      "start": 518.74,
+      "end": 520.58,
+      "text": "you will have to check it."
+    },
+    {
+      "start": 520.8,
+      "end": 520.84,
+      "text": "Or, you will have to check it."
+    },
+    {
+      "start": 520.84,
+      "end": 521.94,
+      "text": "If I open my terminal,"
+    },
+    {
+      "start": 522.42,
+      "end": 523.96,
+      "text": "when I have any view of Windows,"
+    },
+    {
+      "start": 523.96,
+      "end": 524.48,
+      "text": "I will write a Python."
+    },
+    {
+      "start": 525.16,
+      "end": 525.46,
+      "text": "And,"
+    },
+    {
+      "start": 525.48,
+      "end": 527.88,
+      "text": "you can see that Python is not found."
+    },
+    {
+      "start": 528.34,
+      "end": 530.12,
+      "text": "This problem is to solve."
+    },
+    {
+      "start": 530.22,
+      "end": 531.36,
+      "text": "If you are in Linux,"
+    },
+    {
+      "start": 531.94,
+      "end": 532.34,
+      "text": "or in Mac,"
+    },
+    {
+      "start": 532.62,
+      "end": 533.78,
+      "text": "then Python will write."
+    },
+    {
+      "start": 593.78,
+      "end": 608.08,
+      "text": ""
+    },
+    {
+      "start": 668.08,
+      "end": 671.74,
+      "text": "diferenRity 20%, 5 bug market."
+    },
+    {
+      "start": 672.28,
+      "end": 691.46,
+      "text": "D.A.T. Pri."
+    },
+    {
+      "start": 694.52,
+      "end": 695.92,
+      "text": "quedceی"
+    },
+    {
+      "start": 695.92,
+      "end": 698.0,
+      "text": "Dée"
+    },
+    {
+      "start": 698.0,
+      "end": 698.06,
+      "text": "Détú"
+    }
+  ]
+}

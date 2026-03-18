@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+data/embeddings/
+data/rag/
+data/speech/
+audio/
+.env
+*.pyc
+data/notes/
