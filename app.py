@@ -11,9 +11,7 @@ from reportlab.lib.pagesizes import letter
 
 load_dotenv()
 
-# ==========================================
-# Page Config
-# ==========================================
+
 st.set_page_config(
     page_title="RAGuru - AI Teaching Assistant",
     page_icon="🧠",
@@ -21,9 +19,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ==========================================
-# CSS
-# ==========================================
+
 st.markdown("""
 <style>
     @media (max-width: 768px) {
@@ -64,9 +60,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# ==========================================
-# Load Models
-# ==========================================
+
+
 @st.cache_resource
 def load_models():
     embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -75,11 +70,10 @@ def load_models():
     groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
     return embedding_model, collection, groq_client
 
+
 embedding_model, collection, groq_client = load_models()
 
-# ==========================================
-# Session State — Sab Initialize Karo
-# ==========================================
+
 if "messages" not in st.session_state:
     st.session_state.messages = [{
         "role": "assistant",
@@ -116,9 +110,8 @@ if "quiz_topic" not in st.session_state:
 if "quiz_result" not in st.session_state:
     st.session_state.quiz_result = None
 
-# ==========================================
-# Helper Functions
-# ==========================================
+
+
 def get_relevant_chunks(question, top_k=3):
     question_embedding = embedding_model.encode([question]).tolist()
     results = collection.query(
@@ -127,7 +120,8 @@ def get_relevant_chunks(question, top_k=3):
     )
     return results
 
-def humanized_answer(question, context_chunks, chat_history, model_choice="Groq (LLaMA)"):
+
+def humanized_answer(question, context_chunks, chat_history):
     context = "\n\n".join(context_chunks)
     history_text = ""
     for msg in chat_history[-4:]:
@@ -163,35 +157,20 @@ Student: {question}
 
 Your response as a real human teacher:"""
 
-    if model_choice == "Groq (LLaMA)":
-        response = groq_client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You are RAGuru, a real human teacher. Never reveal you are an AI. Be natural and warm."
-                },
-                {"role": "user", "content": prompt}
-            ],
-            max_tokens=700,
-            temperature=0.8
-        )
-        return response.choices[0].message.content
+    response = groq_client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=[
+            {
+                "role": "system",
+                "content": "You are RAGuru, a real human teacher. Never reveal you are an AI. Be natural and warm."
+            },
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=700,
+        temperature=0.8
+    )
+    return response.choices[0].message.content
 
-    elif model_choice == "HuggingFace (Local — Free)":
-        try:
-            from transformers import pipeline
-            import torch
-            generator = pipeline(
-                "text-generation",
-                model="TinyLlama/TinyLlama-1.1B-Chat-v1.0",
-                torch_dtype=torch.float32,
-                device=-1
-            )
-            result = generator(prompt, max_new_tokens=300, temperature=0.8, do_sample=True)
-            return result[0]['generated_text'].split("Your response as a real human teacher:")[-1].strip()
-        except Exception as e:
-            return f"HuggingFace error: {e}. Switch to Groq!"
 
 def generate_quiz(topic, num_questions=5):
     results = get_relevant_chunks(topic)
@@ -230,6 +209,7 @@ Return ONLY this JSON — nothing else:
     except:
         return None
 
+
 def generate_summary(topic):
     results = get_relevant_chunks(topic, top_k=5)
     context = "\n\n".join(results['documents'][0])
@@ -251,6 +231,7 @@ Under 300 words. Simple language."""
         max_tokens=500
     )
     return response.choices[0].message.content
+
 
 def generate_flashcards(topic, num_cards=5):
     results = get_relevant_chunks(topic)
@@ -278,6 +259,7 @@ Return ONLY JSON:
     except:
         return None
 
+
 def save_as_pdf(content, filename):
     os.makedirs("data/notes", exist_ok=True)
     pdf_path = f"data/notes/{filename}.pdf"
@@ -299,20 +281,14 @@ def save_as_pdf(content, filename):
     c.save()
     return pdf_path
 
-# ==========================================
-# SIDEBAR
-# ==========================================
+
+
 with st.sidebar:
     st.markdown("## 🧠 RAGuru")
     st.markdown("*Your Personal AI Teacher*")
     st.markdown("---")
 
-    model_choice = st.selectbox(
-        "Choose AI Model",
-        ["Groq (LLaMA)", "HuggingFace (Local — Free)"]
-    )
 
-    st.markdown("---")
 
     page = st.radio(
         "Navigate To",
@@ -328,7 +304,6 @@ with st.sidebar:
 
     st.markdown("---")
 
-    # ✅ FIX — Accuracy sahi calculate hogi
     col1, col2 = st.columns(2)
     with col1:
         st.metric("Score", f"{st.session_state.quiz_score} pts")
@@ -354,9 +329,6 @@ with st.sidebar:
         }]
         st.rerun()
 
-# ==========================================
-# PAGE 1 — CHAT
-# ==========================================
 if page == "💬 Chat with RAGuru":
     st.title("💬 Chat with RAGuru")
     st.caption("Ask anything — any language works!")
@@ -385,8 +357,7 @@ if page == "💬 Chat with RAGuru":
                 answer = humanized_answer(
                     user_question,
                     context_chunks,
-                    st.session_state.messages,
-                    model_choice
+                    st.session_state.messages
                 )
 
                 st.markdown(answer)
@@ -400,19 +371,16 @@ if page == "💬 Chat with RAGuru":
 
                 with st.expander("📍 Lecture Sources"):
                     for i, meta in enumerate(metadatas):
-                        st.write(f"**{i+1}.** {meta['lecture']} at {meta['start_time']}s")
+                        st.write(f"**{i + 1}.** {meta['lecture']} at {meta['start_time']}s")
 
         st.session_state.messages.append({"role": "assistant", "content": answer})
 
-# ==========================================
-# PAGE 2 — QUIZ GENERATOR ✅ FIXED
-# ==========================================
+
 elif page == "📝 Quiz Generator":
     st.title("📝 Quiz Generator")
     st.caption("Test your knowledge from the lectures!")
     st.divider()
 
-    # Show generate form only when no quiz active
     if st.session_state.current_quiz is None:
         col1, col2 = st.columns(2)
         with col1:
@@ -439,7 +407,6 @@ elif page == "📝 Quiz Generator":
             else:
                 st.warning("Please enter a topic first!")
 
-    # Show quiz questions
     elif not st.session_state.quiz_submitted:
         st.markdown(f"### Topic: {st.session_state.quiz_topic}")
         st.markdown(f"*{len(st.session_state.current_quiz)} questions — answer all below*")
@@ -448,11 +415,11 @@ elif page == "📝 Quiz Generator":
         for i, q in enumerate(st.session_state.current_quiz):
             st.markdown(f"""
 <div class="quiz-card">
-<b>Q{i+1}. {q['question']}</b>
+<b>Q{i + 1}. {q['question']}</b>
 </div>
 """, unsafe_allow_html=True)
             selected = st.radio(
-                f"Q{i+1}",
+                f"Q{i + 1}",
                 q['options'],
                 key=f"quiz_q_{i}",
                 label_visibility="collapsed"
@@ -463,7 +430,6 @@ elif page == "📝 Quiz Generator":
         col1, col2 = st.columns(2)
         with col1:
             if st.button("✅ Submit Quiz"):
-                # ✅ FIX — Calculate score
                 score = 0
                 results_list = []
 
@@ -484,7 +450,6 @@ elif page == "📝 Quiz Generator":
                 total = len(st.session_state.current_quiz)
                 percentage = int((score / total) * 100)
 
-                # ✅ FIX — Update session state BEFORE rerun
                 st.session_state.quiz_score += score
                 st.session_state.total_questions += total
                 st.session_state.quiz_submitted = True
@@ -508,7 +473,6 @@ elif page == "📝 Quiz Generator":
                 st.session_state.quiz_result = None
                 st.rerun()
 
-    # Show results
     elif st.session_state.quiz_submitted and st.session_state.quiz_result:
         result = st.session_state.quiz_result
         score = result['score']
@@ -526,7 +490,6 @@ elif page == "📝 Quiz Generator":
 
         st.markdown("---")
 
-        # ✅ Score Cards
         col1, col2, col3 = st.columns(3)
         with col1:
             st.metric("Your Score", f"{score}/{total}")
@@ -566,9 +529,6 @@ elif page == "📝 Quiz Generator":
                 st.session_state.quiz_result = None
                 st.rerun()
 
-# ==========================================
-# PAGE 3 — FLASHCARDS
-# ==========================================
 elif page == "🃏 Flashcards":
     st.title("🃏 Flashcards")
     st.caption("Quick revision made easy!")
@@ -597,19 +557,17 @@ elif page == "🃏 Flashcards":
         st.markdown("### Click each card to see the answer:")
 
         for i, card in enumerate(st.session_state.flashcards):
-            with st.expander(f"📌 Card {i+1}: {card['front']}"):
+            with st.expander(f"📌 Card {i + 1}: {card['front']}"):
                 st.info(f"**Answer:** {card['back']}")
 
         if st.button("📥 Download as PDF"):
             content = "RAGuru Flashcards\n\n"
             for i, card in enumerate(st.session_state.flashcards):
-                content += f"Card {i+1}\nQ: {card['front']}\nA: {card['back']}\n\n"
+                content += f"Card {i + 1}\nQ: {card['front']}\nA: {card['back']}\n\n"
             path = save_as_pdf(content, "flashcards")
             st.success("Saved!")
 
-# ==========================================
-# PAGE 4 — PROGRESS
-# ==========================================
+
 elif page == "📊 My Progress":
     st.title("📊 My Progress")
     st.caption("Track your learning journey!")
@@ -657,9 +615,7 @@ elif page == "📊 My Progress":
             st.success("Progress reset!")
             st.rerun()
 
-# ==========================================
-# PAGE 5 — SUMMARY
-# ==========================================
+
 elif page == "📖 Summary Generator":
     st.title("📖 Summary Generator")
     st.caption("Get a clear summary of any topic!")
@@ -681,9 +637,7 @@ elif page == "📖 Summary Generator":
         else:
             st.warning("Please enter a topic first!")
 
-# ==========================================
-# PAGE 6 — DOUBT HISTORY
-# ==========================================
+
 elif page == "📚 Doubt History":
     st.title("📚 Doubt History")
     st.caption("All your previous questions!")
@@ -694,7 +648,7 @@ elif page == "📚 Doubt History":
         st.markdown("---")
 
         for i, doubt in enumerate(reversed(st.session_state.doubt_history)):
-            with st.expander(f"Q{len(st.session_state.doubt_history)-i}: {doubt['question'][:60]}..."):
+            with st.expander(f"Q{len(st.session_state.doubt_history) - i}: {doubt['question'][:60]}..."):
                 st.write(f"**Question:** {doubt['question']}")
                 st.caption(f"Asked: {doubt['time']}")
 
@@ -704,7 +658,7 @@ elif page == "📚 Doubt History":
             if st.button("📥 Download as PDF"):
                 content = "My Doubt History\n\n"
                 for i, d in enumerate(st.session_state.doubt_history):
-                    content += f"Q{i+1}: {d['question']}\nAsked: {d['time']}\n\n"
+                    content += f"Q{i + 1}: {d['question']}\nAsked: {d['time']}\n\n"
                 path = save_as_pdf(content, "doubt_history")
                 st.success("Saved!")
         with col2:
