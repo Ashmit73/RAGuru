@@ -56,7 +56,7 @@ streamlit run app.py
 
 
 ## 👨‍💻 Author
-**Ashmit Agrawal** — B.Tech CSE (AIML)
+**Ashmit Agrawal**
 [![GitHub](https://img.shields.io/badge/GitHub-Ashmit73-black?style=flat&logo=github)](https://github.com/Ashmit73)
 
 
