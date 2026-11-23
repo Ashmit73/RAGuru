@@ -1,15 +1,6 @@
-streamlit
+﻿streamlit
 chromadb
 sentence-transformers
 groq
-openai-whisper
-ffmpeg-python
-yt-dlp
-datasets
-huggingface_hub
-langchain
-torch
 python-dotenv
 reportlab
-transformers
-accelerate

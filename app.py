@@ -1,24 +1,30 @@
-import streamlit as st
-import chromadb
 import os
 import json
+from io import BytesIO
 from datetime import datetime
+import streamlit as st
+import chromadb
 from sentence_transformers import SentenceTransformer
 from groq import Groq
 from dotenv import load_dotenv
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
+from reportlab.lib.utils import simpleSplit
 
 load_dotenv()
 
+DB_PATH = "data/embeddings"
+COLLECTION_NAME = "raguru_lectures"
+EMBEDDING_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
+LLM_MODEL = "llama-3.3-70b-versatile"
+MAX_DISTANCE = 0.65  # Cosine distance threshold (lower = more similar)
 
 st.set_page_config(
     page_title="RAGuru - AI Teaching Assistant",
-    page_icon="🧠",
+    page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
 
 st.markdown("""
 <style>
@@ -27,644 +33,346 @@ st.markdown("""
         h1 { font-size: 1.5rem !important; }
     }
     .main { background-color: #0e1117; }
-    .stChatMessage { border-radius: 15px; padding: 10px; margin: 5px 0; }
+    .stChatMessage { border-radius: 12px; padding: 10px; margin: 5px 0; }
     .stButton>button {
         background: linear-gradient(135deg, #1f538d, #2d7dd2);
         color: white;
-        border-radius: 25px;
+        border-radius: 8px;
         border: none;
-        padding: 10px 25px;
-        font-weight: bold;
-        transition: all 0.3s;
+        padding: 8px 20px;
+        font-weight: 600;
         width: 100%;
     }
     .stButton>button:hover {
         background: linear-gradient(135deg, #2d7dd2, #1f538d);
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(29,83,141,0.4);
     }
     .quiz-card {
-        background: linear-gradient(135deg, #1a1a2e, #16213e);
-        border-radius: 15px;
-        padding: 20px;
+        background-color: #161b22;
+        border-radius: 10px;
+        padding: 16px;
         margin: 10px 0;
         border-left: 4px solid #2d7dd2;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
     [data-testid="stMetric"] {
-        background: linear-gradient(135deg, #1a1a2e, #16213e);
-        border-radius: 10px;
-        padding: 15px;
-        border: 1px solid #2d7dd2;
+        background-color: #161b22;
+        border-radius: 8px;
+        padding: 12px;
+        border: 1px solid #30363d;
     }
 </style>
 """, unsafe_allow_html=True)
 
 
-
 @st.cache_resource
-def load_models():
-    embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
-    client = chromadb.PersistentClient(path="data/embeddings")
-    collection = client.get_collection(name="raguru_lectures")
+def load_resources():
+    embedder = SentenceTransformer(EMBEDDING_MODEL)
+    client = chromadb.PersistentClient(path=DB_PATH)
+    collection = client.get_collection(name=COLLECTION_NAME)
     groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-    return embedding_model, collection, groq_client
+    return embedder, collection, groq_client
 
 
-embedding_model, collection, groq_client = load_models()
+embedder, collection, groq_client = load_resources()
 
-
-if "messages" not in st.session_state:
-    st.session_state.messages = [{
+# Initialize session state
+defaults = {
+    "messages": [{
         "role": "assistant",
-        "content": "Hey! I am RAGuru — your personal teacher! Ask me anything from the lectures. Any language works — English, Hindi, whatever!"
-    }]
-
-if "quiz_score" not in st.session_state:
-    st.session_state.quiz_score = 0
-
-if "total_questions" not in st.session_state:
-    st.session_state.total_questions = 0
-
-if "doubt_history" not in st.session_state:
-    st.session_state.doubt_history = []
-
-if "topics_covered" not in st.session_state:
-    st.session_state.topics_covered = []
-
-if "flashcards" not in st.session_state:
-    st.session_state.flashcards = []
-
-if "current_quiz" not in st.session_state:
-    st.session_state.current_quiz = None
-
-if "quiz_submitted" not in st.session_state:
-    st.session_state.quiz_submitted = False
-
-if "quiz_answers" not in st.session_state:
-    st.session_state.quiz_answers = {}
-
-if "quiz_topic" not in st.session_state:
-    st.session_state.quiz_topic = ""
-
-if "quiz_result" not in st.session_state:
-    st.session_state.quiz_result = None
+        "content": "Hi! I'm RAGuru, your AI study assistant. Ask me anything from your lectures in English or Hinglish."
+    }],
+    "quiz_score": 0,
+    "total_questions": 0,
+    "doubt_history": [],
+    "topics_covered": [],
+    "flashcards": [],
+    "current_quiz": None,
+    "quiz_submitted": False,
+    "quiz_answers": {},
+    "quiz_topic": "",
+    "quiz_result": None
+}
+for key, val in defaults.items():
+    if key not in st.session_state:
+        st.session_state[key] = val
 
 
+def format_timestamp(seconds):
+    mins = int(seconds // 60)
+    secs = int(seconds % 60)
+    return f"{mins:02d}:{secs:02d}"
 
-def get_relevant_chunks(question, top_k=3):
-    question_embedding = embedding_model.encode([question]).tolist()
+
+def retrieve_context(query, top_k=4):
+    query_vec = embedder.encode([query]).tolist()
     results = collection.query(
-        query_embeddings=question_embedding,
-        n_results=top_k
+        query_embeddings=query_vec,
+        n_results=top_k,
+        include=["documents", "metadatas", "distances"]
     )
-    return results
+
+    docs = results["documents"][0]
+    metas = results["metadatas"][0]
+    dists = results["distances"][0]
+
+    # Filter out irrelevant chunks using cosine distance
+    valid_docs, valid_metas = [], []
+    for doc, meta, dist in zip(docs, metas, dists):
+        if dist <= MAX_DISTANCE:
+            valid_docs.append(doc)
+            valid_metas.append(meta)
+
+    return valid_docs, valid_metas
 
 
-def humanized_answer(question, context_chunks, chat_history):
-    context = "\n\n".join(context_chunks)
-    history_text = ""
+def ask_tutor(question, context_chunks, chat_history):
+    if not context_chunks:
+        return (
+            "I checked the lecture notes, and this specific topic doesn't appear to be covered in the uploaded material. "
+            "Try rephrasing your question or ask about a topic from your lectures!"
+        )
+
+    context_text = "\n\n---\n\n".join(context_chunks)
+    recent_chat = ""
     for msg in chat_history[-4:]:
-        role = "Student" if msg["role"] == "user" else "RAGuru"
-        history_text += f"{role}: {msg['content']}\n"
+        speaker = "Student" if msg["role"] == "user" else "RAGuru"
+        recent_chat += f"{speaker}: {msg['content']}\n"
 
-    prompt = f"""You are RAGuru — a real human teacher and mentor, NOT an AI.
+    prompt = f"""You are RAGuru, a supportive and clear AI teaching assistant.
 
-Your personality:
-- Friendly, experienced teacher who genuinely cares
-- Natural conversational tone — warm and approachable
-- Say things like "Look, it is quite simple", "Think of it this way", "Great question!"
-- Real world examples students can relate to
-- Encouraging — "You are getting it!", "Almost there!"
-- NEVER say you are an AI, chatbot or assistant
-- NEVER start with "Certainly!" or "Of course!" or "As an AI..."
-- Answer in WHATEVER language the student uses
-- Keep answers clear and focused
+Guidelines:
+- Answer the student's question primarily using the Lecture Context provided below.
+- Use a warm, encouraging, and easy-to-understand tone with simple examples.
+- Reply in the same language style the student used (English or Hinglish).
+- If the context only partially answers the question, explain what is in the lecture clearly and avoid making up facts not supported by the material.
 
-Rules:
-1. Answer from lecture context if available
-2. General study questions — use your teaching knowledge
-3. Off-topic — warmly say "That is outside our course right now!"
-4. Always make the student feel smart and capable
+Lecture Context:
+{context_text}
 
-Lecture Content:
-{context}
+Recent Conversation:
+{recent_chat}
 
-Previous Chat:
-{history_text}
+Student Question: {question}
 
-Student: {question}
-
-Your response as a real human teacher:"""
+Response:"""
 
     response = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model=LLM_MODEL,
         messages=[
-            {
-                "role": "system",
-                "content": "You are RAGuru, a real human teacher. Never reveal you are an AI. Be natural and warm."
-            },
+            {"role": "system", "content": "You are RAGuru, a helpful AI teaching assistant grounded in lecture transcripts."},
             {"role": "user", "content": prompt}
         ],
         max_tokens=700,
-        temperature=0.8
+        temperature=0.4
     )
     return response.choices[0].message.content
 
 
 def generate_quiz(topic, num_questions=5):
-    results = get_relevant_chunks(topic)
-    context = "\n\n".join(results['documents'][0])
+    docs, _ = retrieve_context(topic, top_k=5)
+    if not docs:
+        return None
 
-    prompt = f"""Create {num_questions} multiple choice questions about: {topic}
+    context = "\n\n".join(docs)
+    prompt = f"""Create {num_questions} multiple-choice questions on "{topic}" strictly based on the lecture content below.
 
-Based on:
+Lecture Content:
 {context}
 
-Return ONLY this JSON — nothing else:
+Return ONLY a valid JSON array in this exact format:
 [
   {{
-    "question": "Question here?",
+    "question": "Clear question text?",
     "options": ["A) Option 1", "B) Option 2", "C) Option 3", "D) Option 4"],
     "correct": "A",
-    "explanation": "Why this is correct"
+    "explanation": "Brief explanation referencing the lecture"
   }}
 ]"""
 
     response = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model=LLM_MODEL,
         messages=[
-            {"role": "system", "content": "Return only valid JSON array."},
+            {"role": "system", "content": "Output only valid JSON. No markdown fences or extra text."},
             {"role": "user", "content": prompt}
         ],
         max_tokens=2000,
-        temperature=0.5
+        temperature=0.3
     )
 
     try:
-        text = response.choices[0].message.content
-        start = text.find('[')
-        end = text.rfind(']') + 1
-        return json.loads(text[start:end])
-    except:
+        raw = response.choices[0].message.content
+        start, end = raw.find("["), raw.rfind("]") + 1
+        return json.loads(raw[start:end])
+    except Exception:
         return None
 
 
 def generate_summary(topic):
-    results = get_relevant_chunks(topic, top_k=5)
-    context = "\n\n".join(results['documents'][0])
+    docs, _ = retrieve_context(topic, top_k=5)
+    if not docs:
+        return "No relevant lecture content found for this topic. Try searching a keyword covered in your lectures."
 
-    prompt = f"""Create a clear student-friendly summary of: {topic}
+    context = "\n\n".join(docs)
+    prompt = f"""Summarize the topic "{topic}" for a student using the lecture content below.
 
-Content: {context}
+Content:
+{context}
 
-Format:
-- One sentence overview
-- Key points as bullets
-- One real world example
-- Why this matters
-Under 300 words. Simple language."""
+Structure:
+- **Overview:** 1-2 sentences
+- **Key Takeaways:** 3-5 bullet points
+- **Practical Example:** 1 relatable example
+Keep it concise (under 250 words) and clear."""
 
     response = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model=LLM_MODEL,
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=500
+        max_tokens=500,
+        temperature=0.4
     )
     return response.choices[0].message.content
 
 
 def generate_flashcards(topic, num_cards=5):
-    results = get_relevant_chunks(topic)
-    context = "\n\n".join(results['documents'][0])
+    docs, _ = retrieve_context(topic, top_k=4)
+    if not docs:
+        return None
 
-    prompt = f"""Create {num_cards} flashcards for: {topic}
-Content: {context}
-Return ONLY JSON:
-[{{"front": "Question", "back": "Answer"}}]"""
+    context = "\n\n".join(docs)
+    prompt = f"""Create {num_cards} study flashcards on "{topic}" from the lecture content below.
+
+Content:
+{context}
+
+Return ONLY a valid JSON array:
+[{{"front": "Concept or Question", "back": "Concise answer"}}]"""
 
     response = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model=LLM_MODEL,
         messages=[
-            {"role": "system", "content": "Return only valid JSON array."},
+            {"role": "system", "content": "Output only valid JSON."},
             {"role": "user", "content": prompt}
         ],
-        max_tokens=1000
+        max_tokens=1000,
+        temperature=0.3
     )
 
     try:
-        text = response.choices[0].message.content
-        start = text.find('[')
-        end = text.rfind(']') + 1
-        return json.loads(text[start:end])
-    except:
+        raw = response.choices[0].message.content
+        start, end = raw.find("["), raw.rfind("]") + 1
+        return json.loads(raw[start:end])
+    except Exception:
         return None
 
 
-def save_as_pdf(content, filename):
-    os.makedirs("data/notes", exist_ok=True)
-    pdf_path = f"data/notes/{filename}.pdf"
-    c = canvas.Canvas(pdf_path, pagesize=letter)
-    c.setFont("Helvetica-Bold", 18)
-    c.drawString(50, 770, "RAGuru Study Notes")
-    c.setFont("Helvetica", 10)
-    c.drawString(50, 750, f"Generated: {datetime.now().strftime('%d %B %Y, %I:%M %p')}")
-    c.line(50, 740, 550, 740)
+def build_pdf_bytes(title, content):
+    buffer = BytesIO()
+    c = canvas.Canvas(buffer, pagesize=letter)
+    width, height = letter
+
+    c.setFont("Helvetica-Bold", 16)
+    c.drawString(50, height - 50, f"RAGuru Notes: {title}")
+    c.setFont("Helvetica", 9)
+    c.drawString(50, height - 68, f"Generated on {datetime.now().strftime('%d %b %Y, %I:%M %p')}")
+    c.line(50, height - 76, width - 50, height - 76)
+
     c.setFont("Helvetica", 11)
-    y = 720
-    for line in content.split('\n'):
-        if y < 60:
-            c.showPage()
-            c.setFont("Helvetica", 11)
-            y = 750
-        c.drawString(50, y, line[:85])
-        y -= 18
+    y = height - 100
+
+    # Sanitize non-latin characters safely so ReportLab never crashes
+    safe_text = content.encode("latin-1", "replace").decode("latin-1")
+
+    for paragraph in safe_text.split("\n"):
+        wrapped_lines = simpleSplit(paragraph, "Helvetica", 11, width - 100) or [""]
+        for line in wrapped_lines:
+            if y < 60:
+                c.showPage()
+                c.setFont("Helvetica", 11)
+                y = height - 50
+            c.drawString(50, y, line)
+            y -= 16
+
     c.save()
-    return pdf_path
+    buffer.seek(0)
+    return buffer
 
 
-
+# ---------------- SIDEBAR ----------------
 with st.sidebar:
-    st.markdown("## 🧠 RAGuru")
-    st.markdown("*Your Personal AI Teacher*")
-    st.markdown("---")
-
-
+    st.markdown("## 🎓 RAGuru")
+    st.caption("AI Teaching Assistant")
+    st.divider()
 
     page = st.radio(
-        "Navigate To",
+        "Navigation",
         [
-            "💬 Chat with RAGuru",
+            "💬 Ask Doubt",
             "📝 Quiz Generator",
             "🃏 Flashcards",
-            "📊 My Progress",
-            "📖 Summary Generator",
+            "📖 Topic Summary",
+            "📊 Progress",
             "📚 Doubt History"
         ]
     )
 
-    st.markdown("---")
-
+    st.divider()
     col1, col2 = st.columns(2)
     with col1:
-        st.metric("Score", f"{st.session_state.quiz_score} pts")
+        st.metric("Score", f"{st.session_state.quiz_score}")
     with col2:
-        sidebar_accuracy = 0
-        if st.session_state.total_questions > 0:
-            sidebar_accuracy = int(
-                (st.session_state.quiz_score / st.session_state.total_questions) * 100
-            )
-        st.metric("Accuracy", f"{sidebar_accuracy}%")
+        acc = int((st.session_state.quiz_score / st.session_state.total_questions) * 100) if st.session_state.total_questions else 0
+        st.metric("Accuracy", f"{acc}%")
 
-    st.markdown("---")
-    st.markdown(f"📚 **Knowledge Base:** {collection.count()} chunks")
-    st.markdown(f"🎯 **Questions Attempted:** {st.session_state.total_questions}")
-    st.markdown(f"💡 **Doubts Asked:** {len(st.session_state.doubt_history)}")
-    st.markdown(f"📖 **Topics Covered:** {len(st.session_state.topics_covered)}")
-    st.markdown("---")
+    st.divider()
+    st.markdown(f"**Indexed Chunks:** {collection.count()}")
+    st.markdown(f"**Doubts Asked:** {len(st.session_state.doubt_history)}")
+    st.markdown(f"**Topics Practiced:** {len(st.session_state.topics_covered)}")
+    st.divider()
 
-    if st.button("🗑️ Clear Chat History"):
+    if st.button("Clear Chat"):
         st.session_state.messages = [{
             "role": "assistant",
-            "content": "Hey! I am RAGuru — your personal teacher! Ask me anything!"
+            "content": "Chat cleared! What would you like to study next?"
         }]
         st.rerun()
 
-if page == "💬 Chat with RAGuru":
-    st.title("💬 Chat with RAGuru")
-    st.caption("Ask anything — any language works!")
+
+# ---------------- PAGES ----------------
+if page == "💬 Ask Doubt":
+    st.title("💬 Ask RAGuru")
+    st.caption("Doubt solver grounded in your lecture transcripts")
     st.divider()
 
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
+    for idx, msg in enumerate(st.session_state.messages):
+        with st.chat_message(msg["role"]):
+            st.markdown(msg["content"])
 
-    if user_question := st.chat_input("Type your question here..."):
+    if user_q := st.chat_input("Ask a question from your lectures..."):
         with st.chat_message("user"):
-            st.markdown(user_question)
+            st.markdown(user_q)
 
-        st.session_state.messages.append({"role": "user", "content": user_question})
+        st.session_state.messages.append({"role": "user", "content": user_q})
         st.session_state.doubt_history.append({
-            "question": user_question,
+            "question": user_q,
             "time": datetime.now().strftime("%d %b %Y, %I:%M %p")
         })
 
         with st.chat_message("assistant"):
-            with st.spinner("Thinking..."):
-                results = get_relevant_chunks(user_question)
-                context_chunks = results['documents'][0]
-                metadatas = results['metadatas'][0]
+            with st.spinner("Searching lectures..."):
+                docs, metas = retrieve_context(user_q, top_k=3)
+                reply = ask_tutor(user_q, docs, st.session_state.messages)
+                st.markdown(reply)
 
-                answer = humanized_answer(
-                    user_question,
-                    context_chunks,
-                    st.session_state.messages
-                )
+                if metas:
+                    with st.expander("📍 Referenced Lecture Timestamps"):
+                        for i, m in enumerate(metas, start=1):
+                            start_fmt = format_timestamp(m["start_time"])
+                            end_fmt = format_timestamp(m["end_time"])
+                            st.write(f"**{i}. {m['lecture']}** (`{start_fmt}` – `{end_fmt}`)")
 
-                st.markdown(answer)
-
-                if st.button("📥 Save as PDF", key=f"pdf_{len(st.session_state.messages)}"):
-                    path = save_as_pdf(
-                        f"Q: {user_question}\n\nA: {answer}",
-                        f"answer_{len(st.session_state.messages)}"
-                    )
-                    st.success("Saved!")
-
-                with st.expander("📍 Lecture Sources"):
-                    for i, meta in enumerate(metadatas):
-                        st.write(f"**{i + 1}.** {meta['lecture']} at {meta['start_time']}s")
-
-        st.session_state.messages.append({"role": "assistant", "content": answer})
-
-
-elif page == "📝 Quiz Generator":
-    st.title("📝 Quiz Generator")
-    st.caption("Test your knowledge from the lectures!")
-    st.divider()
-
-    if st.session_state.current_quiz is None:
-        col1, col2 = st.columns(2)
-        with col1:
-            quiz_topic = st.text_input(
-                "Enter Topic",
-                placeholder="e.g., Python basics, Variables, Loops..."
+                pdf_bytes = build_pdf_bytes("Doubt Note", f"Question:\n{user_q}\n\nAnswer:\n{reply}")
+            st.download_button(
+                label="📥 Download Note (PDF)",
+                data=pdf_bytes,
+                file_name=f"raguru_note_{len(st.session_state.messages)}.pdf",
+                mime="application/pdf"
             )
-        with col2:
-            num_q = st.slider("Number of Questions", 3, 10, 5)
-
-        if st.button("🎯 Generate Quiz!"):
-            if quiz_topic:
-                with st.spinner("Creating your quiz..."):
-                    questions = generate_quiz(quiz_topic, num_q)
-                    if questions:
-                        st.session_state.current_quiz = questions
-                        st.session_state.quiz_topic = quiz_topic
-                        st.session_state.quiz_answers = {}
-                        st.session_state.quiz_submitted = False
-                        st.session_state.quiz_result = None
-                        st.rerun()
-                    else:
-                        st.error("Could not generate quiz — try a different topic!")
-            else:
-                st.warning("Please enter a topic first!")
-
-    elif not st.session_state.quiz_submitted:
-        st.markdown(f"### Topic: {st.session_state.quiz_topic}")
-        st.markdown(f"*{len(st.session_state.current_quiz)} questions — answer all below*")
-        st.markdown("---")
-
-        for i, q in enumerate(st.session_state.current_quiz):
-            st.markdown(f"""
-<div class="quiz-card">
-<b>Q{i + 1}. {q['question']}</b>
-</div>
-""", unsafe_allow_html=True)
-            selected = st.radio(
-                f"Q{i + 1}",
-                q['options'],
-                key=f"quiz_q_{i}",
-                label_visibility="collapsed"
-            )
-            st.session_state.quiz_answers[i] = selected[0]
-
-        st.markdown("---")
-        col1, col2 = st.columns(2)
-        with col1:
-            if st.button("✅ Submit Quiz"):
-                score = 0
-                results_list = []
-
-                for i, q in enumerate(st.session_state.current_quiz):
-                    user_ans = st.session_state.quiz_answers.get(i, "")
-                    correct = q['correct']
-                    is_correct = user_ans == correct
-                    if is_correct:
-                        score += 1
-                    results_list.append({
-                        "question_num": i + 1,
-                        "correct": is_correct,
-                        "user_ans": user_ans,
-                        "correct_ans": correct,
-                        "explanation": q['explanation']
-                    })
-
-                total = len(st.session_state.current_quiz)
-                percentage = int((score / total) * 100)
-
-                st.session_state.quiz_score += score
-                st.session_state.total_questions += total
-                st.session_state.quiz_submitted = True
-                st.session_state.quiz_result = {
-                    "score": score,
-                    "total": total,
-                    "percentage": percentage,
-                    "results": results_list
-                }
-
-                topic = st.session_state.quiz_topic
-                if topic not in st.session_state.topics_covered:
-                    st.session_state.topics_covered.append(topic)
-
-                st.rerun()
-
-        with col2:
-            if st.button("❌ Cancel Quiz"):
-                st.session_state.current_quiz = None
-                st.session_state.quiz_submitted = False
-                st.session_state.quiz_result = None
-                st.rerun()
-
-    elif st.session_state.quiz_submitted and st.session_state.quiz_result:
-        result = st.session_state.quiz_result
-        score = result['score']
-        total = result['total']
-        percentage = result['percentage']
-
-        st.markdown("### Your Results")
-        st.markdown("---")
-
-        for r in result['results']:
-            if r['correct']:
-                st.success(f"**Q{r['question_num']}: Correct! ✅** — {r['explanation']}")
-            else:
-                st.error(f"**Q{r['question_num']}: Wrong ❌** — Correct: {r['correct_ans']}) — {r['explanation']}")
-
-        st.markdown("---")
-
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            st.metric("Your Score", f"{score}/{total}")
-        with col2:
-            st.metric("Percentage", f"{percentage}%")
-        with col3:
-            overall_acc = 0
-            if st.session_state.total_questions > 0:
-                overall_acc = int(
-                    (st.session_state.quiz_score / st.session_state.total_questions) * 100
-                )
-            st.metric("Overall Accuracy", f"{overall_acc}%")
-
-        st.markdown("---")
-
-        if percentage >= 80:
-            st.balloons()
-            st.success(f"🌟 Excellent! {score}/{total} — {percentage}%! You really know this topic!")
-        elif percentage >= 50:
-            st.warning(f"👍 Good effort! {score}/{total} — {percentage}%. Keep practicing!")
-        else:
-            st.error(f"💪 {score}/{total} — {percentage}%. Review the lecture and try again!")
-
-        st.markdown("---")
-
-        col1, col2 = st.columns(2)
-        with col1:
-            if st.button("🔄 Take Another Quiz"):
-                st.session_state.current_quiz = None
-                st.session_state.quiz_submitted = False
-                st.session_state.quiz_result = None
-                st.rerun()
-        with col2:
-            if st.button("📊 View My Progress"):
-                st.session_state.current_quiz = None
-                st.session_state.quiz_submitted = False
-                st.session_state.quiz_result = None
-                st.rerun()
-
-elif page == "🃏 Flashcards":
-    st.title("🃏 Flashcards")
-    st.caption("Quick revision made easy!")
-    st.divider()
-
-    col1, col2 = st.columns(2)
-    with col1:
-        flash_topic = st.text_input("Enter Topic", placeholder="e.g., Python functions, OOP...")
-    with col2:
-        num_cards = st.slider("Number of Cards", 3, 10, 5)
-
-    if st.button("🃏 Create Flashcards"):
-        if flash_topic:
-            with st.spinner("Creating flashcards..."):
-                cards = generate_flashcards(flash_topic, num_cards)
-                if cards:
-                    st.session_state.flashcards = cards
-                    st.success(f"{len(cards)} flashcards ready!")
-                else:
-                    st.error("Could not create flashcards — try again!")
-        else:
-            st.warning("Please enter a topic first!")
-
-    if st.session_state.flashcards:
-        st.markdown("---")
-        st.markdown("### Click each card to see the answer:")
-
-        for i, card in enumerate(st.session_state.flashcards):
-            with st.expander(f"📌 Card {i + 1}: {card['front']}"):
-                st.info(f"**Answer:** {card['back']}")
-
-        if st.button("📥 Download as PDF"):
-            content = "RAGuru Flashcards\n\n"
-            for i, card in enumerate(st.session_state.flashcards):
-                content += f"Card {i + 1}\nQ: {card['front']}\nA: {card['back']}\n\n"
-            path = save_as_pdf(content, "flashcards")
-            st.success("Saved!")
-
-
-elif page == "📊 My Progress":
-    st.title("📊 My Progress")
-    st.caption("Track your learning journey!")
-    st.divider()
-
-    col1, col2, col3, col4 = st.columns(4)
-    with col1:
-        st.metric("Total Score", st.session_state.quiz_score)
-    with col2:
-        st.metric("Questions Done", st.session_state.total_questions)
-    with col3:
-        acc = 0
-        if st.session_state.total_questions > 0:
-            acc = int((st.session_state.quiz_score / st.session_state.total_questions) * 100)
-        st.metric("Accuracy", f"{acc}%")
-    with col4:
-        st.metric("Topics Covered", len(st.session_state.topics_covered))
-
-    st.markdown("---")
-
-    if st.session_state.topics_covered:
-        st.markdown("### Topics Covered")
-        for topic in st.session_state.topics_covered:
-            st.success(f"✅ {topic}")
-    else:
-        st.info("No topics yet — take a quiz!")
-
-    st.markdown("---")
-
-    if acc >= 80:
-        st.success("🌟 Excellent! You are mastering the material!")
-    elif acc >= 60:
-        st.warning("👍 Good progress! Keep practicing!")
-    elif acc > 0:
-        st.error("💪 Keep going — review lectures and try again!")
-    else:
-        st.info("Take a quiz to start tracking your progress!")
-
-    st.markdown("---")
-    if st.session_state.total_questions > 0:
-        if st.button("🔄 Reset Progress"):
-            st.session_state.quiz_score = 0
-            st.session_state.total_questions = 0
-            st.session_state.topics_covered = []
-            st.success("Progress reset!")
-            st.rerun()
-
-
-elif page == "📖 Summary Generator":
-    st.title("📖 Summary Generator")
-    st.caption("Get a clear summary of any topic!")
-    st.divider()
-
-    summary_topic = st.text_input("Enter Topic", placeholder="e.g., Python, Variables...")
-
-    if st.button("📖 Generate Summary"):
-        if summary_topic:
-            with st.spinner("Creating summary..."):
-                summary = generate_summary(summary_topic)
-                st.markdown("### Summary")
-                st.markdown(summary)
-                st.markdown("---")
-
-                if st.button("📥 Save as PDF"):
-                    path = save_as_pdf(f"Topic: {summary_topic}\n\n{summary}", f"summary_{summary_topic}")
-                    st.success("Saved!")
-        else:
-            st.warning("Please enter a topic first!")
-
-
-elif page == "📚 Doubt History":
-    st.title("📚 Doubt History")
-    st.caption("All your previous questions!")
-    st.divider()
-
-    if st.session_state.doubt_history:
-        st.markdown(f"**Total questions: {len(st.session_state.doubt_history)}**")
-        st.markdown("---")
-
-        for i, doubt in enumerate(reversed(st.session_state.doubt_history)):
-            with st.expander(f"Q{len(st.session_state.doubt_history) - i}: {doubt['question'][:60]}..."):
-                st.write(f"**Question:** {doubt['question']}")
-                st.caption(f"Asked: {doubt['time']}")
-
-        st.markdown("---")
-        col1, col2 = st.columns(2)
-        with col1:
-            if st.button("📥 Download as PDF"):
-                content = "My Doubt History\n\n"
-                for i, d in enumerate(st.session_state.doubt_history):
-                    content += f"Q{i + 1}: {d['question']}\nAsked: {d['time']}\n\n"
-                path = save_as_pdf(content, "doubt_history")
-                st.success("Saved!")
-        with col2:
-            if st.button("🗑️ Clear History"):
-                st.session_state.doubt_history = []
-                st.success("Cleared!")
-                st.rerun()
-    else:
-        st.info("No questions yet — go to Chat and ask something!")

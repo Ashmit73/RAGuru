@@ -1,86 +1,105 @@
-import json
 import os
+import json
+import shutil
 import chromadb
 from sentence_transformers import SentenceTransformer
 
-# Create embeddings output folder
-os.makedirs("data/embeddings", exist_ok=True)
+TRANSCRIPT_DIR = "data/transcripts"
+DB_PATH = "data/embeddings"
+COLLECTION_NAME = "raguru_lectures"
+EMBEDDING_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
 
-# Load sentence transformer model for embeddings
-print("Loading embedding model...")
-model = SentenceTransformer("all-MiniLM-L6-v2")
-print("Embedding model ready!")
+# Sliding window parameters (6 segments per chunk, 2 segments overlap)
+WINDOW_SIZE = 6
+STEP_SIZE = 4
 
-# Initialize ChromaDB
-print("\nInitializing ChromaDB...")
-client = chromadb.PersistentClient(path="data/embeddings")
-collection = client.get_or_create_collection(name="raguru_lectures")
-print("ChromaDB ready!")
 
-# Load all transcript JSON files
-transcript_folder = "data/transcripts"
-transcript_files = [f for f in os.listdir(transcript_folder)
-                    if f.endswith(".json")]
-
-print(f"\nTotal transcripts found: {len(transcript_files)}")
-print("=" * 50)
-
-all_chunks = []
-all_ids = []
-all_metadata = []
-
-# Process each transcript file
-for transcript_file in transcript_files:
-    transcript_path = f"{transcript_folder}/{transcript_file}"
-    lecture_name = transcript_file.replace(".json", "")
-
-    print(f"\nProcessing: {transcript_file}")
-
-    # Load transcript JSON
-    with open(transcript_path, "r", encoding="utf-8") as f:
-        transcript_data = json.load(f)
-
-    # Split transcript into chunks using segments
+def build_chunks(transcript_data, filename):
     segments = transcript_data.get("segments", [])
+    lecture_name = transcript_data.get("lecture_name", os.path.splitext(filename)[0])
 
-    # Group every 5 segments into one chunk
-    chunk_size = 5
-    for i in range(0, len(segments), chunk_size):
-        chunk_segments = segments[i:i + chunk_size]
+    chunks = []
+    for i in range(0, len(segments), STEP_SIZE):
+        window = segments[i: i + WINDOW_SIZE]
+        if not window:
+            continue
 
-        # Combine text from segments
-        chunk_text = " ".join([seg["text"] for seg in chunk_segments])
-        start_time = chunk_segments[0]["start"]
-        end_time = chunk_segments[-1]["end"]
+        combined_text = " ".join(seg["text"] for seg in window).strip()
+        if len(combined_text) < 20:  # skip tiny noise segments
+            continue
 
-        chunk_id = f"{lecture_name}_chunk_{i}"
-
-        all_chunks.append(chunk_text)
-        all_ids.append(chunk_id)
-        all_metadata.append({
-            "lecture": lecture_name,
-            "start_time": start_time,
-            "end_time": end_time,
-            "source": transcript_file
+        chunks.append({
+            "id": f"{lecture_name}_chunk_{i}",
+            "text": combined_text,
+            "metadata": {
+                "lecture": lecture_name,
+                "start_time": window[0]["start"],
+                "end_time": window[-1]["end"],
+                "source": filename
+            }
         })
 
-    print(f"Total chunks created: {len(segments) // chunk_size + 1}")
+        # Stop if we've reached the end of segments
+        if i + WINDOW_SIZE >= len(segments):
+            break
 
-print(f"\nTotal chunks to embed: {len(all_chunks)}")
-print("Creating embeddings... (this may take a few minutes)")
-embeddings = model.encode(all_chunks, show_progress_bar=True)
+    return chunks
 
-# Store in ChromaDB
-print("\nStoring embeddings in ChromaDB...")
-collection.add(
-    documents=all_chunks,
-    embeddings=embeddings.tolist(),
-    ids=all_ids,
-    metadatas=all_metadata
-)
 
-print("\n" + "=" * 50)
-print("All embeddings stored successfully!")
-print(f"Total chunks in ChromaDB: {collection.count()}")
-print("RAGuru knowledge base is ready!")
-print("=" * 50)
+def main():
+    if not os.path.exists(TRANSCRIPT_DIR):
+        print(f"Folder '{TRANSCRIPT_DIR}' not found. Run transcribe.py first.")
+        return
+
+    json_files = [f for f in os.listdir(TRANSCRIPT_DIR) if f.endswith(".json")]
+    if not json_files:
+        print("No transcript JSON files found.")
+        return
+
+    all_chunks = []
+    for file in json_files:
+        path = os.path.join(TRANSCRIPT_DIR, file)
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        file_chunks = build_chunks(data, file)
+        all_chunks.extend(file_chunks)
+        print(f"{file}: {len(file_chunks)} chunks prepared")
+
+    if not all_chunks:
+        print("No valid text chunks generated.")
+        return
+
+    print(f"\nTotal chunks ready: {len(all_chunks)}")
+    print(f"Loading embedding model: {EMBEDDING_MODEL}...")
+    model = SentenceTransformer(EMBEDDING_MODEL)
+
+    texts = [c["text"] for c in all_chunks]
+    ids = [c["id"] for c in all_chunks]
+    metadatas = [c["metadata"] for c in all_chunks]
+
+    print("Generating embeddings...")
+    embeddings = model.encode(texts, show_progress_bar=True).tolist()
+
+    # Reset old database folder cleanly to avoid stale/mismatched vectors
+    if os.path.exists(DB_PATH):
+        shutil.rmtree(DB_PATH)
+
+    client = chromadb.PersistentClient(path=DB_PATH)
+    collection = client.create_collection(
+        name=COLLECTION_NAME,
+        metadata={"hnsw:space": "cosine"}  # cosine distance works best for text similarity
+    )
+
+    collection.add(
+        ids=ids,
+        documents=texts,
+        embeddings=embeddings,
+        metadatas=metadatas
+    )
+
+    print(f"\nDone! Stored {collection.count()} chunks in '{DB_PATH}'.")
+
+
+if __name__ == "__main__":
+    main()
